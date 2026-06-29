@@ -1,0 +1,63 @@
+# Operre repository hygiene
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+secrets/
+private/
+credentials/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+.cache/
+cache/
+.DS_Store
+Thumbs.db
+
+# Node / frontend dependencies
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+
+# Package manager discipline: pnpm only
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Rust / Tauri build outputs
+target/
+src-tauri/target/
+
+# Operre project-local metadata hybrid model
+.operre/*
+!.operre/shared/
+!.operre/shared/**
+
+# Always ignored Operre private/local subtrees
+.operre/audit/
+.operre/secrets/
+.operre/cache/
+.operre/local-state/
+.operre/snapshots/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
