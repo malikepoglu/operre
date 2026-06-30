@@ -1789,7 +1789,382 @@ A documentation change is done only when:
 - commit is pushed;
 - post-push audit is clean.
 
-## 50. Open decisions / future topics
+## 50. Research baseline: VS Code, Cursor, and Monaco
+
+### 50.1 VS Code architecture reference
+
+VS Code is an important architectural reference, but Operre must not become a VS Code clone.
+
+Useful VS Code-inspired ideas:
+
+- Electron-style cross-platform workbench concept;
+- Monaco Editor as the editor engine;
+- custom TypeScript workbench/UI concept;
+- Activity Bar;
+- Sidebar;
+- Explorer;
+- tabs;
+- split editor;
+- status bar;
+- command palette;
+- extension manifest;
+- activation events;
+- contribution points;
+- extension host separation;
+- language-scoped activation;
+- Workspace Trust;
+- webviews;
+- secret storage.
+
+Important distinction:
+
+- Monaco is only the editor engine.
+- VS Code Workbench is a much larger platform.
+- Operre must design its own workbench, extension model, permission system, and security model.
+
+### 50.2 Cursor architecture reference
+
+Cursor is useful as an AI-first reference but not as Operre's product model.
+
+Cursor is understood as:
+
+- VS Code / Code-OSS fork base;
+- Electron/Chromium desktop lineage;
+- Monaco/VS Code editor-core lineage;
+- VS Code extension compatibility direction;
+- additional proprietary AI layer;
+- AI chat/composer;
+- inline AI editing;
+- codebase indexing;
+- cloud/local agent workflows;
+- backend-mediated AI request flow.
+
+Operre must not copy Cursor's cloud-first AI assumptions.
+
+Operre AI direction:
+
+- AI is optional;
+- AI is a Connector Extension;
+- full workspace access is denied by default;
+- all reads, writes, command execution, network calls, Git actions, and proposed edits require scoped permission;
+- all AI edits require diff before apply;
+- all AI actions must be auditable.
+
+### 50.3 Monaco license and usage policy
+
+Monaco Editor is accepted as the preferred editor engine candidate.
+
+Planning assumption:
+
+- Monaco Editor is open source;
+- Monaco Editor uses a permissive license suitable for commercial/proprietary usage when notices are preserved.
+
+Implementation rule:
+
+- verify the official Monaco package license before dependency addition;
+- preserve required copyright/license notices;
+- audit wrapper packages separately;
+- do not assume Monaco includes the VS Code extension system;
+- do not use VS Code or Microsoft branding.
+
+### 50.4 Why not full VS Code/Cursor clone
+
+Operre must stay smaller.
+
+Accepted positioning:
+
+- VS Code is code-centered.
+- Cursor is AI-coding-centered.
+- Operre is lightweight workspace/editor-centered, local-first, privacy-first, and extension-driven.
+
+Operre should learn from VS Code usability, but use stricter privacy and permission rules.
+
+## 51. Detailed technology decision notes
+
+### 51.1 Frontend framework decision
+
+Accepted primary frontend stack:
+
+- TypeScript;
+- Vite;
+- Solid.
+
+Fallback:
+
+- TypeScript;
+- Vite;
+- React.
+
+Not first choice:
+
+- Svelte.
+
+Reasoning:
+
+- Solid is preferred for lightweight UI and fine-grained reactivity.
+- React remains a fallback because its ecosystem is large.
+- Svelte is considered good but not the first choice for this project direction.
+
+### 51.2 Package manager decision
+
+Accepted package manager:
+
+- pnpm.
+
+Reasoning:
+
+- better fit for monorepo/workspace structure;
+- better disk efficiency through shared store model;
+- stricter dependency discipline;
+- good fit for apps/packages/extensions layout;
+- better match for future extension-based architecture.
+
+Repository rule:
+
+- use pnpm only;
+- commit pnpm-lock.yaml when implementation begins;
+- use pnpm-workspace.yaml when workspace structure begins;
+- packageManager field should pin pnpm version later;
+- do not commit package-lock.json;
+- do not commit yarn.lock;
+- do not commit bun.lockb.
+
+Future CI rule:
+
+- pnpm install --frozen-lockfile.
+
+### 51.3 Desktop framework decision
+
+Accepted primary desktop framework:
+
+- Tauri.
+
+Fallback:
+
+- Electron.
+
+Reasoning for Tauri:
+
+- lightweight product goal;
+- smaller package direction;
+- lower RAM target;
+- Rust-native command layer;
+- stronger fit with explicit permissions/capabilities;
+- future Android/iOS path stays open;
+- better match for privacy-first, local-first architecture.
+
+Reasoning for Electron fallback:
+
+- proven desktop maturity;
+- more predictable Chromium runtime;
+- strong Node.js ecosystem;
+- easier VS Code-like extension/tooling patterns;
+- fallback if Tauri + Monaco + platform WebView behavior creates unacceptable limitations.
+
+Implementation rule:
+
+- start with Tauri;
+- keep Electron fallback documented;
+- test Tauri + Solid + Monaco early on Linux;
+- later test Windows and macOS;
+- do not assume Tauri solves mobile ergonomics automatically.
+
+### 51.4 Web-first idea status
+
+Earlier planning considered web-first direction because Ideboard is web-oriented.
+
+Final Operre direction is different:
+
+- Operre is primarily a lightweight desktop application first;
+- web technologies still power the UI;
+- Tauri is the primary desktop shell;
+- future web or mobile shells may exist later;
+- Ideboard remains a separate project.
+
+## 52. Earlier drawing, diagram, and project-board ideas
+
+### 52.1 Accepted broad direction
+
+Operre may eventually include or support:
+
+- drawing;
+- diagrams;
+- project boards;
+- TODO lists;
+- work plans;
+- service plans;
+- documentation;
+- Git/GitHub workflows;
+- AI-assisted workflows.
+
+But these must not bloat the first core.
+
+### 52.2 Diagram ideas
+
+Future diagram capabilities may include:
+
+- free canvas;
+- boxes/arrows;
+- flowcharts;
+- architecture diagrams;
+- mind maps;
+- entity diagrams;
+- sequence diagrams;
+- SVG export;
+- PNG export;
+- JSON document model.
+
+### 52.3 CAD separation
+
+CAD is future work.
+
+Rule:
+
+- CAD must stay separate from diagrams.
+- CAD must not be part of first core.
+- Default workspace keeps `Diagrams/` and `Cad/` separate.
+
+### 52.4 Project board idea status
+
+Earlier combined-product ideas included:
+
+- ideas;
+- tasks;
+- decisions;
+- risks;
+- docs;
+- Git;
+- code;
+- diagrams.
+
+Final current rule:
+
+- these may become extensions or future built-in features;
+- not first implementation target;
+- TODO/work plan/service plan are later extension/data-domain topics.
+
+## 53. Repo discipline details to split later
+
+Current root documents are acceptable for the specification phase.
+
+Later, after the specification baseline is stable, split documentation into focused files.
+
+Candidate future docs:
+
+- docs/README.md
+- docs/repository-discipline.md
+- docs/product-principles.md
+- docs/security-baseline.md
+- docs/privacy-policy-draft.md
+- docs/architecture.md
+- docs/technology-decisions.md
+- docs/extension-system.md
+- docs/extension-security.md
+- docs/ai-agent-security.md
+- docs/storage-paths.md
+- docs/ui-ux.md
+- docs/markdown-security.md
+- docs/sync-strategy.md
+- docs/license-policy.md
+- docs/implementation-plan.md
+
+During the specification phase, specifications.md remains the single consolidated source of truth.
+
+## 54. First implementation shape draft
+
+Implementation must not start yet, but the likely future shape is:
+
+- apps/desktop/
+- packages/editor-core/
+- packages/workbench-core/
+- packages/ui/
+- packages/file-core/
+- packages/settings-core/
+- packages/security-core/
+- packages/extension-api/
+- packages/markdown-core/
+- packages/logging-core/
+- docs/
+- extensions/ later
+
+This is not yet final.
+
+Rules:
+
+- do not create application scaffolding until specification and first implementation TODO are approved;
+- keep first implementation minimal;
+- no premature marketplace;
+- no premature AI;
+- no premature GitHub;
+- no premature Ideboard;
+- no premature CAD.
+
+## 55. Implementation restraint rules
+
+Operre must not start too large.
+
+First implementation target should not include:
+
+- full IDE;
+- debugger;
+- terminal;
+- marketplace;
+- AI agent;
+- GitHub connector;
+- Ideboard connector;
+- CAD;
+- cloud sync;
+- collaboration;
+- remote workspace.
+
+First implementation should likely focus on:
+
+- Tauri shell;
+- Solid/Vite UI;
+- Monaco editor display;
+- create/open/save text file;
+- basic Markdown editing;
+- basic layout;
+- status bar skeleton;
+- settings foundation;
+- no unsafe extension execution.
+
+## 56. Specification consolidation status
+
+Current specification has consolidated decisions through:
+
+- project identity;
+- domain/name meaning;
+- open-source/source model;
+- LogisticSearch parallelism;
+- Ideboard separation;
+- technology direction;
+- platform order;
+- storage paths;
+- privacy/telemetry;
+- extension terminology;
+- VS Code-like but stricter extension model;
+- AI agent security/audit model;
+- `.operre/` hybrid Git model;
+- default workspace structure;
+- startup/session/autosave/crash recovery;
+- encoding/BOM;
+- line endings;
+- indentation;
+- themes/fonts;
+- tabs/split editor;
+- Markdown preview/security;
+- minimap/status bar;
+- command palette;
+- keyboard shortcuts;
+- menu system;
+- Activity Bar/Sidebar;
+- Explorer/folder tree;
+- delete behavior baseline.
+
+Next discussion continues after delete behavior.
+
+## 57. Open decisions / future topics
 
 Topics still to decide after delete behavior:
 

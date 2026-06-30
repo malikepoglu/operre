@@ -34,6 +34,7 @@ Current project phase:
 |---|---|---|
 | OPR-SPEC-0001 | DONE | Create initial README, specifications, TODO, and repository hygiene baseline. |
 | OPR-SPEC-0002 | DONE | Expand specifications from full planning transcript through delete behavior. |
+| OPR-SPEC-0002B | DONE | Add gap patch from uploaded ODT transcript: VS Code/Cursor/Monaco research baseline, detailed technology notes, earlier diagram/project-board ideas, future doc split, and implementation restraint rules. |
 | OPR-SPEC-0003 | QUEUED | Continue product decisions after delete behavior. |
 | OPR-SPEC-0004 | QUEUED | Decide detailed permanent delete and OS Trash/Recycle Bin behavior. |
 | OPR-SPEC-0005 | QUEUED | Define search behavior. |
@@ -47,6 +48,7 @@ Current project phase:
 | OPR-SPEC-0013 | QUEUED | Define installer/update/security model. |
 | OPR-SPEC-0014 | QUEUED | Define non-open-source/free-core legal/license strategy. |
 | OPR-SPEC-0015 | QUEUED | Define first application implementation phase after specifications stabilize. |
+| OPR-SPEC-0016 | QUEUED | Split consolidated specification into focused docs after specification baseline stabilizes. |
 
 ## Implementation queue
 
