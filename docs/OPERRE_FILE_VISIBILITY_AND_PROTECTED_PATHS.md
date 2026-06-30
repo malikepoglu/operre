@@ -316,3 +316,7 @@ Accepted behavior:
 - Protected paths may be hidden, redacted, or shown with warning depending on setting.
 - Protected path contents are not scanned unnecessarily.
 - AI/extensions cannot read protected tree entries by default.
+
+## Workspace Trust and protected paths
+
+Workspace Trust does not remove protected path restrictions. Protected path access remains separately gated. In untrusted workspaces, protected path access is locked. Trust decisions must not expose protected path contents, secrets, logs, diagnostics, AI prompts, or AI responses by default.

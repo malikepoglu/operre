@@ -2836,3 +2836,32 @@ Accepted decisions:
 - Open UI does not imply data access.
 
 NEXT_TOPIC: Workspace Trust deep behavior
+
+## OPR-SPEC-0040 - Workspace Trust Deep Behavior
+
+Operre must make Workspace Trust scoped, explainable, revocable, device-local, workspace-aware, extension-aware, and toolchain-aware.
+
+Accepted decisions:
+
+- Workspace Trust uses both opening-time trust bars and runtime prompts for dangerous operations.
+- Trust can be scoped to file, folder, workspace, multi-root root, extension in workspace, toolchain profile, executable path, and machine.
+- Global trust is unavailable by default or strongly discouraged.
+- Trust decisions must not sync by default.
+- Untrusted workspaces keep basic editing available while code execution, data exfiltration, AI workspace access, and external toolchain actions remain locked.
+- Workspace identity uses canonical path, workspace roots, optional repository remote summary, local workspace ID, root list, symlink state, protected path state, owner and permission summary, and safety metadata.
+- Full workspace hashing is not required by default.
+- Multi-root workspaces track trust per root.
+- A trusted root does not trust another root.
+- Trust review needed appears after meaningful risk changes.
+- Red critical, yellow warning, and light-blue info trust bars can appear below the toolbar and above the editor or working surface.
+- Trust bars must not rely on color alone.
+- Dismissing a trust bar does not grant trust.
+- Dismissed trust bars leave status bar summaries where relevant.
+- Extension trust depends on package verification, identity, signature, requested permissions, workspace trust, limited-mode declaration, user grants, device capability, and audit state.
+- Workspace Trust does not automatically grant all extension permissions.
+- External toolchain and live runtime require workspace trust, verified extension, approved toolchain profile, approved executable path, argument review, sanitized environment, output redaction, resource limits, timeout, process tree termination, and audit logging.
+- Phone and tablet show unsupported risky trust actions as disabled with desktop required.
+- Open UI does not imply data access.
+- Visible workspace content does not grant extension or AI access.
+
+NEXT_TOPIC: Safe terminal and process execution model

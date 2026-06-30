@@ -65,3 +65,7 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Extension permission UI and approval flow
 
 - `OPERRE_EXTENSION_PERMISSION_UI_AND_APPROVAL_FLOW.md` - defines extension permission timing, install summaries, runtime prompts, scoped grants, duration choices, risk bars, status bar persistence, update permission policy, local extension Developer Mode, phone/tablet disabled desktop-required capability display, revocation, Safe Mode, and audit behavior.
+
+## Workspace Trust deep behavior
+
+- `OPERRE_WORKSPACE_TRUST_DEEP_BEHAVIOR.md` - defines scoped, revocable, device-local Workspace Trust; opening bars; runtime prompts; restricted mode; per-root multi-root trust; extension trust relationship; external toolchain and live runtime trust chain; trust review needed; phone/tablet limits; no trust sync; and audit behavior.

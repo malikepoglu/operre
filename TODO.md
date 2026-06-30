@@ -77,7 +77,8 @@ Current project phase:
 | OPR-SPEC-0037 | DONE | Define problems, search results, output, logs, and diagnostics panel detailed behavior. |
 | OPR-SPEC-0038 | DONE | Define extension contribution points and manifest schema as the detailed successor to the earlier extension manifest planning item. |
 | OPR-SPEC-0039 | DONE | Define extension permission UI and approval flow. |
-| OPR-SPEC-0040 | QUEUED | Define Workspace Trust deep behavior. |
+| OPR-SPEC-0040 | DONE | Define Workspace Trust deep behavior. |
+| OPR-SPEC-0041 | QUEUED | Define safe terminal and process execution model. |
 
 ## Implementation queue
 
@@ -99,7 +100,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Workspace Trust deep behavior
+NEXT_TOPIC: Safe terminal and process execution model
 
 ## Meta discipline queue
 

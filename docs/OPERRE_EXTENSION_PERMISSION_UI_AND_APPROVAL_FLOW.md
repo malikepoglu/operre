@@ -590,3 +590,7 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Workspace Trust relationship
+
+Extension permission prompts must respect Workspace Trust. A permission grant does not bypass Workspace Trust. Dangerous operations such as process execution, AI workspace access, protected path access, network access with workspace data, diagnostics access, and external toolchain sessions require both appropriate permission and appropriate trust state.

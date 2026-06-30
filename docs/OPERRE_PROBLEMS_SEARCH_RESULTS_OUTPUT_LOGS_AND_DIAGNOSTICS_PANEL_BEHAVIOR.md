@@ -843,3 +843,7 @@ Likely later topics:
 - safe terminal and process execution model;
 - programming language toolchain and live runtime extension model;
 - first implementation milestone freeze.
+
+## Workspace Trust relationship
+
+Problems, Search Results, Output, Logs, and Diagnostics must respect Workspace Trust. In untrusted workspaces, safe summaries can remain visible, but unrestricted panel reads, diagnostic bundles, logs access, output access, and AI summarization remain locked unless both trust and scoped permissions allow them.

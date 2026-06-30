@@ -503,3 +503,7 @@ Extensions must not read files, workspace trees, Search Results, Problems, Outpu
 Extension permission UI must use install-time summaries and runtime critical prompts. Dangerous permissions require scoped approval, duration choices, risk classification, Workspace Trust checks, and audit logging. Permission UI is not the security boundary by itself; enforcement belongs to the Permission Broker, Extension Host API bridge, Workspace Trust Broker, Device Capability Resolver, Package Verifier, future Process Execution Broker, future Toolchain Broker, and Audit Log.
 
 Extension update policy B is the default: an extension requesting new permissions remains blocked or disabled until user approval. Local and unpacked extensions require Developer Mode. Phone and tablet must show unsupported risky capabilities as disabled with desktop required.
+
+## Workspace Trust relationship
+
+Extensions must respect Workspace Trust. Package verification, manifest permissions, user grants, and Workspace Trust are separate gates. Workspace Trust does not automatically grant extension permissions, and extension permission grants do not replace Workspace Trust. High-risk and very-high-risk extension actions require Workspace Trust where workspace data, process execution, AI access, diagnostics, logs, protected paths, or external tools are involved.

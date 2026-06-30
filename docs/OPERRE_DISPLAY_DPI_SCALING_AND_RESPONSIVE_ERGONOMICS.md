@@ -521,3 +521,7 @@ Operational panels must respect UI scale, touch mode, compact mode, on-screen ke
 ## Extension permission bar ergonomics
 
 Extension permission bars must remain readable and actionable across high-DPI desktop, laptop, MacBook, tablet, phone, compact mode, touch mode, and on-screen keyboard scenarios. Buttons must not become microscopic. Phone and tablet must show unsupported risky capabilities as disabled with desktop required instead of forcing cramped desktop permission controls.
+
+## Workspace Trust responsive behavior
+
+Workspace Trust bars and Manage Workspace Trust views must remain readable and actionable on high-DPI desktops, laptops, MacBooks, tablets, phones, compact mode, touch mode, and on-screen keyboard scenarios. Phone and tablet must show unsupported risky trust actions as disabled with desktop required instead of exposing cramped desktop controls.

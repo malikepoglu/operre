@@ -651,3 +651,28 @@ Key decisions:
 - Open UI does not imply data access.
 
 Next topic: Workspace Trust deep behavior.
+
+## OPR-SPEC-0040 - Workspace Trust Deep Behavior
+
+Decision: Accepted.
+
+Operre will use a scoped, revocable, device-local Workspace Trust model with opening-time trust bars, runtime prompts for dangerous actions, restricted mode, granular trust scopes, per-root multi-root behavior, extension-aware trust, toolchain-aware trust, trust review needed, status bar state, and strict no-sync defaults.
+
+Key decisions:
+
+- Workspace Trust uses both opening-time bars and runtime prompts.
+- Global trust is unavailable by default or strongly discouraged.
+- Trust decisions do not sync by default.
+- Untrusted workspaces keep basic editing available.
+- Code execution, data exfiltration, AI workspace access, protected paths, secrets, extension scans, and external toolchain actions remain locked.
+- Workspace identity uses path, roots, optional repo remote, local workspace ID, and safety metadata.
+- Multi-root trust is tracked per root.
+- Trust review needed appears after meaningful risk changes.
+- Trust bars can be red critical, yellow warning, or light-blue info.
+- Dismissed trust bars leave status bar state where relevant.
+- Extension trust requires package verification, workspace trust, permissions, and device capability.
+- External toolchain and live runtime require the full trust and approval chain.
+- Phone and tablet show unsupported risky actions as disabled with desktop required.
+- Open UI does not imply data access.
+
+Next topic: Safe terminal and process execution model.

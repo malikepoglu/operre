@@ -312,3 +312,7 @@ Extensions cannot grant AI access to data that the user did not explicitly autho
 ## AI permission prompts and extension requests
 
 AI access requested by an extension is a very-high-risk permission. It requires runtime critical prompt, scoped grant, duration choice, Workspace Trust where project data is involved, visible audit logging, and revocation support. Extension UI visibility never grants AI data access. Open UI does not imply data access.
+
+## Workspace Trust and AI access
+
+AI workspace access requires Workspace Trust where project data is involved. AI cannot use visible workspace UI as hidden data access. Open UI does not imply data access. In untrusted workspaces, AI workspace read, AI tool execution, and AI-assisted external toolchain actions remain locked unless a later explicit trusted flow allows them.

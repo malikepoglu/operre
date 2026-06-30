@@ -501,3 +501,7 @@ Extension UI contributions must not damage Operre ergonomics. Extensions cannot 
 ## Extension permission risk bars
 
 Extension permission warnings must appear below the toolbar and above the editor or working surface. Info bars, warning bars, and critical alert bars must use severity label, icon, readable text, accessible label, keyboard focus support, and status bar fallback. Warning bars must not auto-dismiss. Critical alert bars require acknowledgement before dangerous continuation. Colors are customizable but must not be the only meaning carrier.
+
+## Workspace Trust UI behavior
+
+Workspace Trust warnings can use red critical, yellow warning, and light-blue info bars below the toolbar and above the editor or working surface. Bars must include text, severity label, icon, action buttons, accessibility labels, keyboard focus support, and status bar fallback. Dismissing a bar does not grant trust.

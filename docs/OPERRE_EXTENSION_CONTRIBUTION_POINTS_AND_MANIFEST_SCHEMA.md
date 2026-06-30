@@ -903,3 +903,7 @@ Likely later topics:
 ## Permission UI relationship
 
 Extension manifest permissions are declarations, not automatic grants. OPR-SPEC-0039 defines install-time summaries, runtime critical prompts, scoped grants, duration choices, risk bars, update policy, local extension Developer Mode, phone/tablet disabled desktop-required capability display, revocation controls, Safe Mode, and audit logging.
+
+## Workspace Trust relationship
+
+Extension manifests must declare limited-mode behavior for untrusted or restricted workspaces. High-risk contribution points may be disabled until Workspace Trust and required permissions are granted. Desktop-only toolchain and live runtime contributions require Workspace Trust and later broker approval.
