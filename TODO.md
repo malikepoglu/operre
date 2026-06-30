@@ -53,7 +53,7 @@ Current project phase:
 | OPR-SOURCE-0001 | DONE | Process 1.odt into dedicated source review memory document. |
 | OPR-SOURCE-0002 | DONE | Process 2.odt into dedicated source review memory document. |
 | OPR-SOURCE-0003 | DONE | Process 3.odt into dedicated source review memory document. |
-| OPR-SOURCE-0004 | QUEUED | Process 4.odt into dedicated source review memory document. |
+| OPR-SOURCE-0004 | DONE | Process 4.odt into dedicated source review memory document. |
 | OPR-SOURCE-0005 | QUEUED | Process 5.odt into dedicated source review memory document. |
 
 ## Implementation queue

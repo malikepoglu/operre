@@ -120,3 +120,16 @@ Default rule:
 - no force push;
 - no history rewrite;
 - no mixed project files between Operre and LogisticSearch.
+
+## Source 4 repository memory baseline
+
+The `4.odt` review confirms the first major GitHub memory direction.
+
+Accepted repository writing model:
+
+- root README.md contains general project information;
+- specifications.md contains detailed project specification;
+- TODO.md tracks planning and later work queue;
+- implementation TODO comes after specification stabilization;
+- repository docs are English-only;
+- terminal workflow follows LogisticSearch-like audit/write/commit/push discipline.

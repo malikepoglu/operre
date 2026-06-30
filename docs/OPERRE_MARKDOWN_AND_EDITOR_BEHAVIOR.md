@@ -209,3 +209,27 @@ Example warning:
 - Allow for this file.
 - Allow for this workspace.
 - Settings.
+
+## Source 4 Markdown baseline
+
+The `4.odt` review confirms Markdown behavior and security.
+
+Accepted Markdown behavior:
+
+- users can create `.md` files;
+- `.md` opens in edit mode by default;
+- preview only mode exists;
+- side-by-side edit + preview exists;
+- live preview toggle exists.
+
+Accepted Markdown preview security:
+
+- raw HTML disabled or sanitized;
+- scripts always blocked;
+- remote images/resources blocked by default;
+- local images allowed only from current workspace;
+- blocked/downgraded content displays a browser-like yellow top warning bar.
+
+Dependency rule:
+
+- Markdown parser/renderer must be license-audited before implementation.

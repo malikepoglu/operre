@@ -2228,7 +2228,7 @@ Processing status:
 - 1.odt: processed into repository memory.
 - 2.odt: processed into repository memory.
 - 3.odt: processed into repository memory.
-- 4.odt: pending dedicated review.
+- 4.odt: processed into repository memory.
 - 5.odt: pending dedicated review.
 
 ## 60. Source review: 2.odt
@@ -2251,7 +2251,7 @@ Processing status:
 - 1.odt: processed into repository memory.
 - 2.odt: processed into repository memory.
 - 3.odt: processed into repository memory.
-- 4.odt: pending dedicated review.
+- 4.odt: processed into repository memory.
 - 5.odt: pending dedicated review.
 
 ## 61. Source review: 3.odt
@@ -2281,5 +2281,35 @@ Processing status:
 - 1.odt: processed into repository memory.
 - 2.odt: processed into repository memory.
 - 3.odt: processed into repository memory.
-- 4.odt: pending dedicated review.
+- 4.odt: processed into repository memory.
+- 5.odt: pending dedicated review.
+
+## 62. Source review: 4.odt
+
+`docs/source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md` records the fourth source-file review from the uploaded five-part ODT transcript.
+
+It covers:
+
+- tab system;
+- split editor;
+- Markdown behavior;
+- Markdown preview security;
+- browser-like yellow warning bar;
+- minimap;
+- Status Bar;
+- Command Palette;
+- keyboard shortcuts;
+- menu system;
+- Activity Bar / Sidebar;
+- Ideboard separation;
+- Explorer / folder tree;
+- delete behavior baseline;
+- initial GitHub documentation/memory direction.
+
+Processing status:
+
+- 1.odt: processed into repository memory.
+- 2.odt: processed into repository memory.
+- 3.odt: processed into repository memory.
+- 4.odt: processed into repository memory.
 - 5.odt: pending dedicated review.

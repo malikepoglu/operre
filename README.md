@@ -119,3 +119,4 @@ Topic-focused project memory is stored under [`docs/`](./docs/):
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md)
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_2_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_2_ODT.md)
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md)
+- [`docs/source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md)

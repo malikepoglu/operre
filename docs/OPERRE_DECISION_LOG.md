@@ -149,3 +149,23 @@ Accepted memory extracted from `3.odt`:
 - Every AI action must be logged.
 - Prompt/response logging is OFF by default and optional per project/per agent.
 - `.operre/` uses hybrid Git model with audit/secrets/cache/local-state/snapshots always ignored.
+
+### 4.odt processed
+
+Accepted memory extracted from `4.odt`:
+
+- Tab system accepted.
+- Vertical split editor accepted.
+- Markdown edit/preview behavior accepted.
+- Markdown preview security accepted.
+- Browser-like yellow warning bar accepted for blocked Markdown preview content.
+- Minimap accepted and default ON.
+- Status Bar accepted.
+- Command Palette accepted with Ctrl+Shift+P.
+- Keyboard shortcuts are configurable through keybindings.json.
+- Classic menu accepted.
+- Activity Bar/Sidebar accepted.
+- Ideboard remains separate and later optional Connector Extension.
+- Explorer/folder tree first version accepted.
+- Delete behavior baseline accepted: OS Trash/Recycle Bin by default, Permanent Delete separate, confirmations required.
+- Initial GitHub documentation/memory direction accepted.

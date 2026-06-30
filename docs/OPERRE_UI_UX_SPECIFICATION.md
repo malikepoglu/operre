@@ -254,3 +254,44 @@ Details still open:
 - recent folders;
 - recent projects;
 - privacy-safe recent history.
+
+## Source 4 UI baseline
+
+The `4.odt` review confirms the initial UI/workbench baseline.
+
+Accepted UI features:
+
+- tabs;
+- dirty tab indicator;
+- reopen closed tab;
+- vertical split editor;
+- minimap default ON;
+- Status Bar;
+- Command Palette;
+- configurable keyboard shortcuts;
+- classic menu;
+- Left Activity Bar / Sidebar;
+- Explorer;
+- Search;
+- Recent;
+- Extensions;
+- Settings.
+
+Accepted Explorer behavior:
+
+- opened folder/project;
+- files and folders;
+- create file;
+- create folder;
+- rename;
+- delete with confirmation;
+- reveal in file manager;
+- refresh;
+- scope limited to user-opened folder/project.
+
+Accepted delete baseline:
+
+- Delete moves to OS Trash/Recycle Bin by default.
+- Permanent Delete is a separate command.
+- Every delete requires confirmation.
+- Folder delete requires extra warning.
