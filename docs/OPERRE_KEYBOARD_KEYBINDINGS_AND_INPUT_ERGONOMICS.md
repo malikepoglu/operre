@@ -636,3 +636,7 @@ Accepted behavior:
 - Tabs keyboard navigation is required.
 - Breadcrumbs keyboard navigation should exist.
 - Commands must exist for focus Explorer, reveal active file, new file, new folder, rename, delete, copy path, open File Info, navigation back/forward, close tab, and toggle hidden files.
+
+## Workbench chrome input ergonomics
+
+Workbench chrome must support keyboard, mouse, touchpad, trackpad, stylus, touch, and on-screen keyboard usage. Menus must be keyboard accessible. Toolbar and status bar items must have accessible labels and usable hit targets. Phone and tablet layouts must avoid hover-only controls and pixel-perfect tapping. On-screen keyboard behavior must not cover the active editor input where practical.

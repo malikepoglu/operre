@@ -49,3 +49,7 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Workbench layout and view management
 
 - `OPERRE_PANELS_SIDEBARS_ACTIVITY_BAR_LAYOUT_PERSISTENCE_AND_VIEW_MANAGEMENT_BEHAVIOR.md` - defines Activity Bar entries, sidebars, panels, view containers, layout persistence, view management commands, accessibility, privacy boundaries, extension view restrictions, and the later programming language toolchain/runtime extension track.
+
+## Workbench chrome
+
+- `OPERRE_MENUS_TOOLBAR_TITLEBAR_STATUS_BAR_AND_WORKBENCH_CHROME_BEHAVIOR.md` - defines menus, toolbar, titlebar, status bar, workbench chrome, command integration, high-DPI behavior, tablet/phone/MacBook ergonomics, responsive overflow, accessibility, and safety/privacy indicators.

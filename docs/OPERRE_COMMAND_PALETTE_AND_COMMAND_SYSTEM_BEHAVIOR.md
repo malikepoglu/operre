@@ -486,3 +486,9 @@ Accepted behavior:
 - Command Palette must expose file.rename, file.delete, file.revealInOS, file.compareWithDisk, and file.reloadFromDisk.
 - Command Palette must expose navigation.back, navigation.forward, tabs.close, tabs.closeOthers, and breadcrumbs.focus.
 - Command Palette must not bypass dangerous operation confirmation.
+
+## Workbench chrome command integration
+
+Menus, toolbar actions, titlebar actions, status bar actions, chrome overflow actions, UI scale actions, compact mode actions, and touch mode actions must use the central command registry.
+
+Required workbench chrome command IDs include workbench.action.focusMenuBar, workbench.action.toggleMenuBar, workbench.action.focusToolbar, workbench.action.toggleToolbar, workbench.action.focusStatusBar, workbench.action.toggleStatusBar, workbench.action.increaseUIScale, workbench.action.decreaseUIScale, workbench.action.resetUIScale, workbench.action.enableTouchMode, workbench.action.disableTouchMode, workbench.action.toggleCompactMode, and workbench.action.showChromeOverflow.

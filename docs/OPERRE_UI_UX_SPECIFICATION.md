@@ -481,3 +481,9 @@ Required UI principles:
 - Layout state is machine-local by default.
 - Touch, high-DPI, keyboard focus, and narrow layouts must be considered from the start.
 - Terminal, Debug, Git, AI, and language runtime surfaces are not v0.1 core surfaces.
+
+## Responsive workbench chrome ergonomics
+
+Operre must not repeat legacy editor failures where toolbar icons and menu text become microscopic on high-DPI monitors. Menus, toolbar buttons, titlebar controls, status bar items, badges, and overflow controls must scale with UI scale and remain usable across desktop, laptop, MacBook, tablet, phone, external display, high-DPI, fractional scaling, and mixed-DPI setups.
+
+The UI must provide compact, comfortable, and touch-oriented density modes. Toolbar and status bar surfaces must overflow gracefully instead of shrinking controls into unreadable or untouchable sizes.

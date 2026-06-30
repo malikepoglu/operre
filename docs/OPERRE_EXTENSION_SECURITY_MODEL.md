@@ -477,3 +477,9 @@ Extension-contributed views must be explicit contribution points, not arbitrary 
 Future programming language toolchain/runtime extensions may support compilers, interpreters, simulators, emulators, linkers, executable builders, package builders, live runtime/REPL surfaces, language servers, debuggers, build/test runners, problem matchers, formatters, linters, and language-specific project templates.
 
 These capabilities require Workspace Trust, explicit process execution permissions, environment handling, secrets protection, resource limits, output limits, audit logging, and AI restrictions. They must never become required Operre core dependencies.
+
+## Workbench chrome contribution constraints
+
+Extension-contributed menu items, toolbar items, titlebar items, status bar items, and overflow actions must be declared contribution points. They must be permission-scoped, user-hideable, stable-ID based, and unable to bypass Workspace Trust. Extensions must not shrink core chrome into unusable sizes, leak protected paths, leak secrets, track users through chrome state, or add hidden automation through status items.
+
+Runtime, compiler, interpreter, simulator, emulator, linker, executable builder, AI, Git, Terminal, Run, and Debug chrome must remain later optional extension surfaces with explicit permissions and audit logging.

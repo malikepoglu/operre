@@ -560,3 +560,25 @@ Operre must run a detailed terminal-based GitHub repository audit after every 20
 The audit may be run earlier after failed audits, failed pushes, unexpected dirty worktrees, new conversation handoffs, major scope changes, overlapping topics, or before implementation begins.
 
 After the audit, work should continue only after a done/queued/risk/next-action summary is produced.
+
+## OPR-SPEC-0036 - Menus, Toolbar, Titlebar, Status Bar, and Workbench Chrome
+
+Decision: Accepted.
+
+Operre will define a responsive workbench chrome model for menus, toolbar, titlebar, status bar, command surfaces, high-DPI displays, tablets, phones, laptops, MacBooks, external displays, and mixed-DPI environments.
+
+Key decisions:
+
+- VS Code is a useful reference for command-driven chrome, but Operre must be calmer and less crowded.
+- The Notepad++ on a 4K 27-inch monitor failure mode is an explicit anti-pattern.
+- Menus, toolbar buttons, titlebar controls, status bar items, badges, and overflow controls must remain readable, reachable, scalable, and ergonomic.
+- UI scale and editor font size are separate.
+- Workbench chrome must not rely on hard-coded pixel-only sizing.
+- Toolbar and status bar must use overflow behavior instead of shrinking controls into unusable sizes.
+- Phone and tablet layouts must not depend on desktop menubar assumptions.
+- Native titlebar behavior is preferred for v0.1 where practical.
+- Run, Debug, Terminal, Git, AI, compiler, interpreter, simulator, emulator, linker, executable builder, and runtime chrome remain later optional extension or connector surfaces.
+- Security and privacy indicators must be visible but calm.
+- Extension-contributed chrome must be declared, permission-scoped, user-hideable, and unable to bypass Workspace Trust.
+
+Next topic: Problems, search results, output, logs, and diagnostics panel detailed behavior.

@@ -139,12 +139,15 @@ Topic-focused project memory is stored under [`docs/`](./docs/):
 
 ## Current specification status
 
-- Current completed topic: OPR-SPEC-0035 - Panels, Sidebars, Activity Bar, Layout Persistence, and View Management.
-- Latest specification document: `docs/OPERRE_PANELS_SIDEBARS_ACTIVITY_BAR_LAYOUT_PERSISTENCE_AND_VIEW_MANAGEMENT_BEHAVIOR.md`
-- NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior.
+- Current completed topic: OPR-SPEC-0036 - Menus, Toolbar, Titlebar, Status Bar, and Workbench Chrome.
+- Latest specification document: `docs/OPERRE_MENUS_TOOLBAR_TITLEBAR_STATUS_BAR_AND_WORKBENCH_CHROME_BEHAVIOR.md`
+- NEXT_TOPIC: Problems, search results, output, logs, and diagnostics panel detailed behavior.
 
 OPR-SPEC-0035 records the workbench layout model. Operre should keep the useful interaction patterns proven by VS Code, but reduce complexity through fewer default surfaces, clearer view ownership, stricter privacy, explicit extension contribution points, permission-scoped view access, and machine-local layout persistence by default.
 
 ## Periodic repository audit cadence
 
 Operre uses a strict periodic audit rule: after every 20 completed meaningful repository workflow steps, a detailed terminal-based GitHub repository audit must be run before continuing. The audit compares local HEAD, origin/main, live remote main, TODO state, current and next topic markers, documentation indexes, decision logs, specification summaries, privacy/security markers, and possible duplicate or contradictory decisions.
+
+
+OPR-SPEC-0036 records the workbench chrome model. Operre must avoid legacy high-DPI failures such as tiny menus and microscopic toolbar icons on 4K displays. Menus, toolbar buttons, titlebar items, and status bar items must remain readable, reachable, scalable, and ergonomic across desktop, laptop, MacBook, tablet, phone, external monitor, and mixed-DPI environments.

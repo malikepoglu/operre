@@ -73,7 +73,8 @@ Current project phase:
 | OPR-SPEC-0033 | DONE | Define symlink, hardlink, special file, and file watcher behavior. |
 | OPR-SPEC-0034 | DONE | Define File Explorer, workspace tree, File Info, tabs, and navigation behavior. |
 | OPR-SPEC-0035 | DONE | Define panels, sidebars, activity bar, layout persistence, and view management behavior. |
-| OPR-SPEC-0036 | QUEUED | Define menus, toolbar, titlebar, status bar, and workbench chrome behavior. |
+| OPR-SPEC-0036 | DONE | Define menus, toolbar, titlebar, status bar, and workbench chrome behavior. |
+| OPR-SPEC-0037 | QUEUED | Define problems, search results, output, logs, and diagnostics panel detailed behavior. |
 
 ## Implementation queue
 
@@ -95,7 +96,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior
+NEXT_TOPIC: Problems, search results, output, logs, and diagnostics panel detailed behavior
 
 ## Meta discipline queue
 

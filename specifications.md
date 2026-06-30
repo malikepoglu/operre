@@ -2734,3 +2734,28 @@ Accepted decisions:
 - Future programming language toolchain/runtime features must be extension-driven and not core dependencies.
 
 NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior
+
+## OPR-SPEC-0036 - Menus, Toolbar, Titlebar, Status Bar, and Workbench Chrome
+
+Operre must provide a simple but responsive workbench chrome model across desktop, laptop, MacBook, tablet, phone, external display, high-DPI, fractional scaling, and mixed-DPI multi-monitor environments.
+
+Accepted decisions:
+
+- Menus, toolbar, titlebar, and status bar must use the central command registry.
+- UI scale and editor font size are separate.
+- Workbench chrome must not use hard-coded pixel-only sizing.
+- The Notepad++ on a 4K 27-inch monitor failure mode is an explicit anti-pattern.
+- Toolbar buttons, menu text, titlebar items, and status bar items must remain readable, reachable, and scalable.
+- Interactive chrome targets need separate pointer, comfortable desktop, touch, and phone target behavior.
+- Toolbar and status bar need overflow behavior instead of shrinking controls into unusable sizes.
+- v0.1 includes File, Edit, Selection, View, Go, Search, Extensions, and Help menus.
+- Run, Debug, Source Control, AI, Tools, Terminal, compiler, interpreter, simulator, emulator, linker, executable builder, and runtime chrome remain later optional extension surfaces.
+- v0.1 uses minimal toolbar actions: Open File, Open Folder, Save, Search, Toggle Sidebar, Toggle Panel, Command Palette, and Settings.
+- Native titlebar behavior is preferred for v0.1 where practical.
+- Status bar must show compact state without becoming an uncontrolled dumping ground.
+- Workspace Trust, protected/restricted state, Safe Mode, diagnostics upload OFF, telemetry OFF, and AI no-access defaults must be visible where appropriate.
+- Phone and tablet layouts must use command sheets, overflow groups, larger hit targets, and on-screen keyboard-safe behavior.
+- MacBook safe area and notch-like constraints must be considered.
+- Mixed-DPI monitor movement must not make chrome tiny, huge, clipped, or unreachable.
+
+NEXT_TOPIC: Problems, search results, output, logs, and diagnostics panel detailed behavior

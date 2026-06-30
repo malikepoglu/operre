@@ -507,3 +507,9 @@ Accepted behavior:
 - Badges must not rely only on color.
 - On-screen keyboard must not hide Explorer filter/input fields where practical.
 - Layout must support narrow screens without losing critical file state indicators.
+
+## Workbench chrome DPI acceptance gates
+
+Workbench chrome must be tested against high-DPI and responsive failure cases. A 4K 27-inch monitor with tiny menu text and microscopic toolbar icons is an explicit anti-pattern. Operre chrome must remain readable, reachable, and proportionate when UI scale changes, when fractional scaling is active, and when the window moves between monitors with different scale factors.
+
+Required acceptance contexts include 1366 x 768 laptop, 1920 x 1080 desktop, 2560 x 1440 desktop, 3840 x 2160 high-DPI desktop, 150 percent scaling, 200 percent scaling, tablet portrait, tablet landscape, phone portrait, phone landscape, MacBook-like safe area, mixed-DPI external monitor movement, on-screen keyboard active, compact mode, and touch mode.
