@@ -22,3 +22,7 @@ The root `specifications.md` remains the consolidated specification during the p
 Current phase is still specification consolidation.
 
 Implementation must wait until the specification baseline is stable and the first implementation TODO queue is explicitly approved.
+
+## Source reviews
+
+- `source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md`

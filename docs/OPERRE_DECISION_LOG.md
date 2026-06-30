@@ -95,3 +95,19 @@ Next decisions should cover:
 - Search behavior;
 - Recent files/projects behavior;
 - Settings UI/schema.
+
+## Source review processing
+
+### 1.odt processed
+
+Accepted memory extracted from `1.odt`:
+
+- VS Code is an architecture/usability reference, not a clone target.
+- Cursor is an AI-first reference, not a product model.
+- Monaco Editor is the preferred editor engine candidate.
+- Monaco is not the full VS Code workbench.
+- Operre must design its own workbench, extension model, permissions, and security model.
+- AI must be optional, permission-scoped, auditable, and diff-before-apply.
+- Monaco and all wrappers/dependencies require license audit before implementation.
+- Ideboard remains separate.
+- Diagrams/CAD remain future direction and must not bloat first core.

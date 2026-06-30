@@ -113,3 +113,7 @@ Topic-focused project memory is stored under [`docs/`](./docs/):
 - [`docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md`](./docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md)
 - [`docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md`](./docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md)
 - [`docs/OPERRE_DECISION_LOG.md`](./docs/OPERRE_DECISION_LOG.md)
+
+## Source review documents
+
+- [`docs/source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md)

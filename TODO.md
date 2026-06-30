@@ -50,6 +50,11 @@ Current project phase:
 | OPR-SPEC-0015 | QUEUED | Define first application implementation phase after specifications stabilize. |
 | OPR-SPEC-0016 | DONE | Split consolidated specification into focused docs after specification baseline stabilizes. |
 | OPR-SPEC-0017 | DONE | Write accepted decisions from uploaded five-part ODT transcript into structured repository memory files. |
+| OPR-SOURCE-0001 | DONE | Process 1.odt into dedicated source review memory document. |
+| OPR-SOURCE-0002 | QUEUED | Process 2.odt into dedicated source review memory document. |
+| OPR-SOURCE-0003 | QUEUED | Process 3.odt into dedicated source review memory document. |
+| OPR-SOURCE-0004 | QUEUED | Process 4.odt into dedicated source review memory document. |
+| OPR-SOURCE-0005 | QUEUED | Process 5.odt into dedicated source review memory document. |
 
 ## Implementation queue
 

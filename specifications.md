@@ -2208,3 +2208,25 @@ Structured docs:
 - `docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md`
 - `docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md`
 - `docs/OPERRE_DECISION_LOG.md`
+
+## 59. Source review: 1.odt
+
+`docs/source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md` records the first source-file review from the uploaded five-part ODT transcript.
+
+It covers:
+
+- VS Code architecture reference;
+- Cursor architecture and AI/privacy lessons;
+- Monaco Editor distinction from full VS Code;
+- Monaco license planning rules;
+- early Operre editor/workspace direction;
+- early drawing/diagram/project-board ideas;
+- initial restraint rules for first implementation.
+
+Processing status:
+
+- 1.odt: processed into repository memory.
+- 2.odt: pending dedicated review.
+- 3.odt: pending dedicated review.
+- 4.odt: pending dedicated review.
+- 5.odt: pending dedicated review.
