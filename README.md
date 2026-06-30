@@ -2,20 +2,22 @@
 
 Operre is a lightweight, privacy-first, local-first project working environment.
 
-It starts as a very fast Notepad-like text and Markdown editor, then grows step by step into a modular project platform for text, Markdown, common source files, documentation, project workspaces, diagrams, future CAD, Git/GitHub integration, optional Ideboard integration, and optional AI-agent workflows.
+It starts like a classic, fast, old Windows 10 Notepad-style editor: install it, open it, write `.txt`, save, and continue working without accounts, cloud dependency, GitHub, Ideboard, AI, or online services.
 
-Operre is an independent project. It is not an Ideboard client shell. It must be useful on its own. Ideboard may later connect to Operre through an optional connector extension.
+From that small core, Operre can grow through explicit, permission-scoped extensions into a broader project platform for text, Markdown, common source files, documentation, project workspaces, diagrams, future CAD, Git/GitHub integration, optional Ideboard integration, optional sync, and optional AI-agent workflows.
+
+Operre is an independent project. It is not an Ideboard client shell. Ideboard is a separate application and project. Ideboard may later connect to Operre through an optional Connector Extension.
 
 ## Name and domain
 
 - Project name: Operre
 - Domain: operre.com
 
-The name was originally inspired by operation research. It also carries useful product meaning around operation, organization, preparation, execution, workspace, and the German word "Oper" as a stage/performance metaphor.
+The domain was originally inspired by operation research. The name also carries useful product meaning around operation, organization, preparation, execution, repository, workspace, and the German word "Oper" as a stage/performance metaphor.
 
 Internal positioning:
 
-Operre is a lightweight place where projects are prepared, organized, and performed.
+> Operre is a lightweight place where projects are prepared, organized, and performed.
 
 ## Source model
 
@@ -23,10 +25,11 @@ Operre is not planned as an open-source project.
 
 Current source and distribution direction:
 
-- development repository: private after initial inspection/setup;
+- development repository: normally private;
+- current public visibility: temporary, only for inspection/setup;
 - basic/core application: free to use;
 - future extensions: may be free or paid;
-- future public repository: possible later for distribution, public documentation, or user-facing materials.
+- future public repository: possible later for distribution, public documentation, or user-facing material.
 
 ## Product principles
 
@@ -38,15 +41,17 @@ Operre must be:
 - useful without an account;
 - useful without Ideboard;
 - useful without GitHub;
+- useful without AI;
+- useful without online sync;
 - extension-driven;
 - secure by default;
 - documented in detail;
-- TODO-driven in development;
+- TODO-driven after the specification phase;
 - ergonomic on desktop first, tablet/mobile later.
 
 Core philosophy:
 
-Core-first. Cloud-optional. Extension-driven. Privacy-first.
+> Core-first. Cloud-optional. Extension-driven. Privacy-first.
 
 ## Initial technology direction
 
@@ -56,6 +61,7 @@ Preferred stack:
 - Editor engine: Monaco Editor
 - Frontend: TypeScript + Vite + Solid
 - Package manager: pnpm
+- Native side: Rust through Tauri
 
 Fallbacks:
 
@@ -74,20 +80,15 @@ Initial platform order:
 
 This repository is the project memory.
 
-Every meaningful decision, feature, architectural rule, security rule, UX rule, path decision, and implementation detail must be documented.
+Every meaningful decision, feature, architectural rule, security rule, UX rule, path decision, implementation detail, and completed work item must be documented.
 
-Development must be TODO-driven:
+Current phase:
 
-1. choose a TODO item;
-2. audit current state;
-3. implement;
-4. verify;
-5. document;
-6. update TODO;
-7. inspect git diff;
-8. commit;
-9. push;
-10. audit after push.
+1. consolidate the full specification;
+2. document every accepted decision;
+3. keep implementation TODOs pending until the specification is stable;
+4. then create the detailed TODO/work plan;
+5. then start application implementation.
 
 ## Language rule
 

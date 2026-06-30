@@ -55,6 +55,10 @@ src-tauri/target/
 .operre/local-state/
 .operre/snapshots/
 
+# Local conversation/import material
+conversation_import/
+*.odt
+
 # Editor files
 .vscode/
 .idea/

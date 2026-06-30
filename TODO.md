@@ -1,6 +1,12 @@
 # Operre TODO
 
-This file is the initial TODO-driven execution queue for Operre.
+This file is the planning queue for Operre.
+
+Current project phase:
+
+- specification consolidation first;
+- implementation TODO after specifications are stable;
+- no application implementation before accepted specification baseline.
 
 ## Rules
 
@@ -22,27 +28,33 @@ This file is the initial TODO-driven execution queue for Operre.
 - DEFERRED
 - SEALED
 
-## Initial queue
+## Specification-phase queue
 
 | ID | Status | Task |
 |---|---|---|
-| OPR-0001 | DONE | Create initial README, specifications, TODO, and repository hygiene baseline from planning discussion. |
-| OPR-0002 | QUEUED | Continue product decisions after Explorer delete behavior. |
-| OPR-0003 | QUEUED | Define exact repository discipline document structure. |
-| OPR-0004 | QUEUED | Define initial Tauri + Solid + Vite + pnpm project layout. |
-| OPR-0005 | QUEUED | Define non-open-source/free-core legal/license strategy. |
-| OPR-0006 | QUEUED | Define extension manifest schema. |
-| OPR-0007 | QUEUED | Define extension permission UI and approval flow. |
-| OPR-0008 | QUEUED | Define workspace trust model and restricted mode UI. |
-| OPR-0009 | QUEUED | Define .operre metadata format and Git ignore rules. |
-| OPR-0010 | QUEUED | Define Markdown preview security implementation. |
-| OPR-0011 | QUEUED | Define AI connector audit log schema. |
-| OPR-0012 | QUEUED | Define initial file/editor settings schema. |
-| OPR-0013 | QUEUED | Define installer/update/security model. |
-| OPR-0014 | QUEUED | Audit LogisticSearch repository discipline and compare reusable rules for Operre. |
-| OPR-0015 | QUEUED | Define permanent delete and OS Trash/Recycle Bin implementation strategy. |
-| OPR-0016 | QUEUED | Define search behavior. |
-| OPR-0017 | QUEUED | Define recent files/projects behavior. |
-| OPR-0018 | QUEUED | Define settings UI and settings storage schema. |
-| OPR-0019 | QUEUED | Define TODO/workplan/service-plan extension model. |
-| OPR-0020 | QUEUED | Define first application implementation phase after specifications stabilize. |
+| OPR-SPEC-0001 | DONE | Create initial README, specifications, TODO, and repository hygiene baseline. |
+| OPR-SPEC-0002 | DONE | Expand specifications from full planning transcript through delete behavior. |
+| OPR-SPEC-0003 | QUEUED | Continue product decisions after delete behavior. |
+| OPR-SPEC-0004 | QUEUED | Decide detailed permanent delete and OS Trash/Recycle Bin behavior. |
+| OPR-SPEC-0005 | QUEUED | Define search behavior. |
+| OPR-SPEC-0006 | QUEUED | Define recent files/projects behavior. |
+| OPR-SPEC-0007 | QUEUED | Define settings UI and settings storage schema. |
+| OPR-SPEC-0008 | QUEUED | Define exact extension manifest schema. |
+| OPR-SPEC-0009 | QUEUED | Define extension permission UI and approval flow. |
+| OPR-SPEC-0010 | QUEUED | Define workspace trust model and restricted mode UI. |
+| OPR-SPEC-0011 | QUEUED | Define Markdown preview security implementation details. |
+| OPR-SPEC-0012 | QUEUED | Define AI connector audit log schema. |
+| OPR-SPEC-0013 | QUEUED | Define installer/update/security model. |
+| OPR-SPEC-0014 | QUEUED | Define non-open-source/free-core legal/license strategy. |
+| OPR-SPEC-0015 | QUEUED | Define first application implementation phase after specifications stabilize. |
+
+## Implementation queue
+
+Implementation queue is intentionally not expanded yet.
+
+Implementation starts only after:
+
+1. specifications.md is stable enough;
+2. core scope is frozen for the first milestone;
+3. repository discipline is accepted;
+4. first implementation TODO list is generated.
