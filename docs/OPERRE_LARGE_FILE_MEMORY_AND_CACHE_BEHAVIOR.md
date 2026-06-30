@@ -487,3 +487,11 @@ Accepted behavior:
 - Large file cache size and cleanup policy must be configurable.
 - Large File Mode behavior must be visible and configurable where practical.
 - Machine-local performance settings should not sync by default.
+
+## Warning relationship
+
+Accepted behavior:
+
+- Large File Mode, Very Large File Mode, feature disabled states, search limits, compare limits, memory/cache pressure, and read-only fallback should produce clear warnings where useful.
+- Large file warnings should be informative without becoming noisy.
+- Large file warnings must respect notification fatigue controls.

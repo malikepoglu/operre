@@ -409,3 +409,12 @@ Accepted extension behavior:
 - Extension commands cannot silently gain network, workspace, Git, AI, shell, or credential access.
 - Extension command source should be visible where relevant.
 - Disabled extensions have unavailable or disabled commands.
+
+## Extension warning and problem baseline
+
+Accepted extension behavior:
+
+- Extension warnings must include permission requests, crashes, slow extensions, trust blocks, blocked network attempts, and blocked protected path access.
+- Extension commands must not bypass warning/confirmation policy.
+- Extension telemetry remains denied by default.
+- Extension access to warning/error history is denied by default.

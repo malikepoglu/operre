@@ -894,3 +894,18 @@ Accepted behavior:
 - Settings should include touch-friendly Command Palette mode.
 - Error, warning, notification, and problem reporting behavior must have detailed Settings controls in a dedicated follow-up specification.
 - Critical safety warnings must not be disabled casually.
+- critical safety warnings must not be disabled silently.
+- critical safety warnings must not be disabled casually.
+
+## Error, warning, notification, and Problems settings relationship
+
+Accepted behavior:
+
+- Settings must expose warning and notification behavior where safe.
+- Settings should include toast duration, info notifications, success notifications, warning banners, Problems auto-open, quiet mode, focus mode, grouping, max visible notifications, and notification retention.
+- Settings should support per-category notification preferences later.
+- Settings should support per-extension notification preferences later.
+- Settings should support per-AI-agent warning preferences later.
+- Critical safety warnings must not be disabled casually.
+- Critical safety warnings must not be disabled silently.
+- Diagnostics upload remains OFF by default.

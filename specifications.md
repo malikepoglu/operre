@@ -2546,3 +2546,28 @@ Accepted decisions:
 Next topic:
 
 - define error, warning, notification, and problem reporting behavior.
+
+## 72. Error, warning, notification, and problem reporting behavior
+
+`docs/OPERRE_ERROR_WARNING_NOTIFICATION_AND_PROBLEM_REPORTING_BEHAVIOR.md` defines severity levels, Problems panel, Settings Problems, notification surfaces, configurable warning behavior, privacy-safe logs, diagnostics export rules, and safety restrictions.
+
+Accepted decisions:
+
+- error, warning, notification, and problem reporting behavior must have a dedicated specification;
+- severity levels are required;
+- Problems panel is required;
+- Settings Problems relationship must be defined;
+- warning/error behavior must be configurable through Settings where safe;
+- Critical safety warnings must not be disabled casually;
+- Critical safety warnings must not be disabled silently;
+- toast, status bar, inline warning, banner, modal, Problems panel, Settings Problems, logs, and diagnostics export have distinct roles;
+- Command Palette must provide access to Problems, Warnings, Notifications, Logs, and Diagnostics commands;
+- privacy-first diagnostics behavior is required;
+- diagnostics upload is OFF by default;
+- file contents, secrets, and AI prompt/response content are not included automatically;
+- file operation, large file, search/replace/compare, extension, AI, and Workspace Trust warnings must be considered;
+- accessibility, touch, DPI, and on-screen keyboard compatibility must be considered.
+
+Next topic:
+
+- define detailed logs and diagnostics export behavior.

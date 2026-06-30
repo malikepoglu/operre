@@ -416,3 +416,13 @@ Accepted decisions:
 - Error, warning, notification, and problem reporting behavior must be a dedicated follow-up topic.
 - Warning/error behavior must be configurable through Settings where safe.
 - warning/error behavior must be configurable through Settings where safe.
+
+## Error, warning, notification, and Problems relationship
+
+Accepted behavior:
+
+- Command failures must be visible and understandable.
+- Command Palette must expose Problems, Warnings, Notifications, Logs, and Diagnostics commands.
+- Command Palette must not bypass warning/confirmation policy.
+- Dangerous diagnostic export commands require confirmation.
+- Disabled command reasons may appear as warnings or Problems where useful.

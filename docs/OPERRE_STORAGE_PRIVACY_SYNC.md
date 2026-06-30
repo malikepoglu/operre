@@ -382,3 +382,15 @@ Accepted storage behavior:
 - Machine-local display state must not sync by default.
 - Safe window restore must prevent restoring unusable off-screen windows.
 - User display preferences may live in settings, but raw monitor/window state stays local.
+
+## Error logs and diagnostics storage baseline
+
+Accepted storage behavior:
+
+- Logs are local-only by default.
+- Logs must not store secrets by design.
+- Logs must not store file contents by default.
+- Logs must not store AI prompt/response content by default.
+- Diagnostics upload is OFF by default.
+- Diagnostics export requires explicit user action and confirmation.
+- Paths/settings may be redacted in diagnostics export.

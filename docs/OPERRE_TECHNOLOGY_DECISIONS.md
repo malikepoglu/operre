@@ -279,3 +279,14 @@ Accepted technology direction:
 - Commands must support disabled reasons.
 - Commands must support dangerous/confirmation metadata.
 - Command execution must integrate with future error/warning/problem reporting.
+
+## Error, warning, notification, and Problems architecture baseline
+
+Accepted technology direction:
+
+- Operre needs a structured severity model.
+- Operre needs a Problems model.
+- Command execution must integrate with visible error reporting.
+- Settings validation must integrate with Settings Problems.
+- Diagnostics export must be privacy-safe by design.
+- Structured error codes should not be blocked by architecture.

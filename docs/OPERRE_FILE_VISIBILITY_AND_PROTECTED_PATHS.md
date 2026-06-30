@@ -259,3 +259,12 @@ Accepted behavior:
 - `.operre/audit/`, `.operre/secrets/`, `.operre/cache/`, `.operre/local-state/`, and `.operre/snapshots/` are excluded from recent history by default.
 - `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, and private keys are excluded from recent history by default.
 - Hidden/generated/cache/log files are excluded where practical.
+
+## Warning relationship with protected paths
+
+Accepted behavior:
+
+- Protected path access attempts should produce clear warnings.
+- Secret/token/private-key exposure warnings are security warnings.
+- Protected path warning details must avoid leaking sensitive contents.
+- Diagnostics export must exclude protected path contents by default.

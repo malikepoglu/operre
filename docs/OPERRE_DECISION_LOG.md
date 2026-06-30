@@ -378,3 +378,26 @@ Accepted memory:
 Next continuation point:
 
 - define error, warning, notification, and problem reporting behavior.
+
+### Error, warning, notification, and problem reporting behavior decided
+
+Accepted memory:
+
+- Error, warning, notification, and problem reporting behavior must have a dedicated specification.
+- Severity levels are required.
+- Problems panel is required.
+- Settings Problems relationship must be defined.
+- Warning/error behavior must be configurable through Settings where safe.
+- Critical safety warnings must not be disabled casually.
+- Critical safety warnings must not be disabled silently.
+- Toast, status bar, inline warning, banner, modal, Problems panel, Settings Problems, logs, and diagnostics export have distinct roles.
+- Command Palette must provide access to Problems, Warnings, Notifications, Logs, and Diagnostics commands.
+- Privacy-first diagnostics behavior is required.
+- Diagnostics upload is OFF by default.
+- File contents, secrets, and AI prompt/response content are not included automatically.
+- File operation, large file, search/replace/compare, extension, AI, and Workspace Trust warnings must be considered.
+- Accessibility, touch, DPI, and on-screen keyboard compatibility must be considered.
+
+Next continuation point:
+
+- define detailed logs and diagnostics export behavior.

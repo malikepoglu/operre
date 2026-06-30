@@ -395,3 +395,11 @@ Accepted behavior:
 - File compare layout and highlight behavior must be configurable.
 - Search history settings are separate from Recent Files.
 - Include Hidden Files does not automatically include protected paths.
+
+## Warning relationship
+
+Accepted behavior:
+
+- Replace in Files requires strong confirmation.
+- Hidden/protected exclusions, binary skips, large file limits, too many results, expensive compare, and disabled word/character diff should produce clear warnings where useful.
+- Search/compare warnings should be configurable where safe but must not weaken protected path safety silently.

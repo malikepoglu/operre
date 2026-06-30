@@ -240,3 +240,12 @@ Accepted AI behavior:
 - AI commands cannot bypass Workspace Trust.
 - AI commands must follow AI audit rules.
 - Prompt/response logging cannot be silently changed by command.
+
+## AI warning and problem baseline
+
+Accepted AI behavior:
+
+- AI warnings must include permission requirements, protected path denials, workspace access restrictions, missing credentials, and logged actions.
+- AI commands must not bypass warning/confirmation policy.
+- AI prompt/response content is not included in diagnostics automatically.
+- AI access to warning/error history is denied by default.

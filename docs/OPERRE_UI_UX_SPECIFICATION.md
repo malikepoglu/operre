@@ -398,3 +398,16 @@ Accepted UI behavior:
 - Command Palette must respect UI scale, high-DPI rendering, and responsive layouts.
 - Dangerous commands launched from Command Palette still require confirmation.
 - Problems, warnings, and notifications must be reachable through commands when the warning system is defined.
+
+## Error, warning, notification, and Problems UI baseline
+
+Accepted UI behavior:
+
+- Severity levels are required.
+- Problems panel is required.
+- Settings Problems relationship must be clear.
+- Toast, status bar, inline warning, banner, modal, Problems panel, and Settings Problems have distinct roles.
+- Critical safety warnings must not be disabled casually.
+- Critical safety warnings must not be disabled silently.
+- Warning/error behavior must be configurable through Settings where safe.
+- Warning UI must be keyboard, touch, high-DPI, high contrast, and on-screen-keyboard compatible.
