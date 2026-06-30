@@ -412,3 +412,12 @@ Accepted behavior:
 - Compare with disk should be available for save conflicts where practical.
 - Replace in Files must not silently overwrite external changes.
 - Protected path save/replace warnings must remain active.
+
+## Symlink, hardlink, special file, and watcher search/compare relationship
+
+Accepted behavior:
+
+- Search/compare must respect symlink traversal policy.
+- Protected symlink targets remain protected.
+- Binary/special files may be skipped or previewed with warning.
+- Compare with disk should support external-change conflict handling where practical.

@@ -499,3 +499,13 @@ Accepted decisions:
 - File contents, dirty buffer contents, backup content, and recovery content are not logged.
 - Backup/recovery content is not included in diagnostics export by default.
 - Detailed symlink, hardlink, special file, and file watcher behavior should be decided next.
+
+## Symlink, hardlink, special file, and watcher save relationship
+
+Accepted behavior:
+
+- Saving through symlink must not silently replace the symlink itself with a regular file.
+- Atomic write must not silently break hardlink semantics for user files.
+- Special files must not be saved as normal text files by default.
+- Auto Save must pause during dirty external-change conflicts.
+- Network/removable filesystem uncertainty requires conservative save behavior.

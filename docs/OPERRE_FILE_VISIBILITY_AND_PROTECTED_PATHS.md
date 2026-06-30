@@ -296,3 +296,13 @@ Accepted behavior:
 - Auto Save should be cautious or paused for protected/secret-like files.
 - Backup/recovery/diagnostics export must not include protected contents by default.
 - Secret/token exposure warning is required where practical.
+
+## Symlink, hardlink, special file, and watcher protected path baseline
+
+Accepted behavior:
+
+- Protected paths may be excluded from watcher by default.
+- Symlink targets inside protected paths remain protected.
+- Protected path contents must not be scanned unnecessarily.
+- Secret-like filenames/paths may be redacted.
+- Watcher event history is not exposed to AI/extensions by default.

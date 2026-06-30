@@ -323,3 +323,14 @@ Accepted technology direction:
 - Settings/keybindings require last-known-good backup.
 - User file atomic write must respect symlink/network/metadata risks.
 - File watcher behavior requires a detailed follow-up decision.
+
+## Symlink, hardlink, special file, and watcher architecture baseline
+
+Accepted technology direction:
+
+- File identity model must go beyond path strings.
+- lstat/stat distinction is required by design.
+- Watcher backend must be abstracted across Linux/macOS/Windows/polling.
+- Watcher events must be normalized.
+- Debounce, deduplication, overflow handling, and rescan are required by design.
+- Snapshot reconciliation should be supported by design.

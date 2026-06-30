@@ -266,3 +266,13 @@ Accepted editor behavior:
 - Save failure must preserve dirty buffer.
 - File changed on disk detection is required by design.
 - Encoding and line endings should be preserved where practical.
+
+## Symlink, hardlink, special file, and watcher editor relationship
+
+Accepted editor behavior:
+
+- Dirty buffers must never be silently overwritten by external reload.
+- File changed on disk requires conflict handling.
+- Deleted-on-disk files must not close the editor silently.
+- Binary/special file editing must be warning-protected.
+- File Info should be reachable from editor context where practical.

@@ -448,3 +448,13 @@ Accepted extension behavior:
 - Extensions cannot bypass protected path save warnings.
 - Extensions cannot access backup/recovery content by default.
 - Extension-triggered saves must report errors clearly.
+
+## Extension watcher boundary baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access watcher event history by default.
+- Extension watcher access requires explicit permission later.
+- Extension watcher scope must be limited to workspace scope.
+- Protected paths are excluded from extension watcher access.
+- High-volume watcher abuse must be rate-limited.

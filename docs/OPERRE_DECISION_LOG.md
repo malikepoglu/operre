@@ -477,3 +477,31 @@ Accepted memory:
 Next continuation point:
 
 - define symlink, hardlink, special file, and file watcher behavior.
+
+### Symlink, hardlink, special file, and file watcher behavior decided
+
+Accepted memory:
+
+- Symlink, hardlink, special file, and file watcher behavior must have a dedicated specification.
+- Operre must not silently change filesystem semantics.
+- Operre must distinguish path, canonical path, symlink path, target path, and file identity where practical.
+- lstat/stat distinction is required by design.
+- Symlink files may be opened, but link/target distinction must be visible where useful.
+- Saving through symlink must not silently replace the symlink itself with a regular file.
+- Broken symlink warning is required.
+- Symlink loop detection is required.
+- Hardlink count greater than 1 should trigger warning where supported.
+- Atomic write must not silently break hardlink semantics for user files.
+- Special files must not be treated as normal text files.
+- Sparse and binary files require cautious handling.
+- File watcher must detect external changes and workspace tree changes where practical.
+- Dirty buffers must never be silently overwritten by external reload.
+- Watcher debounce, deduplication, overflow handling, and rescan are required by design.
+- Internal save events must be distinguished from external changes where practical.
+- Watcher limits and network/removable filesystem unreliability must be visible.
+- Protected paths must remain privacy-first in watcher behavior.
+- AI and extensions cannot access watcher event history by default.
+
+Next continuation point:
+
+- define File Explorer, workspace tree, File Info, tabs, and navigation behavior.

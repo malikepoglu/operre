@@ -960,3 +960,18 @@ Accepted behavior:
 - Settings and keybindings require atomic write.
 - Settings and keybindings require last-known-good backup.
 - User file backup is not aggressive by default.
+
+## Symlink, hardlink, special file, and watcher settings relationship
+
+Accepted behavior:
+
+- Settings should expose file watcher enabled.
+- Settings should expose watcher backend auto/polling.
+- Settings should expose polling interval and watcher excludes.
+- Settings should expose follow symlinks in explorer.
+- Settings should expose show symlink target path.
+- Settings should expose warn on hardlinked files.
+- Settings should expose auto reload clean files.
+- Settings must confirm reload dirty files.
+- Settings should expose network filesystem conservative mode.
+- Settings should expose protected path watcher exclusion.

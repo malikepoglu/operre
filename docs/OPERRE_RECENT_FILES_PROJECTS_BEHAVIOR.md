@@ -494,3 +494,12 @@ Accepted behavior:
 - Clearing recent files does not necessarily clear recovery data.
 - Session Restore is separate from Recent Files and separate from Crash Recovery.
 - Clearing recovery data requires separate confirmation.
+
+## Symlink, hardlink, special file, and watcher recent/session relationship
+
+Accepted behavior:
+
+- Recent files should preserve the user-opened path where useful.
+- Symlink target path should not silently replace user-opened path in recent history.
+- Missing/deleted recent files should produce clear warning.
+- Session restore must handle missing, moved, symlinked, and protected targets cautiously.

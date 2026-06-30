@@ -279,3 +279,13 @@ Accepted AI behavior:
 - AI cannot bypass save conflict handling.
 - AI cannot bypass protected path save warnings.
 - AI cannot access backup/recovery content by default.
+
+## AI watcher boundary baseline
+
+Accepted AI behavior:
+
+- AI cannot receive watcher event history by default.
+- AI cannot monitor protected paths.
+- AI requires explicit scoped permission for workspace-change awareness later.
+- Raw watcher events are not hidden prompt context.
+- AI may explain visible file-changed warnings only from user-visible context.

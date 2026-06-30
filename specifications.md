@@ -2653,3 +2653,33 @@ Accepted decisions:
 Next topic:
 
 - define symlink, hardlink, special file, and file watcher behavior.
+
+## 76. Symlink, hardlink, special file, and file watcher behavior
+
+`docs/OPERRE_SYMLINK_HARDLINK_SPECIAL_FILE_AND_FILE_WATCHER_BEHAVIOR.md` defines symlink/hardlink behavior, special file handling, file identity, path canonicalization, save semantics, file watcher design, external changes, watcher limits, protected paths, and AI/extension watcher boundaries.
+
+Accepted decisions:
+
+- symlink, hardlink, special file, and file watcher behavior must have a dedicated specification;
+- Operre must not silently change filesystem semantics;
+- Operre must distinguish path, canonical path, symlink path, target path, and file identity where practical;
+- lstat/stat distinction is required by design;
+- symlink files may be opened, but link/target distinction must be visible where useful;
+- saving through symlink must not silently replace the symlink itself with a regular file;
+- broken symlink warning is required;
+- symlink loop detection is required;
+- hardlink count greater than 1 should trigger warning where supported;
+- atomic write must not silently break hardlink semantics for user files;
+- special files must not be treated as normal text files;
+- sparse and binary files require cautious handling;
+- file watcher must detect external changes and workspace tree changes where practical;
+- dirty buffers must never be silently overwritten by external reload;
+- watcher debounce, deduplication, overflow handling, and rescan are required by design;
+- internal save events must be distinguished from external changes where practical;
+- watcher limits and network/removable filesystem unreliability must be visible;
+- protected paths must remain privacy-first in watcher behavior;
+- AI and extensions cannot access watcher event history by default.
+
+Next topic:
+
+- define File Explorer, workspace tree, File Info, tabs, and navigation behavior.

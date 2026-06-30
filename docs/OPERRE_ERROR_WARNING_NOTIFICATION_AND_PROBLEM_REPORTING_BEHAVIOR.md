@@ -631,3 +631,14 @@ Accepted behavior:
 - Auto Save must pause or warn in risky conditions.
 - External changes must never silently overwrite dirty buffers.
 - Protected/secret-like save warnings must be security-aware.
+
+## Symlink, hardlink, special file, and watcher warning relationship
+
+Accepted behavior:
+
+- Broken symlink warning is required.
+- Symlink loop warning is required.
+- Hardlink warning is required when link count is greater than 1 where supported.
+- Watcher overflow and watcher limited warnings are required.
+- Dirty buffer external change conflict must be visible and actionable.
+- Special file open/save denial must produce clear errors.

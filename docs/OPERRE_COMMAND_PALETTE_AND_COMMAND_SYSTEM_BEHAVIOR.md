@@ -462,3 +462,15 @@ Accepted behavior:
 - Command Palette should expose file.compareWithDisk.
 - Command Palette should expose file.showSaveConflict.
 - Command Palette must not bypass save conflict, overwrite, or protected path confirmations.
+
+## Symlink, hardlink, special file, and watcher command relationship
+
+Accepted behavior:
+
+- Command Palette should expose file.compareWithDisk.
+- Command Palette should expose file.reloadFromDisk.
+- Command Palette should expose file.revealSymlinkTarget.
+- Command Palette should expose file.showFileInfo.
+- Command Palette should expose workspace.rescan.
+- Command Palette should expose watcher.restart and watcher.showStatus.
+- Command Palette must not bypass dirty conflict handling, protected path policy, or watcher privacy rules.

@@ -501,3 +501,14 @@ Accepted behavior:
 - Backup/recovery content is not logged.
 - Diagnostics export may include save error summaries.
 - Backup/recovery content is not included in diagnostics export by default.
+
+## Symlink, hardlink, special file, and watcher logs relationship
+
+Accepted behavior:
+
+- Watcher errors may be logged.
+- File contents are not logged.
+- Watcher event history is not exported by default.
+- Protected raw paths may be redacted.
+- Diagnostics may include watcher limited/overflow summary.
+- Diagnostics must not include protected contents.

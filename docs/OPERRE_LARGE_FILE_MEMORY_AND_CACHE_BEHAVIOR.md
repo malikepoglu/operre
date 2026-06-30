@@ -514,3 +514,12 @@ Accepted behavior:
 - Backup may be limited for large files.
 - Very Large File Mode may disable Auto Save or backup features.
 - Save failure must preserve dirty buffer where practical.
+
+## Symlink, hardlink, special file, and watcher large-file relationship
+
+Accepted behavior:
+
+- Sparse files require warning where rewrite may inflate size.
+- Extremely large files use Large File Mode.
+- Watcher and compare behavior for huge files may be limited.
+- Auto Save may pause for large/sparse files.

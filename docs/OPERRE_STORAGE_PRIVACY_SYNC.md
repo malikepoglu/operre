@@ -429,3 +429,13 @@ Accepted storage behavior:
 - Backup/recovery content is not included in diagnostics export by default.
 - Backup/recovery content is not exposed to AI/extensions by default.
 - Backup retention must be configurable where backups are enabled.
+
+## Symlink, hardlink, special file, and watcher storage baseline
+
+Accepted storage behavior:
+
+- Watcher state is machine-local.
+- Watcher event history is not synced by default.
+- Watcher event history is not exported by default.
+- Protected path watcher data must remain privacy-first.
+- File identity metadata may be stored only where useful and safe.

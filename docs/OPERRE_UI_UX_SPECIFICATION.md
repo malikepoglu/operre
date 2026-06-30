@@ -446,3 +446,12 @@ Accepted UI behavior:
 - Save conflicts must be understandable and actionable.
 - Protected/large/secret-like save warnings must be visible where useful.
 - Status bar, Problems panel, editor tabs, and Command Palette should reflect save state where practical.
+
+## Symlink, hardlink, special file, and watcher UI baseline
+
+Accepted UI behavior:
+
+- Symlink badge, broken symlink badge, hardlink warning badge, special file badge, read-only badge, binary badge, sparse badge, external changed badge, deleted-on-disk badge, watcher-limited badge, and protected target warning should exist where useful.
+- File Info should expose link path, target path, file identity, hardlink count, type, permissions, and watcher status where safe.
+- Dirty buffers must never be silently overwritten by external reload.
+- Watcher overflow and watcher limited states must be visible.
