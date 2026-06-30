@@ -346,3 +346,16 @@ Accepted storage behavior:
 - Recent history sync is OFF by default.
 - Recent history export is not first core.
 - Sensitive/protected entries are excluded by default.
+
+## Settings storage baseline
+
+Accepted storage behavior:
+
+- User settings use `settings.jsonc`.
+- Suggested Linux user settings path is `~/.config/operre/settings.jsonc`.
+- Workspace/project shared settings may use `.operre/shared/settings.jsonc`.
+- Machine-local settings live separately under local state.
+- Machine-local settings are not synced by default.
+- Secret values must not be stored in settings files.
+- Settings sync is OFF by default.
+- Settings import/export must exclude secrets by default.

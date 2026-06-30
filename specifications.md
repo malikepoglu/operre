@@ -2439,3 +2439,30 @@ Accepted decisions:
 Next topic:
 
 - define Settings UI and settings schema behavior.
+
+## 68. Settings UI and settings schema behavior
+
+`docs/OPERRE_SETTINGS_UI_AND_SCHEMA_BEHAVIOR.md` defines Settings UI, `settings.jsonc`, schema validation, settings layers, privacy defaults, secret handling, migration, and Settings Problems behavior.
+
+Accepted decisions:
+
+- Settings UI is required;
+- `settings.jsonc` is required;
+- JSONC comments are accepted;
+- JSON schema validation is required;
+- invalid settings must not crash Operre;
+- Settings Problems panel is required by design;
+- User settings and Workspace/Project settings are separate;
+- Machine-local settings are separate and not synced by default;
+- secret/token/password values must not be stored in settings files;
+- Secret Vault / OS keyring is separate from settings;
+- privacy/security defaults are OFF/safe by default;
+- Settings search, Reset to Default, and modified indicators are required;
+- Settings import/export may come later but must be designed safely;
+- Settings schema version and migration are required by design;
+- Workspace Trust can restrict workspace settings;
+- Extension and AI settings cannot bypass permission systems.
+
+Next topic:
+
+- define keyboard shortcut and keybinding behavior.

@@ -231,3 +231,14 @@ Accepted technology direction:
 - Very large file compare should be line/chunk first.
 - Cache and memory budgets must be configurable.
 - UI must remain responsive during large file operations.
+
+## Settings schema and migration baseline
+
+Accepted technology direction:
+
+- Settings must have schema validation.
+- Settings schema version is required by design.
+- Invalid settings must not crash Operre.
+- Deprecated and unknown settings should be reported safely.
+- Settings migration is required by design.
+- JSONC support is required for user-editable settings.

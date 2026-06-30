@@ -477,3 +477,13 @@ Accepted behavior:
 - Large File marker should be shown where useful.
 - Recent history must not store file contents, chunks, search results, or compare results.
 - Large file recent behavior must still respect protected/sensitive exclusions.
+
+## Settings relationship
+
+Accepted behavior:
+
+- Large file thresholds must be configurable.
+- Large file memory budget must be configurable.
+- Large file cache size and cleanup policy must be configurable.
+- Large File Mode behavior must be visible and configurable where practical.
+- Machine-local performance settings should not sync by default.

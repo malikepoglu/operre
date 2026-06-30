@@ -345,3 +345,16 @@ Accepted UI behavior:
 - Missing items are shown as missing without noisy startup errors.
 - Recent item actions include Open, Reveal in File Manager, Remove from Recent, Pin/Unpin, Clear Missing Entries, Clear All Recents, Copy Path, and Show Details.
 - Clear recent history does not remove pinned items by default.
+
+## Settings UI baseline
+
+Accepted UI behavior:
+
+- Settings UI is required.
+- Settings UI must be searchable.
+- Settings UI must be category-based.
+- Modified settings must be visibly marked.
+- Reset to Default is required.
+- Restart-required settings must be visibly marked.
+- Settings Problems panel is required by design.
+- Settings UI must support privacy/security warnings for risky settings.

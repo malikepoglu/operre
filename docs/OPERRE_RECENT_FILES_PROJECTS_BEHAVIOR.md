@@ -474,3 +474,13 @@ Accepted decisions:
 - Large files can appear in Recent Files with a Large File marker.
 - AI and extensions cannot access recent history by default.
 - Sync/export of recent history is OFF by default and requires explicit user consent if added later.
+
+## Settings relationship
+
+Accepted behavior:
+
+- Recent history settings are separate from Session Restore settings.
+- Recent history remains local-only by default.
+- Private mode can temporarily disable writing new recent history.
+- Settings sync must not sync recent history by default.
+- Recent history export is not first core and must exclude sensitive/protected entries by default if added later.

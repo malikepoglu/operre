@@ -377,3 +377,13 @@ Accepted extension behavior:
 - Extensions cannot access recent history by default.
 - Extensions require explicit scoped permission for reading, adding, syncing, exporting, or contributing recent-history UI.
 - Sending recent history outside the machine requires separate network permission.
+
+## Settings and extension security baseline
+
+Accepted extension behavior:
+
+- Extension settings must be namespaced.
+- Extension settings cannot bypass permissions.
+- Extension settings cannot grant network, workspace, credential, AI, or Git access by themselves.
+- Extension settings are subject to Workspace Trust.
+- Extension-provided settings should have schemas where practical.

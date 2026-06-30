@@ -279,3 +279,28 @@ Accepted memory:
 Next continuation point:
 
 - define Settings UI and settings schema behavior.
+
+### Settings UI and settings schema behavior decided
+
+Accepted memory:
+
+- Settings UI is required.
+- `settings.jsonc` is required.
+- JSONC comments are accepted.
+- JSON schema validation is required.
+- Invalid settings must not crash Operre.
+- Settings Problems panel is required by design.
+- User settings and Workspace/Project settings are separate.
+- Machine-local settings are separate and not synced by default.
+- Secret/token/password values must not be stored in settings files.
+- Secret Vault / OS keyring is separate from settings.
+- Privacy/security defaults are OFF/safe by default.
+- Settings search, Reset to Default, and modified indicators are required.
+- Settings import/export may come later but must be designed safely.
+- Settings schema version and migration are required by design.
+- Workspace Trust can restrict workspace settings.
+- Extension and AI settings cannot bypass permission systems.
+
+Next continuation point:
+
+- define keyboard shortcut and keybinding behavior.

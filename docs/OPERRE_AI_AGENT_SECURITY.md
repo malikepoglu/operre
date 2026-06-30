@@ -208,3 +208,14 @@ Accepted AI behavior:
 - If AI access is ever allowed, explicit scoped permission is required.
 - Sensitive/protected entries remain excluded.
 - Access must be logged.
+
+## Settings and AI security baseline
+
+Accepted AI behavior:
+
+- AI agents default OFF.
+- AI workspace access default OFF.
+- AI credentials are not stored as plaintext settings.
+- AI settings cannot bypass scoped permission requirements.
+- Prompt/response logging remains OFF by default.
+- Per-project/per-agent overrides may exist but remain governed by privacy and Workspace Trust.

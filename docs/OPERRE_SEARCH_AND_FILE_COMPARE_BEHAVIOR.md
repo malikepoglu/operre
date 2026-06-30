@@ -385,3 +385,13 @@ Accepted behavior:
 - Recent Comparisons may be added later and must be separate from Recent Files.
 - Recent comparison entries must apply sensitive/protected exclusions.
 - Missing files in recent comparisons should be marked as missing.
+
+## Settings relationship
+
+Accepted behavior:
+
+- Search defaults must be configurable.
+- Replace safety behavior must be configurable without weakening protected path defaults silently.
+- File compare layout and highlight behavior must be configurable.
+- Search history settings are separate from Recent Files.
+- Include Hidden Files does not automatically include protected paths.

@@ -61,7 +61,8 @@ Current project phase:
 | OPR-SPEC-0021 | DONE | Define detailed search, replace, and file compare behavior. |
 | OPR-SPEC-0022 | DONE | Define Recent files/projects/folders behavior. |
 | OPR-SPEC-0023 | DONE | Define large file memory and cache behavior. |
-| OPR-SPEC-0024 | QUEUED | Define Settings UI and settings schema behavior. |
+| OPR-SPEC-0024 | DONE | Define Settings UI and settings schema behavior. |
+| OPR-SPEC-0025 | QUEUED | Define keyboard shortcut and keybinding behavior. |
 
 ## Implementation queue
 
