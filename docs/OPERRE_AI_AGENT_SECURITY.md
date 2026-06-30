@@ -308,3 +308,7 @@ AI cannot read Problems, Search Results, Output, Logs, or Diagnostics by default
 ## AI and extension boundary
 
 Extensions cannot grant AI access to data that the user did not explicitly authorize. AI connectors are high-risk extensions and must require scoped permission, audit logging, privacy summaries, and Workspace Trust where project data or tool execution is involved. Open UI does not imply AI data access.
+
+## AI permission prompts and extension requests
+
+AI access requested by an extension is a very-high-risk permission. It requires runtime critical prompt, scoped grant, duration choice, Workspace Trust where project data is involved, visible audit logging, and revocation support. Extension UI visibility never grants AI data access. Open UI does not imply data access.

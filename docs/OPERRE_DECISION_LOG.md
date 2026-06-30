@@ -624,3 +624,30 @@ Key decisions:
 - Open UI does not imply data access.
 
 Next topic: Extension permission UI and approval flow.
+
+## OPR-SPEC-0039 - Extension Permission UI and Approval Flow
+
+Decision: Accepted.
+
+Operre will use install-time permission summaries, runtime critical permission prompts, scoped grants, duration choices, visible risk bars, status bar persistence, update permission policy, Developer Mode for local extensions, phone/tablet disabled capability display, revocation controls, Safe Mode, and audit logging.
+
+Key decisions:
+
+- Install-time summary plus runtime critical prompts is the permission timing model.
+- Permission duration supports deny, allow once, session, workspace, machine, until extension update, and until revoked.
+- Permission scope supports file, folder, workspace, glob, domain, URL pattern, command, panel, output channel, diagnostics session, problem source, search session, executable path, toolchain profile, and AI session.
+- Risk levels are Low, Medium, High, Very High, and Critical.
+- Permission risk bars appear below the toolbar and above the editor or working surface.
+- Warning bars do not auto-dismiss and critical alert bars require acknowledgement.
+- Dismissed warnings leave status bar summaries.
+- Colors are customizable but cannot be the only meaning carrier.
+- Extension update policy B is the default and recommended reset behavior.
+- Users may choose update policies A, B, C, or D.
+- Permission grants do not sync silently.
+- Local and unpacked extensions require Developer Mode.
+- Phone and tablet show unsupported risky capabilities as disabled with desktop required.
+- Revocation dashboard, revoke all, Safe Mode, suspicious request handling, and audit logging are required.
+- Technical permission ID and user-friendly explanation must be shown together.
+- Open UI does not imply data access.
+
+Next topic: Workspace Trust deep behavior.

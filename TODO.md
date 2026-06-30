@@ -76,7 +76,8 @@ Current project phase:
 | OPR-SPEC-0036 | DONE | Define menus, toolbar, titlebar, status bar, and workbench chrome behavior. |
 | OPR-SPEC-0037 | DONE | Define problems, search results, output, logs, and diagnostics panel detailed behavior. |
 | OPR-SPEC-0038 | DONE | Define extension contribution points and manifest schema as the detailed successor to the earlier extension manifest planning item. |
-| OPR-SPEC-0039 | QUEUED | Define extension permission UI and approval flow. |
+| OPR-SPEC-0039 | DONE | Define extension permission UI and approval flow. |
+| OPR-SPEC-0040 | QUEUED | Define Workspace Trust deep behavior. |
 
 ## Implementation queue
 
@@ -98,7 +99,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Extension permission UI and approval flow
+NEXT_TOPIC: Workspace Trust deep behavior
 
 ## Meta discipline queue
 

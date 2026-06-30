@@ -497,3 +497,7 @@ Panels must avoid microscopic toolbar buttons, clipped filter inputs, hover-only
 ## Extension ergonomics and device limits
 
 Extension UI contributions must not damage Operre ergonomics. Extensions cannot make menus, toolbar items, status bar items, panels, views, buttons, icons, or labels microscopic, clipped, overlapping, unreachable, or unusable. Phone and tablet extension support is intentionally limited to safe summaries, themes, syntax, snippets, and lightweight helpers by default.
+
+## Extension permission risk bars
+
+Extension permission warnings must appear below the toolbar and above the editor or working surface. Info bars, warning bars, and critical alert bars must use severity label, icon, readable text, accessible label, keyboard focus support, and status bar fallback. Warning bars must not auto-dismiss. Critical alert bars require acknowledgement before dangerous continuation. Colors are customizable but must not be the only meaning carrier.

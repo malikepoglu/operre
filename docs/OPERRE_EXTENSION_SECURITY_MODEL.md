@@ -497,3 +497,9 @@ Operre extensions must be manifest-driven, permission-scoped, and deny-by-defaul
 C, C++, Python, JavaScript runtimes outside the sandbox, database tools, web servers, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, live runtime surfaces, terminal-like tools, and debuggers are not core extension runtime features. They are later desktop/workstation-only brokered integrations requiring Workspace Trust, explicit permissions, resource limits, redaction, and audit logging.
 
 Extensions must not read files, workspace trees, Search Results, Problems, Output, Logs, Diagnostics, secrets, protected paths, AI prompts, AI responses, or environment variables by default.
+
+## Extension permission UI enforcement
+
+Extension permission UI must use install-time summaries and runtime critical prompts. Dangerous permissions require scoped approval, duration choices, risk classification, Workspace Trust checks, and audit logging. Permission UI is not the security boundary by itself; enforcement belongs to the Permission Broker, Extension Host API bridge, Workspace Trust Broker, Device Capability Resolver, Package Verifier, future Process Execution Broker, future Toolchain Broker, and Audit Log.
+
+Extension update policy B is the default: an extension requesting new permissions remains blocked or disabled until user approval. Local and unpacked extensions require Developer Mode. Phone and tablet must show unsupported risky capabilities as disabled with desktop required.

@@ -1001,3 +1001,9 @@ Invalid chrome settings must not make Operre unusable. Safe reset commands must 
 ## Extension sync and device profile settings
 
 Extension sync must be profile-aware and device-aware. Safe settings, keybindings, theme, extension IDs, extension enabled state, and extension version preferences may sync. UI scale, layout dimensions, panel size, sidebar width, touch mode, compact mode, window geometry, recent files, workspace trust, logs, diagnostics, secrets, local toolchain paths, runtime paths, and external process configuration remain machine-local by default.
+
+## Extension permission settings
+
+Extension permission settings should include extensions.permissions.updatePolicy, extensions.permissions.showInstallSummary, extensions.permissions.runtimePromptsEnabled, extensions.permissions.defaultDurationLowRisk, extensions.permissions.defaultDurationMediumRisk, extensions.permissions.defaultDurationHighRisk, extensions.permissions.defaultDurationVeryHighRisk, extensions.permissions.allowPersistentVeryHighRisk, extensions.permissions.syncGrants, extensions.permissions.localDeveloperMode, extensions.permissions.warnOnUnsignedLocalPackage, extensions.permissions.showDisabledDesktopRequiredCapabilities, extensions.permissions.showStatusBarSummary, extensions.permissions.showRiskBars, extensions.permissions.requireAcknowledgeForCritical, and extensions.permissions.recommendedDefaultsProfile.
+
+Recommended defaults use update policy B, runtime prompts enabled, install summary enabled, sync grants disabled, Developer Mode disabled, unsigned package warning enabled, desktop-required capabilities visible, status bar summary enabled, risk bars enabled, and critical acknowledgement required.

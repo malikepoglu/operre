@@ -899,3 +899,7 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Permission UI relationship
+
+Extension manifest permissions are declarations, not automatic grants. OPR-SPEC-0039 defines install-time summaries, runtime critical prompts, scoped grants, duration choices, risk bars, update policy, local extension Developer Mode, phone/tablet disabled desktop-required capability display, revocation controls, Safe Mode, and audit logging.

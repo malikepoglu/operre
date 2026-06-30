@@ -517,3 +517,7 @@ Required acceptance contexts include 1366 x 768 laptop, 1920 x 1080 desktop, 256
 ## Operational panel responsive gates
 
 Operational panels must respect UI scale, touch mode, compact mode, on-screen keyboard constraints, high-DPI displays, and mixed-DPI monitor movement. Problems, Search Results, Output, Logs, and Diagnostics must support virtualization or summaries when item counts become large. Phone and tablet modes must not expose dense desktop-only diagnostic tables or unbounded output surfaces by default.
+
+## Extension permission bar ergonomics
+
+Extension permission bars must remain readable and actionable across high-DPI desktop, laptop, MacBook, tablet, phone, compact mode, touch mode, and on-screen keyboard scenarios. Buttons must not become microscopic. Phone and tablet must show unsupported risky capabilities as disabled with desktop required instead of forcing cramped desktop permission controls.

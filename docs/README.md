@@ -61,3 +61,7 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Extension contribution points and manifest schema
 
 - `OPERRE_EXTENSION_CONTRIBUTION_POINTS_AND_MANIFEST_SCHEMA.md` - defines Operre's extension classes, TypeScript/JavaScript control-plane direction, manifest schema, contribution points, permission defaults, external toolchain broker direction, local install flow, private registry bootstrap, single-VPS feasibility, profile-aware sync planning, and phone/tablet capability limits.
+
+## Extension permission UI and approval flow
+
+- `OPERRE_EXTENSION_PERMISSION_UI_AND_APPROVAL_FLOW.md` - defines extension permission timing, install summaries, runtime prompts, scoped grants, duration choices, risk bars, status bar persistence, update permission policy, local extension Developer Mode, phone/tablet disabled desktop-required capability display, revocation, Safe Mode, and audit behavior.

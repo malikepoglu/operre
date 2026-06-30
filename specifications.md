@@ -2808,3 +2808,31 @@ Accepted decisions:
 - Extension dependencies must be declared, hashed where practical, and must not run arbitrary install scripts in the user workspace by default.
 
 NEXT_TOPIC: Extension permission UI and approval flow
+
+## OPR-SPEC-0039 - Extension Permission UI and Approval Flow
+
+Operre must provide an extension permission UI that is secure, understandable, scoped, revocable, and ergonomic.
+
+Accepted decisions:
+
+- Permission approval uses install-time summary plus runtime critical prompts.
+- Runtime prompts are required for file write, workspace read, protected path access, network access, process execution, external toolchain control, AI access, Logs access, Output access, Search Results access, Problems access, Diagnostics access, secrets access, and environment access.
+- Permission grants support deny, allow once, this session, this workspace, this machine, until extension update, and until revoked.
+- Permission scopes include exact file, folder, workspace, subfolder, file extension, glob, language mode, command, panel, output channel, diagnostics session, problem source, search session, network domain, URL pattern, executable path, toolchain profile, and AI session.
+- Risk levels are Low, Medium, High, Very High, and Critical.
+- Risk bars appear below the toolbar and above the editor or working surface.
+- Info bars, warning bars, and critical alert bars must not rely on color alone.
+- Critical alert bars require an "I understand" style acknowledgement before dangerous continuation.
+- Dismissed warnings leave a status bar summary.
+- Colors are user-customizable but must preserve accessibility and contrast.
+- Extension update policy B is the default and recommended reset behavior.
+- Update policy B blocks or keeps an extension disabled when new permissions are requested until the user approves.
+- Users may choose update policies A, B, C, or D.
+- Permission grants are machine-local or workspace-local by default and do not sync silently.
+- Local and unpacked extensions require Developer Mode.
+- Phone and tablet show unsupported risky capabilities as disabled with "desktop required" and a short explanation.
+- Revocation dashboard, revoke all, disable extension, disable all third-party extensions, Safe Mode, suspicious request handling, and audit logging are required planning targets.
+- Technical permission ID and user-friendly explanation must be shown together.
+- Open UI does not imply data access.
+
+NEXT_TOPIC: Workspace Trust deep behavior
