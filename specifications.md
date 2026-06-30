@@ -2759,3 +2759,26 @@ Accepted decisions:
 - Mixed-DPI monitor movement must not make chrome tiny, huge, clipped, or unreachable.
 
 NEXT_TOPIC: Problems, search results, output, logs, and diagnostics panel detailed behavior
+
+## OPR-SPEC-0037 - Problems, Search Results, Output, Logs, and Diagnostics Panel Behavior
+
+Operre must treat Problems, Search Results, Output, Logs, and Diagnostics as structured operational panels, not unrestricted text dump areas.
+
+Accepted decisions:
+
+- Problems records require stable IDs, severity, source, safe message, optional file identity, optional range, redaction state, privacy classification, trust requirement, and fix command references.
+- Search Results must support grouped results, cancellation, rerun, restricted summaries, stale state, large result virtualization, and redacted previews.
+- Output is a structured channel surface, not an unrestricted text dump.
+- v0.1 Output is a safe basic shell; terminal, build, runtime, compiler, test, and debugger output are later.
+- Desktop/workstation Output may later support Visual Studio-like build/test/runtime session summaries, output channels, problem matcher correlation, filtering, snapshots, retention, and redacted export.
+- Logs are local-only by default, rotated, retention-limited, clearable, redacted, and inaccessible to AI/extensions by default.
+- Diagnostics upload, crash upload, and telemetry are OFF by default.
+- Diagnostics export must be local-first, user-initiated, previewed before export, redacted, and category-selectable.
+- Desktop/workstation Diagnostics may later support Visual Studio-like local diagnostic sessions, issue snapshots, safe timelines, extension health, component health, performance summaries, and diagnostic session comparison.
+- Phone and tablet modes are limited: syntax-like checks, safe Problems summaries, restricted Search Results, safe app health summaries, and redacted diagnostics only.
+- Phone and tablet modes must not expose full Output, terminal output, build/run/debug output, runtime sessions, unbounded logs, or dense desktop diagnostic tables by default.
+- AI and extensions cannot read Problems, Search Results, Output, Logs, or Diagnostics by default.
+- Open UI does not imply data access.
+- Panel UI must follow high-DPI, phone, tablet, MacBook, on-screen keyboard, and mixed-DPI ergonomic rules.
+
+NEXT_TOPIC: Extension contribution points and manifest schema

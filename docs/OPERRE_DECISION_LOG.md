@@ -582,3 +582,24 @@ Key decisions:
 - Extension-contributed chrome must be declared, permission-scoped, user-hideable, and unable to bypass Workspace Trust.
 
 Next topic: Problems, search results, output, logs, and diagnostics panel detailed behavior.
+
+## OPR-SPEC-0037 - Problems, Search Results, Output, Logs, and Diagnostics Panel Behavior
+
+Decision: Accepted.
+
+Operre will define structured Problems, Search Results, Output, Logs, and Diagnostics panels with privacy-first defaults, redaction, command integration, large-list ergonomics, high-DPI behavior, device-specific capability limits, and future desktop/workstation diagnostic depth.
+
+Key decisions:
+
+- Output and Diagnostics may eventually approach Visual Studio-like depth on desktop/workstation platforms.
+- v0.1 Output remains a safe basic shell.
+- Build output, runtime output, compiler diagnostics, test output, terminal output, and debug console are later extension or process-execution topics.
+- Diagnostics are local-first, user-initiated, previewed before export, and redacted by default.
+- Diagnostics upload, crash upload, and telemetry are OFF by default.
+- Logs are local-only by default and inaccessible to AI/extensions without scoped permission.
+- Phone and tablet modes are limited to safe summaries, syntax-like checks, restricted Problems, restricted Search Results, and local app health summaries.
+- Phone and tablet modes must not expose full Output, terminal output, build/run/debug output, runtime sessions, unbounded logs, or dense diagnostic tables by default.
+- AI and extensions cannot read Problems, Search Results, Output, Logs, or Diagnostics by default.
+- Open UI does not imply data access.
+
+Next topic: Extension contribution points and manifest schema.

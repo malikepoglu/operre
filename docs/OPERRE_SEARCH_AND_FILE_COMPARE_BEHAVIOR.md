@@ -430,3 +430,7 @@ Accepted behavior:
 - Quick Open must respect hidden/protected/excluded path policies.
 - Search/compare should preserve user-opened symlink path where useful.
 - Dirty buffers must not be silently overwritten by search/result navigation.
+
+## Search Results panel restrictions
+
+Search Results must support grouped results, partial states, cancellation, rerun, stale results, restricted summaries, redacted previews, and large-result virtualization. Protected paths remain excluded by default. Include Hidden does not imply protected path access. AI and extensions cannot read Search Results by default.

@@ -492,3 +492,7 @@ Accepted behavior:
 Menus, toolbar actions, titlebar actions, status bar actions, chrome overflow actions, UI scale actions, compact mode actions, and touch mode actions must use the central command registry.
 
 Required workbench chrome command IDs include workbench.action.focusMenuBar, workbench.action.toggleMenuBar, workbench.action.focusToolbar, workbench.action.toggleToolbar, workbench.action.focusStatusBar, workbench.action.toggleStatusBar, workbench.action.increaseUIScale, workbench.action.decreaseUIScale, workbench.action.resetUIScale, workbench.action.enableTouchMode, workbench.action.disableTouchMode, workbench.action.toggleCompactMode, and workbench.action.showChromeOverflow.
+
+## Operational panel commands
+
+Problems, Search Results, Output, Logs, and Diagnostics actions must use the central command registry. Required command families include problems.focus, searchResults.focus, output.focus, logs.focus, diagnostics.focus, diagnostics.previewExport, diagnostics.exportLocal, output.showChannelPermissions, logs.showRedactionSummary, and diagnostics.showRedactionSummary.

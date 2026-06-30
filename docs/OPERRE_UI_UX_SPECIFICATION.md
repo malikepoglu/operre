@@ -487,3 +487,9 @@ Required UI principles:
 Operre must not repeat legacy editor failures where toolbar icons and menu text become microscopic on high-DPI monitors. Menus, toolbar buttons, titlebar controls, status bar items, badges, and overflow controls must scale with UI scale and remain usable across desktop, laptop, MacBook, tablet, phone, external display, high-DPI, fractional scaling, and mixed-DPI setups.
 
 The UI must provide compact, comfortable, and touch-oriented density modes. Toolbar and status bar surfaces must overflow gracefully instead of shrinking controls into unreadable or untouchable sizes.
+
+## Operational panel ergonomics
+
+Problems, Search Results, Output, Logs, and Diagnostics panels must remain usable across desktop, high-DPI displays, tablets, phones, MacBooks, external monitors, and mixed-DPI environments. Desktop can use richer tables and channels. Tablet should prefer drawers or stacked views with safe summaries. Phone should prefer cards, full-screen sheets, and restricted summaries.
+
+Panels must avoid microscopic toolbar buttons, clipped filter inputs, hover-only actions on touch, dense desktop tables on phone, and unbounded rendering of large result sets.

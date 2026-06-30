@@ -300,3 +300,7 @@ Accepted AI behavior:
 - AI workspace tree summary requires explicit scoped permission later.
 - AI cannot use hidden watcher/tree state as hidden prompt context.
 - AI suggestions for file operations require user confirmation.
+
+## AI access to operational panels
+
+AI cannot read Problems, Search Results, Output, Logs, or Diagnostics by default. The user must grant scoped access to a specific panel, session, and content type before AI can summarize or act on that data. Safe summaries may be exposed only through explicit permission. Protected path details, secrets, full logs, full output, diagnostics bundles, AI prompts, and AI responses remain denied or redacted by default.

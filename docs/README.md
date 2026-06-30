@@ -53,3 +53,7 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Workbench chrome
 
 - `OPERRE_MENUS_TOOLBAR_TITLEBAR_STATUS_BAR_AND_WORKBENCH_CHROME_BEHAVIOR.md` - defines menus, toolbar, titlebar, status bar, workbench chrome, command integration, high-DPI behavior, tablet/phone/MacBook ergonomics, responsive overflow, accessibility, and safety/privacy indicators.
+
+## Problems, Search Results, Output, Logs, and Diagnostics panels
+
+- `OPERRE_PROBLEMS_SEARCH_RESULTS_OUTPUT_LOGS_AND_DIAGNOSTICS_PANEL_BEHAVIOR.md` - defines structured Problems, Search Results, Output channels, Logs, Diagnostics, Visual Studio-like future diagnostic depth on desktop/workstation platforms, privacy-first redaction, AI/extension access restrictions, and limited phone/tablet panel capabilities.

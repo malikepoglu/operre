@@ -652,3 +652,9 @@ Accepted behavior:
 - Deleted-on-disk, external changed, watcher limited, watcher overflow, protected target, and special file states must be visible where useful.
 - File operation conflicts must be actionable.
 - Recursive delete, overwrite, protected path operation, and drag/drop move require warning or confirmation.
+
+## Structured Problems panel records
+
+Problems panel records must be structured and safe. A problem should include stable problem ID, source, source kind, severity, title, safe message, optional redacted detail, optional file identity, optional range, related command ID, timestamp, session ID, correlation ID, privacy classification, redaction state, trust requirement, and fix availability.
+
+Security and Privacy severities must be first-class and must not disappear behind ordinary filters unless the user explicitly chooses that behavior.

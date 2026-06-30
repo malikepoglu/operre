@@ -483,3 +483,9 @@ These capabilities require Workspace Trust, explicit process execution permissio
 Extension-contributed menu items, toolbar items, titlebar items, status bar items, and overflow actions must be declared contribution points. They must be permission-scoped, user-hideable, stable-ID based, and unable to bypass Workspace Trust. Extensions must not shrink core chrome into unusable sizes, leak protected paths, leak secrets, track users through chrome state, or add hidden automation through status items.
 
 Runtime, compiler, interpreter, simulator, emulator, linker, executable builder, AI, Git, Terminal, Run, and Debug chrome must remain later optional extension surfaces with explicit permissions and audit logging.
+
+## Panel contribution and diagnostic access constraints
+
+Extensions may contribute Problems, Output channels, Logs summaries, and Diagnostics summaries only through declared contribution points and permission-scoped APIs. Extensions cannot read Problems, Search Results, Output, Logs, or Diagnostics by default. Open UI does not imply extension data access.
+
+Build output, runtime output, compiler diagnostics, interpreter diagnostics, simulator diagnostics, emulator diagnostics, linker diagnostics, executable builder output, test output, terminal output, and debug output remain later extension or process-execution topics with Workspace Trust, explicit permissions, redaction, and audit logging.
