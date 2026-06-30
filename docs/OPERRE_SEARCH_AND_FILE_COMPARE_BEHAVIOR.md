@@ -403,3 +403,12 @@ Accepted behavior:
 - Replace in Files requires strong confirmation.
 - Hidden/protected exclusions, binary skips, large file limits, too many results, expensive compare, and disabled word/character diff should produce clear warnings where useful.
 - Search/compare warnings should be configurable where safe but must not weaken protected path safety silently.
+
+## Save relationship for search, replace, and compare
+
+Accepted behavior:
+
+- Replace operations must integrate with save conflict handling.
+- Compare with disk should be available for save conflicts where practical.
+- Replace in Files must not silently overwrite external changes.
+- Protected path save/replace warnings must remain active.

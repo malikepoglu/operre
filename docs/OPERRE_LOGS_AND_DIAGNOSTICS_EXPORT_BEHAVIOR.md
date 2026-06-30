@@ -490,3 +490,14 @@ Accepted behavior:
 - Recovery content is not included in diagnostics export by default.
 - Recovery metadata may be included only as redacted/summarized information.
 - Safe Mode launch summary may be included in diagnostics where safe.
+
+## Auto Save and file saving logs relationship
+
+Accepted behavior:
+
+- Save failures may be logged.
+- File contents are not logged.
+- Dirty buffer contents are not logged.
+- Backup/recovery content is not logged.
+- Diagnostics export may include save error summaries.
+- Backup/recovery content is not included in diagnostics export by default.

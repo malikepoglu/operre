@@ -945,3 +945,18 @@ Accepted behavior:
 - Recovery content is not included in diagnostics export by default.
 - AI and extensions cannot access recovery content by default.
 - Disabling Crash Recovery or Hot Exit requires clear warning.
+
+## Auto Save and file saving settings relationship
+
+Accepted behavior:
+
+- Auto Save is OFF by default.
+- Auto Save can be enabled by user preference.
+- Settings must expose Auto Save mode.
+- Settings must expose Auto Save delay.
+- Settings should expose Auto Save exclusions for large files and protected paths.
+- Settings must expose save conflict behavior.
+- Settings must expose default encoding and line-ending preservation behavior.
+- Settings and keybindings require atomic write.
+- Settings and keybindings require last-known-good backup.
+- User file backup is not aggressive by default.

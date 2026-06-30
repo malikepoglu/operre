@@ -313,3 +313,13 @@ Accepted technology direction:
 - Safe Mode is required by design.
 - Recovery conflict detection is required by design.
 - AI and extensions cannot access recovery content by default.
+
+## Auto Save and file saving architecture baseline
+
+Accepted technology direction:
+
+- Auto Save, Manual Save, Save As, Hot Exit, Crash Recovery, Session Restore, Atomic Write, and Backup are separate concepts.
+- Settings/keybindings require atomic write.
+- Settings/keybindings require last-known-good backup.
+- User file atomic write must respect symlink/network/metadata risks.
+- File watcher behavior requires a detailed follow-up decision.

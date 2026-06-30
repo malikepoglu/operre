@@ -472,3 +472,14 @@ Accepted decisions:
 - Safe Mode is required by design.
 - Destructive recovery actions require confirmation.
 - Detailed Auto Save, file saving, atomic write, and backup behavior should be decided next.
+
+## Auto Save and file saving relationship
+
+Accepted behavior:
+
+- Auto Save remains separate from Crash Recovery.
+- Auto Save remains separate from Hot Exit.
+- Auto Save is OFF by default.
+- Auto Save can be enabled by user preference.
+- Save failure must not destroy dirty buffers.
+- Settings/keybindings atomic write supports recovery safety.

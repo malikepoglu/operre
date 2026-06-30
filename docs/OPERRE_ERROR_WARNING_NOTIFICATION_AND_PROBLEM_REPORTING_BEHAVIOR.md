@@ -621,3 +621,13 @@ Accepted behavior:
 - Discarding recovered content requires confirmation.
 - Overwriting disk files with recovered content requires strong confirmation.
 - Safe Mode should be offered for crash loops.
+
+## Auto Save and file saving error/warning relationship
+
+Accepted behavior:
+
+- Save failure must preserve dirty buffer.
+- Save conflicts should appear as actionable warnings or Problems where useful.
+- Auto Save must pause or warn in risky conditions.
+- External changes must never silently overwrite dirty buffers.
+- Protected/secret-like save warnings must be security-aware.

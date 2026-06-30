@@ -419,3 +419,13 @@ Accepted storage behavior:
 - Recovery content is not included in diagnostics export by default.
 - Recovery content is not exposed to AI/extensions by default.
 - Recovery retention and max size must be configurable by design.
+
+## Auto Save and backup storage baseline
+
+Accepted storage behavior:
+
+- Settings/keybindings backups are app state/config data.
+- User file sidecar backups are not created by default.
+- Backup/recovery content is not included in diagnostics export by default.
+- Backup/recovery content is not exposed to AI/extensions by default.
+- Backup retention must be configurable where backups are enabled.

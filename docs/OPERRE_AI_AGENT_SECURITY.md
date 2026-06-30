@@ -269,3 +269,13 @@ Accepted AI behavior:
 - AI cannot include recovery content in prompts automatically.
 - AI proposed edits to recovered content require user review.
 - AI recovery access, if ever added, requires explicit scoped permission.
+
+## AI save boundary baseline
+
+Accepted AI behavior:
+
+- AI cannot silently save user files.
+- AI proposed edits require user review according to AI policy.
+- AI cannot bypass save conflict handling.
+- AI cannot bypass protected path save warnings.
+- AI cannot access backup/recovery content by default.

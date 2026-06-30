@@ -434,3 +434,15 @@ Accepted UI behavior:
 - Destructive recovery actions require confirmation.
 - Safe Mode is required by design.
 - Recovery UI must be keyboard, touch, high-DPI, high-contrast, and on-screen-keyboard compatible.
+
+## Auto Save and file saving UI baseline
+
+Accepted UI behavior:
+
+- Auto Save is OFF by default.
+- Auto Save can be enabled by user preference.
+- Save state must be visible where practical.
+- Save failed state must preserve dirty buffer and show recovery actions.
+- Save conflicts must be understandable and actionable.
+- Protected/large/secret-like save warnings must be visible where useful.
+- Status bar, Problems panel, editor tabs, and Command Palette should reflect save state where practical.

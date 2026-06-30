@@ -287,3 +287,12 @@ Accepted behavior:
 - Protected path recovery content is hidden from AI/extensions by default.
 - Recovery UI may redact protected paths and show privacy warnings.
 - Secret-like recovered content should trigger security warnings where practical.
+
+## Save behavior protected path baseline
+
+Accepted behavior:
+
+- Protected/secret-like file saving requires strict privacy boundaries.
+- Auto Save should be cautious or paused for protected/secret-like files.
+- Backup/recovery/diagnostics export must not include protected contents by default.
+- Secret/token exposure warning is required where practical.

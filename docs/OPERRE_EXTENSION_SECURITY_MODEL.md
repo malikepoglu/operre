@@ -438,3 +438,13 @@ Accepted extension behavior:
 - Extensions cannot export recovery content by default.
 - Extension crash reports must not include recovery content by default.
 - Extension APIs for recovery content, if ever added, require explicit permission.
+
+## Extension save boundary baseline
+
+Accepted extension behavior:
+
+- Extensions cannot bypass save conflict handling.
+- Extensions cannot bypass overwrite confirmations.
+- Extensions cannot bypass protected path save warnings.
+- Extensions cannot access backup/recovery content by default.
+- Extension-triggered saves must report errors clearly.

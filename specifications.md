@@ -2627,3 +2627,29 @@ Accepted decisions:
 Next topic:
 
 - define Auto Save, file saving, atomic write, and backup behavior.
+
+## 75. Auto Save, file saving, atomic write, and backup behavior
+
+`docs/OPERRE_AUTO_SAVE_FILE_SAVING_ATOMIC_WRITE_AND_BACKUP_BEHAVIOR.md` defines Auto Save, Manual Save, Save As, file saving, conflict handling, atomic write, backup behavior, file changed on disk behavior, encoding/line-ending preservation, and large/protected file saving.
+
+Accepted decisions:
+
+- Auto Save, file saving, atomic write, and backup behavior must have a dedicated specification;
+- Auto Save is OFF by default;
+- Auto Save can be enabled by user preference;
+- the project owner may not personally use Auto Save, but Operre must support user-controlled opt-in Auto Save;
+- Auto Save, Manual Save, Save As, Hot Exit, Crash Recovery, Session Restore, Atomic Write, and Backup are separate concepts;
+- Manual Save and Save As must be safe and conflict-aware;
+- save failure must preserve dirty buffer;
+- external changes must never silently overwrite dirty buffers;
+- settings and keybindings require atomic write;
+- settings and keybindings require last-known-good backup;
+- user files may use atomic write where safe and practical, but symlink/network/metadata risks must be respected;
+- normal user file backups should not be aggressive by default;
+- large/protected/secret-like files require save warnings and strict privacy boundaries;
+- file contents, dirty buffer contents, backup content, and recovery content are not logged;
+- backup/recovery content is not included in diagnostics export by default.
+
+Next topic:
+
+- define symlink, hardlink, special file, and file watcher behavior.

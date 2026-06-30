@@ -255,3 +255,14 @@ Accepted editor behavior:
 - Markdown edits should be recoverable.
 - Recovery actions should include Recover, Compare, Save As, Keep Both, and Discard where practical.
 - Auto Save remains separate from Crash Recovery.
+
+## Auto Save and editor save baseline
+
+Accepted editor behavior:
+
+- Auto Save is OFF by default.
+- Auto Save can be enabled by user preference.
+- Manual Save and Save As must be safe and conflict-aware.
+- Save failure must preserve dirty buffer.
+- File changed on disk detection is required by design.
+- Encoding and line endings should be preserved where practical.

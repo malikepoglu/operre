@@ -504,3 +504,13 @@ Accepted behavior:
 - Very Large File Mode may limit recovery behavior.
 - Large File Mode recovery warnings are required where useful.
 - Recovery must not copy huge files blindly when that would be unsafe or too expensive.
+
+## Save behavior relationship
+
+Accepted behavior:
+
+- Large file saving must control memory usage.
+- Auto Save may be limited for large files.
+- Backup may be limited for large files.
+- Very Large File Mode may disable Auto Save or backup features.
+- Save failure must preserve dirty buffer where practical.

@@ -450,3 +450,15 @@ Accepted behavior:
 - Command Palette should expose session.restorePrevious.
 - Command Palette should expose session.clearRestoreState.
 - Command Palette must not bypass destructive recovery confirmations.
+
+## Auto Save and file saving command relationship
+
+Accepted behavior:
+
+- Command Palette must expose file.save.
+- Command Palette must expose file.saveAs.
+- Command Palette should expose file.saveAll.
+- Command Palette may expose file.saveCopyAs later.
+- Command Palette should expose file.compareWithDisk.
+- Command Palette should expose file.showSaveConflict.
+- Command Palette must not bypass save conflict, overwrite, or protected path confirmations.
