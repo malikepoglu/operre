@@ -250,3 +250,12 @@ Accepted behavior:
 - Include Hidden Files does not automatically include protected paths.
 - `.git/`, `.operre/`, `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, private keys, caches, logs, and snapshots are excluded by default.
 - If a sensitive file is manually opened for compare, Operre should warn before compare where practical.
+
+## Recent history interaction with protected paths
+
+Accepted behavior:
+
+- `.git/` internals are excluded from recent history by default.
+- `.operre/audit/`, `.operre/secrets/`, `.operre/cache/`, `.operre/local-state/`, and `.operre/snapshots/` are excluded from recent history by default.
+- `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, and private keys are excluded from recent history by default.
+- Hidden/generated/cache/log files are excluded where practical.

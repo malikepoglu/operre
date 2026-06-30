@@ -198,3 +198,13 @@ Accepted AI behavior:
 - Selected ranges are preferred over whole large files.
 - User must see what content is sent where practical.
 - Protected/sensitive paths remain denied by default.
+
+## Recent history AI access baseline
+
+Accepted AI behavior:
+
+- AI cannot access recent history by default.
+- AI cannot use recent history as hidden project context.
+- If AI access is ever allowed, explicit scoped permission is required.
+- Sensitive/protected entries remain excluded.
+- Access must be logged.

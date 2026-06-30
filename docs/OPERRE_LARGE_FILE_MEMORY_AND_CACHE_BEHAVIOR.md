@@ -468,3 +468,12 @@ Accepted decisions:
 - user must be able to configure thresholds and behavior;
 - AI and extensions cannot access large file content without explicit scoped permission;
 - next topic remains Recent files/projects behavior.
+
+## Recent history interaction with large files
+
+Accepted behavior:
+
+- Large files may be added to Recent Files if opened normally.
+- Large File marker should be shown where useful.
+- Recent history must not store file contents, chunks, search results, or compare results.
+- Large file recent behavior must still respect protected/sensitive exclusions.

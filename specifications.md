@@ -2414,3 +2414,28 @@ Accepted decisions:
 Next topic:
 
 - define Recent files/projects behavior.
+
+## 67. Recent files, projects, folders, and pinned items
+
+`docs/OPERRE_RECENT_FILES_PROJECTS_BEHAVIOR.md` defines Recent Files, Recent Projects/Folders, pinned items, missing item handling, privacy behavior, storage, and the distinction from Session Restore.
+
+Accepted decisions:
+
+- Recent Files is required;
+- Recent Projects/Folders is required;
+- pinned recent items are required;
+- Startup screen must show Recent Projects and Recent Files;
+- Recent history and Session Restore are separate concepts;
+- Recent history is local-only by default;
+- sensitive/protected files are excluded by default;
+- user can clear recent history;
+- missing files/projects are shown as missing, not noisy errors;
+- Search history is separate from Recent Files;
+- Recent Comparisons may be added later and must be separate;
+- large files can appear in Recent Files with a Large File marker;
+- AI and extensions cannot access recent history by default;
+- sync/export of recent history is OFF by default and requires explicit user consent if added later.
+
+Next topic:
+
+- define Settings UI and settings schema behavior.

@@ -59,8 +59,9 @@ Current project phase:
 | OPR-SPEC-0019 | DONE | Resume product decisions after delete behavior. |
 | OPR-SPEC-0020 | DONE | Define hidden files, dotfiles, and protected path visibility behavior. |
 | OPR-SPEC-0021 | DONE | Define detailed search, replace, and file compare behavior. |
-| OPR-SPEC-0022 | QUEUED | Define Recent files/projects behavior. |
+| OPR-SPEC-0022 | DONE | Define Recent files/projects/folders behavior. |
 | OPR-SPEC-0023 | DONE | Define large file memory and cache behavior. |
+| OPR-SPEC-0024 | QUEUED | Define Settings UI and settings schema behavior. |
 
 ## Implementation queue
 

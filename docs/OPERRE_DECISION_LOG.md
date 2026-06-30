@@ -256,3 +256,26 @@ Accepted memory:
 Next continuation point:
 
 - define Recent files/projects behavior.
+
+### Recent files/projects behavior decided
+
+Accepted memory:
+
+- Recent Files is required.
+- Recent Projects/Folders is required.
+- Pinned recent items are required.
+- Startup screen must show Recent Projects and Recent Files.
+- Recent history and Session Restore are separate concepts.
+- Recent history is local-only by default.
+- Sensitive/protected files are excluded by default.
+- User can clear recent history.
+- Missing files/projects are shown as missing, not noisy errors.
+- Search history is separate from Recent Files.
+- Recent Comparisons may be added later and must be separate.
+- Large files can appear in Recent Files with a Large File marker.
+- AI and extensions cannot access recent history by default.
+- Sync/export of recent history is OFF by default and requires explicit user consent if added later.
+
+Next continuation point:
+
+- define Settings UI and settings schema behavior.

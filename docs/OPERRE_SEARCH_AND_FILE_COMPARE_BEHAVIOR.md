@@ -376,3 +376,12 @@ Accepted behavior:
 - Word/character diff may be disabled automatically above thresholds.
 - Detailed diff may be offered for selected ranges later.
 - Full multi-file compare of very large files should be carefully limited and cancellable.
+
+## Recent history relationship
+
+Accepted behavior:
+
+- Search history is separate from Recent Files.
+- Recent Comparisons may be added later and must be separate from Recent Files.
+- Recent comparison entries must apply sensitive/protected exclusions.
+- Missing files in recent comparisons should be marked as missing.

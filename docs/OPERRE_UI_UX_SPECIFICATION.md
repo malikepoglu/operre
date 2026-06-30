@@ -334,3 +334,14 @@ Accepted UI behavior:
 - Feature-limited state must be visible.
 - User can choose Open in Large File Mode, Open Read-only, Open normally anyway, or Cancel where practical.
 - Settings must expose large file thresholds and behavior.
+
+## Recent files/projects UI baseline
+
+Accepted UI behavior:
+
+- Startup screen shows Continue Last Session, Recent Projects, Recent Files, Pinned, Open File, Open Folder/Project, New Text File, New Markdown Note, and Operre Works.
+- File > Open Recent is required.
+- Command Palette access to recent items is allowed.
+- Missing items are shown as missing without noisy startup errors.
+- Recent item actions include Open, Reveal in File Manager, Remove from Recent, Pin/Unpin, Clear Missing Entries, Clear All Recents, Copy Path, and Show Details.
+- Clear recent history does not remove pinned items by default.

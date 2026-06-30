@@ -369,3 +369,11 @@ Accepted extension behavior:
 - Extensions cannot access large file content by default.
 - Extensions need explicit permission for reading, indexing, comparing, exporting, or externally sending large file content.
 - Large file extension operations must respect memory/cache budgets where practical.
+
+## Recent history extension access baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access recent history by default.
+- Extensions require explicit scoped permission for reading, adding, syncing, exporting, or contributing recent-history UI.
+- Sending recent history outside the machine requires separate network permission.

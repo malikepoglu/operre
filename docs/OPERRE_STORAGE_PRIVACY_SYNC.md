@@ -332,3 +332,17 @@ Accepted storage/cache behavior:
 - Cache must not store secrets by design.
 - Cache follows protected path rules.
 - Workspace/project isolation must be respected.
+
+## Recent files/projects storage baseline
+
+Accepted storage behavior:
+
+- Recent history is local-only by default.
+- Recent history is state, not logs.
+- Recent history should not be stored under log paths.
+- Suggested Linux path is `~/.local/state/operre/recent/`.
+- Suggested Windows path is `%LOCALAPPDATA%\Operre\recent\`.
+- Suggested macOS path is `~/Library/Application Support/Operre/recent/`.
+- Recent history sync is OFF by default.
+- Recent history export is not first core.
+- Sensitive/protected entries are excluded by default.
