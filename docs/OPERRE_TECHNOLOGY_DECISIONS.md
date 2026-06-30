@@ -267,3 +267,15 @@ Accepted technology direction:
 - On-screen keyboard avoidance must be supported by design.
 - Window geometry is machine-local state and must not sync by default.
 - Detailed breakpoint and scaling rules need a later implementation pass.
+
+## Command system architecture baseline
+
+Accepted technology direction:
+
+- Operre requires a core command registry.
+- Menus, keybindings, context menus, Settings UI, extensions, AI commands, and Command Palette must use the same command system.
+- Commands must have stable IDs and metadata.
+- Commands must support context/when conditions.
+- Commands must support disabled reasons.
+- Commands must support dangerous/confirmation metadata.
+- Command execution must integrate with future error/warning/problem reporting.

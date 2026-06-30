@@ -63,9 +63,10 @@ Current project phase:
 | OPR-SPEC-0023 | DONE | Define large file memory and cache behavior. |
 | OPR-SPEC-0024 | DONE | Define Settings UI and settings schema behavior. |
 | OPR-SPEC-0025 | DONE | Define keyboard shortcut, keybinding, and input ergonomics behavior. |
-| OPR-SPEC-0026 | QUEUED | Define detailed Command Palette and command system behavior. |
+| OPR-SPEC-0026 | DONE | Define detailed Command Palette and command system behavior. |
 | OPR-SPEC-0027 | DONE | Define display, DPI, scaling, and responsive ergonomics behavior. |
 | OPR-SPEC-0028 | QUEUED | Revisit display/DPI/scaling/responsive ergonomics during detailed UI implementation. |
+| OPR-SPEC-0029 | QUEUED | Define error, warning, notification, and problem reporting behavior. |
 
 ## Implementation queue
 

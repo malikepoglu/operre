@@ -385,3 +385,16 @@ Accepted UI behavior:
 - On-screen keyboard must not cover active editor/input areas where practical.
 - High contrast, focus visibility, and non-color indicators must remain compatible with scaling.
 - This topic needs a later detailed UI implementation pass.
+
+## Command Palette UI baseline
+
+Accepted UI behavior:
+
+- Command Palette is required.
+- Ctrl+Shift+P is the default shortcut.
+- Command Palette must support fuzzy command search.
+- Command title, category, shortcut, source, and disabled reason should be visible where practical.
+- Command Palette must be usable with keyboard, mouse, touch, and on-screen keyboard.
+- Command Palette must respect UI scale, high-DPI rendering, and responsive layouts.
+- Dangerous commands launched from Command Palette still require confirmation.
+- Problems, warnings, and notifications must be reachable through commands when the warning system is defined.

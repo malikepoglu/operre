@@ -616,3 +616,13 @@ Accepted behavior:
 - On-screen keyboard visibility must influence viewport/input positioning where practical.
 - MacBook trackpad and high-DPI screen ergonomics must be considered together.
 - Keyboard shortcut labels must remain readable under UI scaling.
+
+## Command Palette relationship
+
+Accepted behavior:
+
+- Ctrl+Shift+P opens Command Palette by default.
+- Command Palette and keybindings use the same command registry.
+- Keyboard shortcuts must not bypass command confirmations.
+- Command Palette must show shortcut labels where practical.
+- Command Palette must remain usable with on-screen keyboards and touch input.

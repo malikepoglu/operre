@@ -354,3 +354,27 @@ Accepted memory:
 Next continuation point:
 
 - define detailed Command Palette and command system behavior.
+
+### Command Palette and command system behavior decided
+
+Accepted memory:
+
+- Command Palette is required.
+- Ctrl+Shift+P is the default shortcut.
+- Core command registry is required.
+- Every important action should have a command ID.
+- Menus, keyboard shortcuts, context menus, Settings UI, extension commands, AI commands, and Command Palette use the same command system.
+- Fuzzy command search is required.
+- Command ID, title, category, shortcut, source, and disabled reason should be visible where practical.
+- Dangerous commands require confirmation.
+- Extension and AI commands cannot bypass permission systems.
+- Workspace Trust can restrict command availability and execution.
+- Command usage history is local-only by default.
+- Command usage telemetry is OFF by default.
+- Command Palette must support touch, on-screen keyboard, DPI scaling, and responsive layouts by design.
+- Error, warning, notification, and problem reporting behavior must be a dedicated follow-up topic.
+- Warning/error behavior must be configurable through Settings where safe.
+
+Next continuation point:
+
+- define error, warning, notification, and problem reporting behavior.

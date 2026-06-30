@@ -229,3 +229,14 @@ Accepted AI behavior:
 - AI shortcuts cannot bypass scoped permissions.
 - AI shortcuts cannot silently change prompt/response logging.
 - AI shortcut actions must respect audit logging.
+
+## Command Palette and AI command baseline
+
+Accepted AI behavior:
+
+- AI commands default OFF or limited in first core.
+- AI commands cannot silently enable workspace access.
+- AI commands cannot bypass scoped permissions.
+- AI commands cannot bypass Workspace Trust.
+- AI commands must follow AI audit rules.
+- Prompt/response logging cannot be silently changed by command.

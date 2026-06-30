@@ -880,3 +880,17 @@ Accepted behavior:
 - Settings should include compact mode, sidebar default visibility, panel position, split direction, and compare layout.
 - Settings should include safe window restore and window restore behavior.
 - Machine-local display state must not sync by default.
+
+## Command Palette and warning settings relationship
+
+Accepted behavior:
+
+- Settings must include Command Palette shortcut.
+- Settings should include show command IDs on/off.
+- Settings should include show disabled commands on/off.
+- Settings should include show recent commands on/off.
+- Settings should include max recent commands.
+- Settings should include command result density.
+- Settings should include touch-friendly Command Palette mode.
+- Error, warning, notification, and problem reporting behavior must have detailed Settings controls in a dedicated follow-up specification.
+- Critical safety warnings must not be disabled casually.

@@ -398,3 +398,14 @@ Accepted extension behavior:
 - Extension shortcuts cannot bypass permissions.
 - Disabled extensions have inactive shortcuts.
 - Extension uninstall may ask whether to remove related shortcuts/settings.
+
+## Command Palette and extension command baseline
+
+Accepted extension behavior:
+
+- Extensions may contribute commands.
+- Extension command IDs must be namespaced.
+- Extension commands cannot bypass permissions.
+- Extension commands cannot silently gain network, workspace, Git, AI, shell, or credential access.
+- Extension command source should be visible where relevant.
+- Disabled extensions have unavailable or disabled commands.

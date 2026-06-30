@@ -487,3 +487,13 @@ Accepted decisions:
 - accessibility and high contrast must remain compatible with scaling.
 - this topic must be revisited later for a deeper detailed UI implementation pass.
 - next topic remains detailed Command Palette and command system behavior.
+
+## Command Palette display relationship
+
+Accepted behavior:
+
+- Command Palette must respect UI scale and high-DPI rendering.
+- Command Palette must not be clipped on compact screens.
+- Command Palette must remain usable when on-screen keyboard is visible.
+- Touch-friendly Command Palette mode should use larger result rows.
+- Phone/tablet layouts may use a full-screen command sheet later.

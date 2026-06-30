@@ -2520,3 +2520,29 @@ Accepted decisions:
 Next topic:
 
 - define detailed Command Palette and command system behavior.
+
+## 71. Command Palette and command system behavior
+
+`docs/OPERRE_COMMAND_PALETTE_AND_COMMAND_SYSTEM_BEHAVIOR.md` defines Command Palette behavior, command registry, command identifiers, command metadata, context handling, extension/AI command safety, touch/display ergonomics, and error/warning relationship.
+
+Accepted decisions:
+
+- Command Palette is required;
+- Ctrl+Shift+P is the default shortcut;
+- core command registry is required;
+- every important action should have a command ID;
+- menus, keyboard shortcuts, context menus, Settings UI, extension commands, AI commands, and Command Palette use the same command system;
+- fuzzy command search is required;
+- command ID, title, category, shortcut, source, and disabled reason should be visible where practical;
+- dangerous commands require confirmation;
+- Extension and AI commands cannot bypass permission systems;
+- Workspace Trust can restrict command availability and execution;
+- command usage history is local-only by default;
+- command usage telemetry is OFF by default;
+- Command Palette must support touch, on-screen keyboard, DPI scaling, and responsive layouts by design;
+- error, warning, notification, and problem reporting behavior must be a dedicated follow-up topic;
+- warning/error behavior must be configurable through Settings where safe.
+
+Next topic:
+
+- define error, warning, notification, and problem reporting behavior.
