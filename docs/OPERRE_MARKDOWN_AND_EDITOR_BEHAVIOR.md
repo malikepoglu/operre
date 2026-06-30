@@ -276,3 +276,13 @@ Accepted editor behavior:
 - Deleted-on-disk files must not close the editor silently.
 - Binary/special file editing must be warning-protected.
 - File Info should be reachable from editor context where practical.
+
+## File Explorer, tabs, and editor navigation baseline
+
+Accepted editor behavior:
+
+- Tabs must show dirty/read-only/external-changed/deleted/conflict states.
+- Tab identity must not be only a path string.
+- Dirty buffers must never be silently discarded by tab, reload, or navigation actions.
+- Reveal Active File and File Info should integrate with editor context.
+- Breadcrumbs and Back/Forward navigation should integrate with editor cursor/file jumps.

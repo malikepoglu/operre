@@ -630,3 +630,12 @@ Accepted decisions:
 - Protected paths must remain privacy-first in watcher behavior.
 - AI and extensions cannot access watcher event history by default.
 - Detailed File Explorer, workspace tree, File Info, tabs, and navigation behavior should be decided next.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation relationship
+
+Accepted behavior:
+
+- Explorer and File Info must expose symlink, hardlink, special-file, binary, sparse, read-only, external-change, deleted-on-disk, watcher-limited, and protected target states where useful.
+- Same target opened through different symlink paths must not be silently merged.
+- File Info should expose link path, target path, hardlink count, type, permissions, and watcher status where safe.
+- Recent files should preserve the user-opened path where useful.

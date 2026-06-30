@@ -503,3 +503,13 @@ Accepted behavior:
 - Symlink target path should not silently replace user-opened path in recent history.
 - Missing/deleted recent files should produce clear warning.
 - Session restore must handle missing, moved, symlinked, and protected targets cautiously.
+
+## File Explorer, tabs, recent files, and session relationship
+
+Accepted behavior:
+
+- Opening a file may update Recent Files.
+- Preview-only open may not update Recent Files until made permanent.
+- Symlink opened path should be preserved in recent history where useful.
+- Session restore must re-check protected/missing/moved/symlink targets.
+- Navigation history is separate from recent files.

@@ -455,3 +455,14 @@ Accepted UI behavior:
 - File Info should expose link path, target path, file identity, hardlink count, type, permissions, and watcher status where safe.
 - Dirty buffers must never be silently overwritten by external reload.
 - Watcher overflow and watcher limited states must be visible.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation UI baseline
+
+Accepted UI behavior:
+
+- File Explorer tree, workspace root, File Info, tabs, breadcrumbs, and Back/Forward navigation are required by design.
+- Tabs must show dirty/read-only/external-changed/deleted/conflict states.
+- File Info is a first-class surface for file identity, symlink, hardlink, special-file, watcher, encoding, and protected-path metadata.
+- Dangerous Explorer actions require confirmation.
+- Large workspace lazy loading and tree virtualization are required by design.
+- AI and extensions cannot access Explorer tree or navigation history by default.

@@ -512,3 +512,14 @@ Accepted behavior:
 - Protected raw paths may be redacted.
 - Diagnostics may include watcher limited/overflow summary.
 - Diagnostics must not include protected contents.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation logs relationship
+
+Accepted behavior:
+
+- File operation failures may be logged.
+- File contents are not logged.
+- Protected raw paths may be redacted.
+- Navigation history is not exported by default.
+- Explorer tree snapshot is not exported by default.
+- Diagnostics may include watcher limited/overflow summaries and safe UI state summaries.

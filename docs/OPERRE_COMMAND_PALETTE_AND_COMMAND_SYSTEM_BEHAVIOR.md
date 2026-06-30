@@ -474,3 +474,15 @@ Accepted behavior:
 - Command Palette should expose workspace.rescan.
 - Command Palette should expose watcher.restart and watcher.showStatus.
 - Command Palette must not bypass dirty conflict handling, protected path policy, or watcher privacy rules.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation command relationship
+
+Accepted behavior:
+
+- Command Palette must expose explorer.focus, explorer.refresh, explorer.rescanWorkspace, and explorer.revealActiveFile.
+- Command Palette must expose explorer.toggleHiddenFiles and explorer.openFileInfo.
+- Command Palette must expose explorer.copyPath and explorer.copyRelativePath.
+- Command Palette must expose explorer.newFile and explorer.newFolder.
+- Command Palette must expose file.rename, file.delete, file.revealInOS, file.compareWithDisk, and file.reloadFromDisk.
+- Command Palette must expose navigation.back, navigation.forward, tabs.close, tabs.closeOthers, and breadcrumbs.focus.
+- Command Palette must not bypass dangerous operation confirmation.

@@ -642,3 +642,13 @@ Accepted behavior:
 - Watcher overflow and watcher limited warnings are required.
 - Dirty buffer external change conflict must be visible and actionable.
 - Special file open/save denial must produce clear errors.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation warning relationship
+
+Accepted behavior:
+
+- Dangerous Explorer actions require confirmation.
+- Dirty buffers must never be silently discarded by Explorer, tab, reload, or navigation actions.
+- Deleted-on-disk, external changed, watcher limited, watcher overflow, protected target, and special file states must be visible where useful.
+- File operation conflicts must be actionable.
+- Recursive delete, overwrite, protected path operation, and drag/drop move require warning or confirmation.

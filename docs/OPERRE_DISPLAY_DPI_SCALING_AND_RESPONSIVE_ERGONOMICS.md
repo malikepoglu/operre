@@ -497,3 +497,13 @@ Accepted behavior:
 - Command Palette must remain usable when on-screen keyboard is visible.
 - Touch-friendly Command Palette mode should use larger result rows.
 - Phone/tablet layouts may use a full-screen command sheet later.
+
+## File Explorer, tabs, and navigation responsive baseline
+
+Accepted behavior:
+
+- Explorer rows must be touch-friendly.
+- High-DPI file icons and badges must be crisp.
+- Badges must not rely only on color.
+- On-screen keyboard must not hide Explorer filter/input fields where practical.
+- Layout must support narrow screens without losing critical file state indicators.

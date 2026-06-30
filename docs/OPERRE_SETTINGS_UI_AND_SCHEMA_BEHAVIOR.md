@@ -975,3 +975,19 @@ Accepted behavior:
 - Settings must confirm reload dirty files.
 - Settings should expose network filesystem conservative mode.
 - Settings should expose protected path watcher exclusion.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation settings relationship
+
+Accepted behavior:
+
+- Settings should expose show hidden files.
+- Settings should expose protected path visibility mode.
+- Settings should expose explorer row density.
+- Settings should expose show file badges.
+- Settings should expose sort folders first and sort mode.
+- Settings should expose preview tabs enabled.
+- Settings should expose confirm drag and drop and confirm recursive delete.
+- Settings should expose auto reveal active file.
+- Settings should expose breadcrumbs enabled.
+- Settings should expose navigation history enabled.
+- Settings should expose large workspace lazy loading and explorer excludes.

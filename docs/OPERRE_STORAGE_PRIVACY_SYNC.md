@@ -439,3 +439,13 @@ Accepted storage behavior:
 - Watcher event history is not exported by default.
 - Protected path watcher data must remain privacy-first.
 - File identity metadata may be stored only where useful and safe.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation storage baseline
+
+Accepted storage behavior:
+
+- Explorer expansion state, tab state, breadcrumbs state, and navigation history are local UI state.
+- Navigation history is not synced by default.
+- Explorer tree snapshots are not exported by default.
+- Protected raw paths may be redacted.
+- Session restore must re-check protected/missing/moved/symlink targets.

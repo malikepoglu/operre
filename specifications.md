@@ -2683,3 +2683,30 @@ Accepted decisions:
 Next topic:
 
 - define File Explorer, workspace tree, File Info, tabs, and navigation behavior.
+
+## 77. File Explorer, workspace tree, File Info, tabs, and navigation behavior
+
+`docs/OPERRE_FILE_EXPLORER_WORKSPACE_TREE_FILE_INFO_TABS_AND_NAVIGATION_BEHAVIOR.md` defines File Explorer, workspace tree, File Info, tabs, breadcrumbs, navigation history, file operations, large workspace performance, accessibility, protected path integration, symlink/hardlink/special-file integration, watcher integration, and AI/extension boundaries.
+
+Accepted decisions:
+
+- File Explorer, workspace tree, File Info, tabs, and navigation behavior must have a dedicated specification;
+- users must always understand where they are in the filesystem and workspace;
+- Explorer, tabs, breadcrumbs, recent files, search results, Problems, and Command Palette must share the same file identity model;
+- v0.1 supports single file and single folder/workspace; multi-root workspace remains a future-compatible design target;
+- workspace root must be explicit;
+- hidden file visibility is separate from protected path access;
+- protected path policy applies inside Explorer;
+- File Info is a first-class surface;
+- tabs must show dirty/read-only/external-changed/deleted/conflict states;
+- tab identity must not be only a path string;
+- same target opened through different symlink paths must not be silently merged;
+- dirty buffers must never be silently discarded by Explorer, tab, reload, or navigation actions;
+- dangerous Explorer actions require confirmation;
+- large workspace lazy loading and tree virtualization are required by design;
+- watcher events must update Explorer through debounce/rescan behavior;
+- AI and extensions cannot access Explorer tree or navigation history by default.
+
+Next topic:
+
+- define panels, sidebars, activity bar, layout persistence, and view management behavior.

@@ -523,3 +523,12 @@ Accepted behavior:
 - Extremely large files use Large File Mode.
 - Watcher and compare behavior for huge files may be limited.
 - Auto Save may pause for large/sparse files.
+
+## File Explorer large workspace relationship
+
+Accepted behavior:
+
+- Large workspace lazy loading and tree virtualization are required by design.
+- Very large directories may use partial watcher/tree mode.
+- Large folder warnings should be shown where useful.
+- Search/filter/tree rendering must avoid blocking the UI thread.

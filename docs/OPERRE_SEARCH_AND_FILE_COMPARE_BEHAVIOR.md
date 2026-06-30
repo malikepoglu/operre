@@ -421,3 +421,12 @@ Accepted behavior:
 - Protected symlink targets remain protected.
 - Binary/special files may be skipped or previewed with warning.
 - Compare with disk should support external-change conflict handling where practical.
+
+## File Explorer and search/navigation relationship
+
+Accepted behavior:
+
+- Search results, compare results, Problems jumps, breadcrumbs, and tabs must share file identity where practical.
+- Quick Open must respect hidden/protected/excluded path policies.
+- Search/compare should preserve user-opened symlink path where useful.
+- Dirty buffers must not be silently overwritten by search/result navigation.

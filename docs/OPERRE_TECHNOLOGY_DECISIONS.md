@@ -334,3 +334,13 @@ Accepted technology direction:
 - Watcher events must be normalized.
 - Debounce, deduplication, overflow handling, and rescan are required by design.
 - Snapshot reconciliation should be supported by design.
+
+## File Explorer, workspace tree, File Info, tabs, and navigation architecture baseline
+
+Accepted technology direction:
+
+- Explorer, tabs, breadcrumbs, recent files, search results, Problems, and Command Palette must share the same file identity model.
+- Large workspace lazy loading and tree virtualization are required by design.
+- Watcher events must update Explorer through debounce/rescan behavior.
+- Tab identity must not be only a path string.
+- Multi-root workspace is future-compatible but not required in v0.1.

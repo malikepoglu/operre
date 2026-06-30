@@ -71,7 +71,8 @@ Current project phase:
 | OPR-SPEC-0031 | DONE | Define crash recovery and unsaved work recovery behavior. |
 | OPR-SPEC-0032 | DONE | Define Auto Save, file saving, atomic write, and backup behavior. |
 | OPR-SPEC-0033 | DONE | Define symlink, hardlink, special file, and file watcher behavior. |
-| OPR-SPEC-0034 | QUEUED | Define File Explorer, workspace tree, File Info, tabs, and navigation behavior. |
+| OPR-SPEC-0034 | DONE | Define File Explorer, workspace tree, File Info, tabs, and navigation behavior. |
+| OPR-SPEC-0035 | QUEUED | Define panels, sidebars, activity bar, layout persistence, and view management behavior. |
 
 ## Implementation queue
 

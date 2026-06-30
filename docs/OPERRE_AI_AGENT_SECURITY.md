@@ -289,3 +289,14 @@ Accepted AI behavior:
 - AI requires explicit scoped permission for workspace-change awareness later.
 - Raw watcher events are not hidden prompt context.
 - AI may explain visible file-changed warnings only from user-visible context.
+
+## AI Explorer and navigation boundary baseline
+
+Accepted AI behavior:
+
+- AI cannot read Explorer tree by default.
+- AI cannot read navigation history by default.
+- AI cannot read protected paths by default.
+- AI workspace tree summary requires explicit scoped permission later.
+- AI cannot use hidden watcher/tree state as hidden prompt context.
+- AI suggestions for file operations require user confirmation.

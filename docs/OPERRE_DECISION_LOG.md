@@ -505,3 +505,28 @@ Accepted memory:
 Next continuation point:
 
 - define File Explorer, workspace tree, File Info, tabs, and navigation behavior.
+
+### File Explorer, workspace tree, File Info, tabs, and navigation behavior decided
+
+Accepted memory:
+
+- File Explorer, workspace tree, File Info, tabs, and navigation behavior must have a dedicated specification.
+- Users must always understand where they are in the filesystem and workspace.
+- Explorer, tabs, breadcrumbs, recent files, search results, Problems, and Command Palette must share the same file identity model.
+- v0.1 supports single file and single folder/workspace; multi-root workspace remains a future-compatible design target.
+- Workspace root must be explicit.
+- Hidden file visibility is separate from protected path access.
+- Protected path policy applies inside Explorer.
+- File Info is a first-class surface.
+- Tabs must show dirty/read-only/external-changed/deleted/conflict states.
+- Tab identity must not be only a path string.
+- Same target opened through different symlink paths must not be silently merged.
+- Dirty buffers must never be silently discarded by Explorer, tab, reload, or navigation actions.
+- Dangerous Explorer actions require confirmation.
+- Large workspace lazy loading and tree virtualization are required by design.
+- Watcher events must update Explorer through debounce/rescan behavior.
+- AI and extensions cannot access Explorer tree or navigation history by default.
+
+Next continuation point:
+
+- define panels, sidebars, activity bar, layout persistence, and view management behavior.

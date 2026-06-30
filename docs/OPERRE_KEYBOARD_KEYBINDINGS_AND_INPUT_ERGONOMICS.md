@@ -626,3 +626,13 @@ Accepted behavior:
 - Keyboard shortcuts must not bypass command confirmations.
 - Command Palette must show shortcut labels where practical.
 - Command Palette must remain usable with on-screen keyboards and touch input.
+
+## File Explorer, tabs, and navigation keyboard baseline
+
+Accepted behavior:
+
+- Tree keyboard navigation is required.
+- Context menu keyboard access is required.
+- Tabs keyboard navigation is required.
+- Breadcrumbs keyboard navigation should exist.
+- Commands must exist for focus Explorer, reveal active file, new file, new folder, rename, delete, copy path, open File Info, navigation back/forward, close tab, and toggle hidden files.

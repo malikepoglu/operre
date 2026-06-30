@@ -306,3 +306,13 @@ Accepted behavior:
 - Protected path contents must not be scanned unnecessarily.
 - Secret-like filenames/paths may be redacted.
 - Watcher event history is not exposed to AI/extensions by default.
+
+## File Explorer protected path baseline
+
+Accepted behavior:
+
+- Protected path policy applies inside Explorer.
+- Hidden file visibility is separate from protected path access.
+- Protected paths may be hidden, redacted, or shown with warning depending on setting.
+- Protected path contents are not scanned unnecessarily.
+- AI/extensions cannot read protected tree entries by default.

@@ -458,3 +458,14 @@ Accepted extension behavior:
 - Extension watcher scope must be limited to workspace scope.
 - Protected paths are excluded from extension watcher access.
 - High-volume watcher abuse must be rate-limited.
+
+## Extension Explorer and navigation boundary baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access Explorer tree by default.
+- Extensions cannot access navigation history by default.
+- Extension Explorer contributions require permission and Workspace Trust.
+- Extension context menu items require permission.
+- Extensions cannot bypass dangerous Explorer confirmations.
+- Protected paths are excluded by default.
