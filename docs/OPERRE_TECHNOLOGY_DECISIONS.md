@@ -254,3 +254,16 @@ Accepted technology direction:
 - Keybindings must support validation and conflict detection.
 - Architecture must not block chord shortcuts.
 - Architecture must support on-screen keyboard, touch, and touchpad ergonomics.
+
+## Display, DPI, and responsive architecture baseline
+
+Accepted technology direction:
+
+- Operre must be high-DPI aware.
+- Fractional scaling must be supported by design where platform allows.
+- Per-monitor DPI changes must not break layout.
+- Responsive layout system is required by design.
+- Safe window restore is required by design.
+- On-screen keyboard avoidance must be supported by design.
+- Window geometry is machine-local state and must not sync by default.
+- Detailed breakpoint and scaling rules need a later implementation pass.

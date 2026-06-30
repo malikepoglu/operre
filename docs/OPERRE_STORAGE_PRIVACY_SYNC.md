@@ -371,3 +371,14 @@ Accepted storage behavior:
 - Workspace shared keybindings may use `.operre/shared/keybindings.jsonc`.
 - Machine-local keybinding overrides, if needed, stay under local state.
 - Machine-local keybindings are not synced by default.
+
+## Display and window state storage baseline
+
+Accepted storage behavior:
+
+- Window size and position are machine-local state.
+- Fullscreen/maximized state is machine-local state.
+- Monitor identity and monitor-specific display state are machine-local state.
+- Machine-local display state must not sync by default.
+- Safe window restore must prevent restoring unusable off-screen windows.
+- User display preferences may live in settings, but raw monitor/window state stays local.

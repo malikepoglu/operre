@@ -332,3 +332,25 @@ Accepted memory:
 Next continuation point:
 
 - define detailed Command Palette and command system behavior.
+
+### Display, DPI, scaling, and responsive ergonomics decided
+
+Accepted memory:
+
+- Display, DPI, scaling, and responsive ergonomics must have a dedicated specification.
+- UI scale and editor font size are separate concepts.
+- High-DPI and fractional scaling must be supported by design.
+- Multi-monitor different-DPI behavior must be considered.
+- Responsive/collapsible layout is required by design.
+- Compare view should adapt between side-by-side and stacked layouts.
+- Touch mode and mouse mode may use different ergonomics.
+- On-screen keyboard must not cover active editor/input areas where practical.
+- MacBook screens, high-DPI, trackpads, and safe area/notch behavior must be considered.
+- Window size and position are machine-local state and must not sync by default.
+- Display/scale/font/touch/window behavior must be configurable.
+- Accessibility and high contrast must remain compatible with scaling.
+- This topic must be revisited later for a deeper detailed UI implementation pass.
+
+Next continuation point:
+
+- define detailed Command Palette and command system behavior.

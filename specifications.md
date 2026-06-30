@@ -2496,3 +2496,27 @@ Accepted decisions:
 Next topic:
 
 - define detailed Command Palette and command system behavior.
+
+## 70. Display, DPI, scaling, and responsive ergonomics
+
+`docs/OPERRE_DISPLAY_DPI_SCALING_AND_RESPONSIVE_ERGONOMICS.md` defines display size, resolution, DPI, scaling, responsive layout, touch ergonomics, on-screen keyboard interaction, multi-monitor behavior, MacBook ergonomics, and machine-local window state behavior.
+
+Accepted decisions:
+
+- display, DPI, scaling, and responsive ergonomics must have a dedicated specification;
+- UI scale and editor font size are separate concepts;
+- high-DPI and fractional scaling must be supported by design;
+- multi-monitor different-DPI behavior must be considered;
+- responsive/collapsible layout is required by design;
+- compare view should adapt between side-by-side and stacked layouts;
+- touch mode and mouse mode may use different ergonomics;
+- on-screen keyboard must not cover active editor/input areas where practical;
+- MacBook screens, high-DPI, trackpads, and safe area/notch behavior must be considered;
+- window size and position are machine-local state and must not sync by default;
+- display/scale/font/touch/window behavior must be configurable;
+- accessibility and high contrast must remain compatible with scaling;
+- this topic must be revisited later for a deeper detailed UI implementation pass.
+
+Next topic:
+
+- define detailed Command Palette and command system behavior.

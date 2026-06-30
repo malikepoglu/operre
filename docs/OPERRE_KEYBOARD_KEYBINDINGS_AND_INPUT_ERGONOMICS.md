@@ -606,3 +606,13 @@ Accepted decisions:
 - Touchscreen, tablet, phone, PC touchpad, and MacBook trackpad ergonomics must be supported by design.
 - Touch and on-screen keyboard users must be able to use core workflows efficiently.
 - Detailed Command Palette and command system behavior should be decided next.
+
+## Display and input ergonomics relationship
+
+Accepted behavior:
+
+- Keyboard, touch, on-screen keyboard, touchpad, and trackpad ergonomics must account for screen size and DPI.
+- Touch mode may use larger hit targets than mouse mode.
+- On-screen keyboard visibility must influence viewport/input positioning where practical.
+- MacBook trackpad and high-DPI screen ergonomics must be considered together.
+- Keyboard shortcut labels must remain readable under UI scaling.

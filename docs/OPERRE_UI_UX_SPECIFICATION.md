@@ -372,3 +372,16 @@ Accepted UI behavior:
 - Tablet and phone ergonomics must be supported by design.
 - PC touchpads and MacBook trackpads must be comfortable and precise.
 - Dangerous shortcut-triggered commands still require confirmation.
+
+## Display, DPI, scaling, and responsive ergonomics UI baseline
+
+Accepted UI behavior:
+
+- UI scale and editor font size are separate concepts.
+- Responsive/collapsible layout is required by design.
+- Sidebar, panels, split editor, search UI, settings UI, and compare UI must adapt to available screen space.
+- Compare view should support side-by-side on wide screens and stacked layout on narrow screens.
+- Touch mode and mouse mode may use different spacing and hit targets.
+- On-screen keyboard must not cover active editor/input areas where practical.
+- High contrast, focus visibility, and non-color indicators must remain compatible with scaling.
+- This topic needs a later detailed UI implementation pass.

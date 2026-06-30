@@ -64,6 +64,8 @@ Current project phase:
 | OPR-SPEC-0024 | DONE | Define Settings UI and settings schema behavior. |
 | OPR-SPEC-0025 | DONE | Define keyboard shortcut, keybinding, and input ergonomics behavior. |
 | OPR-SPEC-0026 | QUEUED | Define detailed Command Palette and command system behavior. |
+| OPR-SPEC-0027 | DONE | Define display, DPI, scaling, and responsive ergonomics behavior. |
+| OPR-SPEC-0028 | QUEUED | Revisit display/DPI/scaling/responsive ergonomics during detailed UI implementation. |
 
 ## Implementation queue
 

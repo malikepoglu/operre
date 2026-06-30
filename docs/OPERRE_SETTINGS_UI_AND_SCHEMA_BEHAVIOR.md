@@ -868,3 +868,15 @@ Accepted behavior:
 - Settings Problems panel should show invalid keybindings.
 - Workspace Trust can restrict workspace keybindings.
 - On-screen keyboard, touch mode, and touch target preferences should be configurable where practical.
+
+## Display, DPI, scaling, and responsive ergonomics settings relationship
+
+Accepted behavior:
+
+- Settings must include UI scale.
+- Settings must keep editor font size separate from UI scale.
+- Settings should include app UI font size, Markdown preview font size, sidebar font size, and status bar font size.
+- Settings should include touch mode auto/on/off and touch target sizing where practical.
+- Settings should include compact mode, sidebar default visibility, panel position, split direction, and compare layout.
+- Settings should include safe window restore and window restore behavior.
+- Machine-local display state must not sync by default.
