@@ -240,3 +240,13 @@ Accepted decisions:
 - Search excludes hidden/protected paths by default.
 - Recent history excludes protected paths by default.
 - AI and extensions cannot access hidden/protected paths without explicit scoped permission.
+
+## Search/compare interaction with hidden and protected paths
+
+Accepted behavior:
+
+- Search excludes hidden/protected paths by default.
+- File compare follows the same hidden/protected path safety model.
+- Include Hidden Files does not automatically include protected paths.
+- `.git/`, `.operre/`, `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, private keys, caches, logs, and snapshots are excluded by default.
+- If a sensitive file is manually opened for compare, Operre should warn before compare where practical.

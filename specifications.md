@@ -2362,3 +2362,29 @@ Accepted decisions:
 Next topic:
 
 - define detailed search behavior.
+
+## 65. Search, replace, and file compare behavior
+
+`docs/OPERRE_SEARCH_AND_FILE_COMPARE_BEHAVIOR.md` defines the accepted search, replace, and file comparison behavior.
+
+Accepted decisions:
+
+- current file search is required;
+- opened folder/project search is required;
+- replace in current file is required;
+- replace in files requires preview and confirmation;
+- search excludes hidden/protected/generated/binary paths by default;
+- Include Hidden Files may include hidden files but not protected paths by default;
+- file compare is required;
+- two-file side-by-side compare is required;
+- two-file stacked compare is required;
+- multi-file compare must be supported by design;
+- differences may use red background-color;
+- same/identical content may optionally use green background-color;
+- compare UI details must be user-configurable;
+- compare follows hidden/protected path safety rules;
+- AI and extensions cannot access search/compare contents without explicit scoped permission.
+
+Next topic:
+
+- define Recent files/projects behavior.

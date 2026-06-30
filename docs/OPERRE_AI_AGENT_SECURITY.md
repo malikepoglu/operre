@@ -179,3 +179,12 @@ Accepted AI behavior:
 - AI default exclusions include `.git/`, `.operre/`, `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, private keys, caches, logs, and snapshots.
 - AI access to hidden files requires explicit scoped permission.
 - AI access to protected secrets remains denied by default.
+
+## Search/compare AI access baseline
+
+Accepted AI behavior:
+
+- AI cannot access search results by default.
+- AI cannot access compared file contents by default.
+- AI cannot use search/compare as hidden workspace context without explicit scoped permission.
+- Protected/sensitive paths remain denied by default even if AI is granted normal workspace context.

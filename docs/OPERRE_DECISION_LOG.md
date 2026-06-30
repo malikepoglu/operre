@@ -208,3 +208,27 @@ Accepted memory:
 Next continuation point:
 
 - define detailed search behavior.
+
+### Search, replace, and file compare decided
+
+Accepted memory:
+
+- Current file search is required.
+- Opened folder/project search is required.
+- Replace in current file is required.
+- Replace in files requires preview and confirmation.
+- Search excludes hidden/protected/generated/binary paths by default.
+- Include Hidden Files may include hidden files but not protected paths by default.
+- File compare is required.
+- Two-file side-by-side compare is required.
+- Two-file stacked compare is required.
+- Multi-file compare must be supported by design.
+- Differences may use red background-color.
+- Same/identical content may optionally use green background-color.
+- Compare UI details must be user-configurable.
+- Compare follows hidden/protected path safety rules.
+- AI and extensions cannot access search/compare contents without explicit scoped permission.
+
+Next continuation point:
+
+- define Recent files/projects behavior.

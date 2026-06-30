@@ -352,3 +352,12 @@ Accepted extension behavior:
 - Extensions must request explicit permissions for hidden files, workspace metadata, Git metadata, Operre metadata, credentials, secrets, cache, and snapshot areas.
 - `.git/` and `.operre/` access must be scoped and auditable.
 - Default permission remains deny all.
+
+## Search/compare extension access baseline
+
+Accepted extension behavior:
+
+- Extensions cannot receive search results by default.
+- Extensions cannot receive compared file contents by default.
+- Extensions require explicit scoped permission to contribute search providers, compare viewers, compare exporters, or external compare integrations.
+- Sending search/compare data outside the machine requires separate network permission.

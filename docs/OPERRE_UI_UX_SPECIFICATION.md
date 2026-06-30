@@ -306,3 +306,20 @@ Accepted UI behavior:
 - `.operre/` and `.git/` must display protected metadata indicators when visible.
 - Sensitive dotfiles such as `.env` should display warnings before open/preview where practical.
 - Protected metadata paths should not look like normal user folders.
+
+## Search and file compare UI baseline
+
+Accepted UI behavior:
+
+- Ctrl+F opens current file search.
+- Ctrl+Shift+F opens opened folder/project search.
+- Ctrl+H opens replace in current file.
+- Replace in files requires preview and confirmation.
+- File compare is required.
+- Two-file side-by-side compare is required.
+- Two-file stacked compare is required.
+- Multi-file compare must be supported by design.
+- Differences may use red background-color.
+- Same/identical content may optionally use green background-color.
+- Compare settings must allow detailed user control.
+- Compare must provide accessibility-friendly indicators in addition to color where practical.
