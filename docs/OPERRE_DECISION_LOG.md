@@ -111,3 +111,19 @@ Accepted memory extracted from `1.odt`:
 - Monaco and all wrappers/dependencies require license audit before implementation.
 - Ideboard remains separate.
 - Diagrams/CAD remain future direction and must not bloat first core.
+
+### 2.odt processed
+
+Accepted memory extracted from `2.odt`:
+
+- Operre / operre.com product identity confirmed.
+- Operre starts as old Windows 10 Notepad-like lightweight editor/workspace.
+- Core must stay small and immediately useful for `.txt`.
+- GitHub and Ideboard are not core; they are future extensions/connectors.
+- Frontend primary stack is TypeScript + Vite + Solid.
+- React is fallback; Svelte is not first choice.
+- Package manager is pnpm.
+- Desktop primary framework is Tauri; Electron is fallback.
+- Platform order is Linux Desktop, Windows Desktop, macOS Desktop, tablet/mobile later.
+- Monaco performance is not the main mobile concern; ergonomics are.
+- Sync should be local-first, privacy-first, optional, and user-owned when possible.

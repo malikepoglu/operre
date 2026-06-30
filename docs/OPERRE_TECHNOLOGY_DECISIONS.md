@@ -186,3 +186,35 @@ Phone:
 - small edits;
 - preview;
 - focused single-file workflows.
+
+## Source 2 detailed technology baseline
+
+The `2.odt` review confirms the current baseline:
+
+- Desktop framework: Tauri primary.
+- Desktop fallback: Electron.
+- Editor engine: Monaco Editor.
+- Frontend: TypeScript + Vite + Solid.
+- Frontend fallback: TypeScript + Vite + React.
+- Svelte is not first choice.
+- Package manager: pnpm.
+
+Decision rationale:
+
+- Tauri better matches the lightweight, privacy-first, local-first direction.
+- Electron remains useful as fallback because it is mature and Chromium behavior is predictable.
+- Solid better matches lightweight UI goals.
+- React remains fallback because ecosystem strength may matter later.
+- pnpm better matches future monorepo and extension package structure.
+
+Future implementation tests required:
+
+- Tauri + Solid + Monaco on Linux Desktop;
+- startup time;
+- memory use;
+- large `.txt` behavior;
+- Markdown editing and preview;
+- syntax highlighting for default file types;
+- WebView behavior differences;
+- packaging size;
+- security permission model fit.

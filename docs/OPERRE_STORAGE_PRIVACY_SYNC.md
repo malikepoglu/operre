@@ -252,3 +252,34 @@ User-owned sync is important:
 - self-hosted storage;
 - chosen ecosystem;
 - no mandatory upload to Operre servers.
+
+## Source 2 sync baseline
+
+The `2.odt` review confirms the local-first sync direction.
+
+Accepted sync principles:
+
+- User work data is local-first.
+- Operre cloud must not be required for user work data.
+- Sync is optional.
+- Sync is explicit.
+- Sync may be implemented by extension/data-domain.
+- User-owned sync is important.
+
+User-owned sync may include:
+
+- user's own devices;
+- user's own storage;
+- self-hosted storage;
+- user's chosen ecosystem.
+
+Operre servers may still exist for:
+
+- app operation;
+- extension system;
+- extension marketplace/distribution;
+- licensing;
+- updates;
+- account services.
+
+These services must not turn core local work into mandatory cloud work.

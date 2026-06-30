@@ -2226,7 +2226,30 @@ It covers:
 Processing status:
 
 - 1.odt: processed into repository memory.
-- 2.odt: pending dedicated review.
+- 2.odt: processed into repository memory.
+- 3.odt: pending dedicated review.
+- 4.odt: pending dedicated review.
+- 5.odt: pending dedicated review.
+
+## 60. Source review: 2.odt
+
+`docs/source-reviews/OPERRE_SOURCE_REVIEW_2_ODT.md` records the second source-file review from the uploaded five-part ODT transcript.
+
+It covers:
+
+- Operre name/domain and product identity confirmation;
+- old Windows 10 Notepad-like lightweight core direction;
+- repo discipline and English-only documentation rule;
+- TypeScript + Vite + Solid frontend decision;
+- pnpm package manager decision;
+- Tauri primary / Electron fallback desktop framework decision;
+- platform order and adaptive ergonomics rule;
+- local-first, privacy-first, user-owned sync direction.
+
+Processing status:
+
+- 1.odt: processed into repository memory.
+- 2.odt: processed into repository memory.
 - 3.odt: pending dedicated review.
 - 4.odt: pending dedicated review.
 - 5.odt: pending dedicated review.

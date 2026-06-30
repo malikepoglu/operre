@@ -26,3 +26,4 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Source reviews
 
 - `source-reviews/OPERRE_SOURCE_REVIEW_1_ODT.md`
+- `source-reviews/OPERRE_SOURCE_REVIEW_2_ODT.md`

@@ -88,3 +88,17 @@ Operre should reuse the same seriousness:
 - commit;
 - push;
 - post-push audit.
+
+## Source 2 product baseline
+
+The `2.odt` review confirms the product baseline:
+
+- Operre is a very lightweight project platform.
+- Operre starts like old Windows 10 Notepad.
+- The first value is immediate `.txt` writing.
+- Operre is not open source.
+- Basic/core may be free.
+- Extensions may be paid later.
+- Ideboard remains separate.
+- GitHub remains optional.
+- LogisticSearch can continue in parallel.
