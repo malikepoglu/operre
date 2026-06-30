@@ -418,3 +418,13 @@ Accepted extension behavior:
 - Extension commands must not bypass warning/confirmation policy.
 - Extension telemetry remains denied by default.
 - Extension access to warning/error history is denied by default.
+
+## Extension logs and diagnostics baseline
+
+Accepted extension behavior:
+
+- Extension logs may include extension ID, version, activation failure, command failure, permission denial, crash/slow warning, and blocked access summary.
+- Extension logs must not include user file contents by default.
+- Extension secrets must not be logged.
+- Extension telemetry remains denied by default.
+- Extension access to logs/diagnostics history is denied by default.

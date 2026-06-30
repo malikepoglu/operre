@@ -600,3 +600,14 @@ Accepted decisions:
 - File operation, large file, search/replace/compare, extension, AI, and Workspace Trust warnings must be considered.
 - Accessibility, touch, DPI, and on-screen keyboard compatibility must be considered.
 - Detailed logs and diagnostics export behavior should be decided next.
+
+## Logs and diagnostics export relationship
+
+Accepted behavior:
+
+- Logs support error/warning/problem debugging.
+- Diagnostics export must remain privacy-first.
+- Diagnostics upload is OFF by default.
+- Crash upload is OFF by default.
+- File contents, secrets, and AI prompts/responses are not included automatically.
+- Diagnostics export should include preview/summary and redaction status.

@@ -290,3 +290,15 @@ Accepted technology direction:
 - Settings validation must integrate with Settings Problems.
 - Diagnostics export must be privacy-safe by design.
 - Structured error codes should not be blocked by architecture.
+
+## Logs and diagnostics architecture baseline
+
+Accepted technology direction:
+
+- Logs are local-only by default.
+- Diagnostics export is user-initiated only.
+- Automatic diagnostics upload is forbidden by default.
+- Redaction is required before diagnostics export.
+- Log rotation and retention are required by design.
+- Structured diagnostics manifest should be supported by design.
+- Crash recovery data is a separate behavior area.

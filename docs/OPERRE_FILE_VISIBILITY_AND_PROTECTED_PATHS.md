@@ -268,3 +268,12 @@ Accepted behavior:
 - Secret/token/private-key exposure warnings are security warnings.
 - Protected path warning details must avoid leaking sensitive contents.
 - Diagnostics export must exclude protected path contents by default.
+
+## Logs and diagnostics protected path baseline
+
+Accepted behavior:
+
+- Protected path contents are not included in logs or diagnostics export by default.
+- Diagnostics export should redact protected paths by default.
+- Secret-like path segments should be redacted.
+- Diagnostics export must not include raw `.env`, credentials, private keys, or hidden/protected contents by default.

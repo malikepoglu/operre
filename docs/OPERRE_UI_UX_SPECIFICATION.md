@@ -411,3 +411,15 @@ Accepted UI behavior:
 - Critical safety warnings must not be disabled silently.
 - Warning/error behavior must be configurable through Settings where safe.
 - Warning UI must be keyboard, touch, high-DPI, high contrast, and on-screen-keyboard compatible.
+
+## Logs and diagnostics export UI baseline
+
+Accepted UI behavior:
+
+- Diagnostics export must be user-initiated.
+- Diagnostics export should show preview/summary before creation.
+- Export dialogs must be keyboard, touch, high-DPI, and high-contrast compatible.
+- Redaction warnings must not rely only on color.
+- Open Logs Folder, Clear Logs, and Export Diagnostics must be reachable from Command Palette.
+- Diagnostics upload is OFF by default.
+- Crash upload is OFF by default.

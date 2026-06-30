@@ -909,3 +909,24 @@ Accepted behavior:
 - Critical safety warnings must not be disabled casually.
 - Critical safety warnings must not be disabled silently.
 - Diagnostics upload remains OFF by default.
+
+## Logs and diagnostics export settings relationship
+
+Accepted behavior:
+
+- Settings must expose local logs on/off where safe.
+- Settings must expose log level.
+- Settings must expose max log size, max log files, and retention days.
+- Settings must expose Clear Logs.
+- Settings must expose Open Logs Folder.
+- Settings must expose Export Diagnostics.
+- Settings must expose diagnostics export path.
+- Settings must expose redact paths in export.
+- Settings must expose include debug logs as advanced.
+- Settings must expose include security log summary as advanced.
+- diagnostics upload is OFF by default.
+- crash upload is OFF by default.
+- logs are local-only by default.
+- file contents are not included by default.
+- AI prompts/responses are not included by default.
+- secrets must be redacted.

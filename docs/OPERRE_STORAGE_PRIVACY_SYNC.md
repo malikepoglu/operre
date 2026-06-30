@@ -394,3 +394,17 @@ Accepted storage behavior:
 - Diagnostics upload is OFF by default.
 - Diagnostics export requires explicit user action and confirmation.
 - Paths/settings may be redacted in diagnostics export.
+
+## Logs and diagnostics storage baseline
+
+Accepted storage behavior:
+
+- Logs are machine-local state.
+- Logs are local-only by default.
+- Diagnostics export files are user-created files.
+- Diagnostics export files do not sync automatically through Operre by default.
+- Diagnostics upload is OFF by default.
+- Crash upload is OFF by default.
+- File contents are not included by default.
+- AI prompts/responses are not included by default.
+- Secrets must be redacted before export.

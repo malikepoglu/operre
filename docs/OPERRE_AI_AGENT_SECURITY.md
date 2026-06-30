@@ -249,3 +249,13 @@ Accepted AI behavior:
 - AI commands must not bypass warning/confirmation policy.
 - AI prompt/response content is not included in diagnostics automatically.
 - AI access to warning/error history is denied by default.
+
+## AI logs and diagnostics baseline
+
+Accepted AI behavior:
+
+- AI action summaries may be included in diagnostics where safe.
+- AI prompts/responses are not included by default.
+- AI provider credentials are never included.
+- AI read-file lists may be redacted or summarized.
+- AI access to logs/diagnostics history is denied by default.

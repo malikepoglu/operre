@@ -426,3 +426,15 @@ Accepted behavior:
 - Command Palette must not bypass warning/confirmation policy.
 - Dangerous diagnostic export commands require confirmation.
 - Disabled command reasons may appear as warnings or Problems where useful.
+
+## Logs and diagnostics command relationship
+
+Accepted behavior:
+
+- Command Palette must expose Open Logs Folder.
+- Command Palette must expose Clear Logs.
+- Command Palette must expose Export Diagnostics.
+- Command Palette must expose Diagnostics Settings.
+- Diagnostics export commands require confirmation.
+- Clearing logs requires confirmation where destructive.
+- Command Palette must not bypass privacy warnings.

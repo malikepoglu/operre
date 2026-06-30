@@ -401,3 +401,28 @@ Accepted memory:
 Next continuation point:
 
 - define detailed logs and diagnostics export behavior.
+
+### Logs and diagnostics export behavior decided
+
+Accepted memory:
+
+- Logs and diagnostics export behavior must have a dedicated specification.
+- Logs are local-only by default.
+- Diagnostics upload is OFF by default.
+- Crash upload is OFF by default.
+- Automatic diagnostics upload is forbidden by default.
+- Diagnostics export is user-initiated only.
+- Diagnostics export should show preview/summary before creation.
+- Secret redaction is required.
+- File contents are not included by default.
+- AI prompts/responses are not included by default.
+- Paths may be redacted in diagnostics export.
+- Protected paths are redacted/excluded by default.
+- Log rotation and retention are required by design.
+- Settings must expose log level, retention, clear logs, export diagnostics, path redaction, diagnostics upload OFF, and crash upload OFF.
+- Command Palette must expose Open Logs Folder, Clear Logs, Export Diagnostics, and related diagnostics commands.
+- Extension/AI/security events may be included as summaries where safe.
+
+Next continuation point:
+
+- define detailed crash recovery and unsaved work recovery behavior.
