@@ -48,7 +48,8 @@ Current project phase:
 | OPR-SPEC-0013 | QUEUED | Define installer/update/security model. |
 | OPR-SPEC-0014 | QUEUED | Define non-open-source/free-core legal/license strategy. |
 | OPR-SPEC-0015 | QUEUED | Define first application implementation phase after specifications stabilize. |
-| OPR-SPEC-0016 | QUEUED | Split consolidated specification into focused docs after specification baseline stabilizes. |
+| OPR-SPEC-0016 | DONE | Split consolidated specification into focused docs after specification baseline stabilizes. |
+| OPR-SPEC-0017 | DONE | Write accepted decisions from uploaded five-part ODT transcript into structured repository memory files. |
 
 ## Implementation queue
 

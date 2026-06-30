@@ -2191,3 +2191,20 @@ Topics still to decide after delete behavior:
 - legal/license document for non-open-source freeware core;
 - public/private repository split strategy;
 - first implementation milestone after specification freeze.
+
+## 58. Structured documentation split
+
+The consolidated specification remains the source of truth during the specification phase, but accepted decisions are also split into topic-focused documents under `docs/`.
+
+Structured docs:
+
+- `docs/OPERRE_PRODUCT_PRINCIPLES.md`
+- `docs/OPERRE_REPOSITORY_DISCIPLINE.md`
+- `docs/OPERRE_TECHNOLOGY_DECISIONS.md`
+- `docs/OPERRE_EXTENSION_SECURITY_MODEL.md`
+- `docs/OPERRE_AI_AGENT_SECURITY.md`
+- `docs/OPERRE_UI_UX_SPECIFICATION.md`
+- `docs/OPERRE_STORAGE_PRIVACY_SYNC.md`
+- `docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md`
+- `docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md`
+- `docs/OPERRE_DECISION_LOG.md`

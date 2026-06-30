@@ -98,3 +98,18 @@ Repository documentation must be English-only.
 
 - specifications.md
 - TODO.md
+
+## Structured documentation
+
+Topic-focused project memory is stored under [`docs/`](./docs/):
+
+- [`docs/OPERRE_PRODUCT_PRINCIPLES.md`](./docs/OPERRE_PRODUCT_PRINCIPLES.md)
+- [`docs/OPERRE_REPOSITORY_DISCIPLINE.md`](./docs/OPERRE_REPOSITORY_DISCIPLINE.md)
+- [`docs/OPERRE_TECHNOLOGY_DECISIONS.md`](./docs/OPERRE_TECHNOLOGY_DECISIONS.md)
+- [`docs/OPERRE_EXTENSION_SECURITY_MODEL.md`](./docs/OPERRE_EXTENSION_SECURITY_MODEL.md)
+- [`docs/OPERRE_AI_AGENT_SECURITY.md`](./docs/OPERRE_AI_AGENT_SECURITY.md)
+- [`docs/OPERRE_UI_UX_SPECIFICATION.md`](./docs/OPERRE_UI_UX_SPECIFICATION.md)
+- [`docs/OPERRE_STORAGE_PRIVACY_SYNC.md`](./docs/OPERRE_STORAGE_PRIVACY_SYNC.md)
+- [`docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md`](./docs/OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md)
+- [`docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md`](./docs/OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md)
+- [`docs/OPERRE_DECISION_LOG.md`](./docs/OPERRE_DECISION_LOG.md)
