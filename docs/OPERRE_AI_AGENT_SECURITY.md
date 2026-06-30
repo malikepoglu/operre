@@ -219,3 +219,13 @@ Accepted AI behavior:
 - AI settings cannot bypass scoped permission requirements.
 - Prompt/response logging remains OFF by default.
 - Per-project/per-agent overrides may exist but remain governed by privacy and Workspace Trust.
+
+## Keybindings and AI security baseline
+
+Accepted AI behavior:
+
+- AI commands should not receive broad default shortcuts in first core.
+- AI shortcuts cannot silently enable workspace access.
+- AI shortcuts cannot bypass scoped permissions.
+- AI shortcuts cannot silently change prompt/response logging.
+- AI shortcut actions must respect audit logging.

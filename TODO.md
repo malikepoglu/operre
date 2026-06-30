@@ -62,7 +62,8 @@ Current project phase:
 | OPR-SPEC-0022 | DONE | Define Recent files/projects/folders behavior. |
 | OPR-SPEC-0023 | DONE | Define large file memory and cache behavior. |
 | OPR-SPEC-0024 | DONE | Define Settings UI and settings schema behavior. |
-| OPR-SPEC-0025 | QUEUED | Define keyboard shortcut and keybinding behavior. |
+| OPR-SPEC-0025 | DONE | Define keyboard shortcut, keybinding, and input ergonomics behavior. |
+| OPR-SPEC-0026 | QUEUED | Define detailed Command Palette and command system behavior. |
 
 ## Implementation queue
 

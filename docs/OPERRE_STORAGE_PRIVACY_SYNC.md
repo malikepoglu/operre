@@ -359,3 +359,15 @@ Accepted storage behavior:
 - Secret values must not be stored in settings files.
 - Settings sync is OFF by default.
 - Settings import/export must exclude secrets by default.
+
+## Keybinding storage baseline
+
+Accepted storage behavior:
+
+- User keybindings use `keybindings.jsonc`.
+- Suggested Linux user keybindings path is `~/.config/operre/keybindings.jsonc`.
+- Suggested Windows user keybindings path is `%APPDATA%\Operre\config\keybindings.jsonc`.
+- Suggested macOS user keybindings path is `~/Library/Application Support/Operre/config/keybindings.jsonc`.
+- Workspace shared keybindings may use `.operre/shared/keybindings.jsonc`.
+- Machine-local keybinding overrides, if needed, stay under local state.
+- Machine-local keybindings are not synced by default.

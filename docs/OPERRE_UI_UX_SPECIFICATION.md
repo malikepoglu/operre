@@ -358,3 +358,17 @@ Accepted UI behavior:
 - Restart-required settings must be visibly marked.
 - Settings Problems panel is required by design.
 - Settings UI must support privacy/security warnings for risky settings.
+
+## Keyboard, touch, and input ergonomics UI baseline
+
+Accepted UI behavior:
+
+- Keyboard shortcuts are required.
+- Command Palette, menus, Settings UI, context menus, and keybindings use the same command system.
+- Settings UI must support shortcut editing and conflict detection.
+- Menus should show shortcut labels where practical.
+- On-screen keyboard users must be able to use core workflows efficiently.
+- Touchscreen users must not depend on hover-only actions.
+- Tablet and phone ergonomics must be supported by design.
+- PC touchpads and MacBook trackpads must be comfortable and precise.
+- Dangerous shortcut-triggered commands still require confirmation.

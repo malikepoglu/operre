@@ -304,3 +304,31 @@ Accepted memory:
 Next continuation point:
 
 - define keyboard shortcut and keybinding behavior.
+
+### Keyboard, keybindings, and input ergonomics decided
+
+Accepted memory:
+
+- Keyboard shortcuts are required.
+- Command identifier system is required.
+- Command Palette, menus, Settings UI, context menus, and keybindings use the same command system.
+- `keybindings.jsonc` is required.
+- JSONC comments are accepted.
+- Schema validation is required.
+- Conflict detection is required.
+- Shortcut editing through Settings UI is required.
+- Reset shortcut and Reset all shortcuts are required.
+- User keybindings and workspace keybindings are separate.
+- Workspace Trust can restrict workspace keybindings.
+- Extension and AI shortcuts cannot bypass permission systems.
+- Dangerous commands still require confirmation.
+- Linux/Windows/macOS shortcut differences must be supported.
+- Turkish/German/English keyboard layout differences must be considered.
+- Chord shortcuts must not be blocked by architecture.
+- On-screen keyboard support is required by design.
+- Touchscreen, tablet, phone, PC touchpad, and MacBook trackpad ergonomics must be supported by design.
+- Touch and on-screen keyboard users must be able to use core workflows efficiently.
+
+Next continuation point:
+
+- define detailed Command Palette and command system behavior.

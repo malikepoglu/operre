@@ -242,3 +242,15 @@ Accepted technology direction:
 - Deprecated and unknown settings should be reported safely.
 - Settings migration is required by design.
 - JSONC support is required for user-editable settings.
+
+## Command and keybinding architecture baseline
+
+Accepted technology direction:
+
+- Commands must have stable command identifiers.
+- Keybindings must resolve through the command system.
+- Keybindings must support context conditions.
+- Keybindings must support platform-specific bindings.
+- Keybindings must support validation and conflict detection.
+- Architecture must not block chord shortcuts.
+- Architecture must support on-screen keyboard, touch, and touchpad ergonomics.

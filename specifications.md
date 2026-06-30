@@ -2466,3 +2466,33 @@ Accepted decisions:
 Next topic:
 
 - define keyboard shortcut and keybinding behavior.
+
+## 69. Keyboard, keybindings, and input ergonomics
+
+`docs/OPERRE_KEYBOARD_KEYBINDINGS_AND_INPUT_ERGONOMICS.md` defines keyboard shortcuts, keybindings, command identifiers, conflict handling, on-screen keyboard support, touch input, touchpads, MacBook ergonomics, tablet/phone ergonomics, and accessibility expectations.
+
+Accepted decisions:
+
+- keyboard shortcuts are required;
+- command identifier system is required;
+- Command Palette, menus, Settings UI, context menus, and keybindings use the same command system;
+- `keybindings.jsonc` is required;
+- JSONC comments are accepted;
+- schema validation is required;
+- conflict detection is required;
+- shortcut editing through Settings UI is required;
+- Reset shortcut and Reset all shortcuts are required;
+- User keybindings and workspace keybindings are separate;
+- Workspace Trust can restrict workspace keybindings;
+- Extension and AI shortcuts cannot bypass permission systems;
+- dangerous commands still require confirmation;
+- Linux/Windows/macOS shortcut differences must be supported;
+- Turkish/German/English keyboard layout differences must be considered;
+- chord shortcuts must not be blocked by architecture;
+- on-screen keyboard support is required by design;
+- touchscreen, tablet, phone, PC touchpad, and MacBook trackpad ergonomics must be supported by design;
+- touch and on-screen keyboard users must be able to use core workflows efficiently.
+
+Next topic:
+
+- define detailed Command Palette and command system behavior.

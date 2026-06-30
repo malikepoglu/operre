@@ -854,3 +854,17 @@ Accepted decisions:
 - Workspace Trust can restrict workspace settings.
 - Extension and AI settings cannot bypass permission systems.
 - Detailed keyboard shortcut/keybinding behavior should be decided next.
+
+## Keybindings settings relationship
+
+Accepted behavior:
+
+- Settings UI must include Keyboard Shortcuts.
+- `keybindings.jsonc` is required.
+- JSONC comments are accepted.
+- Keybinding schema validation is required.
+- Conflict detection is required.
+- Reset shortcut and Reset all shortcuts are required.
+- Settings Problems panel should show invalid keybindings.
+- Workspace Trust can restrict workspace keybindings.
+- On-screen keyboard, touch mode, and touch target preferences should be configurable where practical.

@@ -387,3 +387,14 @@ Accepted extension behavior:
 - Extension settings cannot grant network, workspace, credential, AI, or Git access by themselves.
 - Extension settings are subject to Workspace Trust.
 - Extension-provided settings should have schemas where practical.
+
+## Keybindings and extension security baseline
+
+Accepted extension behavior:
+
+- Extensions may contribute commands and shortcuts.
+- Extension commands and shortcuts must be namespaced.
+- Extension shortcuts cannot silently override core shortcuts.
+- Extension shortcuts cannot bypass permissions.
+- Disabled extensions have inactive shortcuts.
+- Extension uninstall may ask whether to remove related shortcuts/settings.

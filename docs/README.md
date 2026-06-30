@@ -22,6 +22,7 @@ The root `specifications.md` remains the consolidated specification during the p
 - `OPERRE_LARGE_FILE_MEMORY_AND_CACHE_BEHAVIOR.md`
 - `OPERRE_RECENT_FILES_PROJECTS_BEHAVIOR.md`
 - `OPERRE_SETTINGS_UI_AND_SCHEMA_BEHAVIOR.md`
+- `OPERRE_KEYBOARD_KEYBINDINGS_AND_INPUT_ERGONOMICS.md`
 
 ## Current phase
 
