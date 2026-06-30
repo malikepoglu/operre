@@ -244,3 +244,14 @@ Accepted editor behavior:
 - Minimap may be disabled above thresholds.
 - Read-only fallback is allowed for very large files.
 - User can override with warning where practical.
+
+## Crash recovery and unsaved editor work baseline
+
+Accepted editor behavior:
+
+- Unsaved editor buffers should be recoverable after crash.
+- Untitled documents must be recoverable.
+- Dirty files should be recoverable.
+- Markdown edits should be recoverable.
+- Recovery actions should include Recover, Compare, Save As, Keep Both, and Discard where practical.
+- Auto Save remains separate from Crash Recovery.

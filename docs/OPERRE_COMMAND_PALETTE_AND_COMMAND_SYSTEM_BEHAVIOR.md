@@ -438,3 +438,15 @@ Accepted behavior:
 - Diagnostics export commands require confirmation.
 - Clearing logs requires confirmation where destructive.
 - Command Palette must not bypass privacy warnings.
+
+## Crash recovery command relationship
+
+Accepted behavior:
+
+- Command Palette should expose recovery.open.
+- Command Palette should expose recovery.showRecoveredWork.
+- Command Palette should expose recovery.clearRecoveredWork.
+- Command Palette should expose recovery.openSafeMode.
+- Command Palette should expose session.restorePrevious.
+- Command Palette should expose session.clearRestoreState.
+- Command Palette must not bypass destructive recovery confirmations.

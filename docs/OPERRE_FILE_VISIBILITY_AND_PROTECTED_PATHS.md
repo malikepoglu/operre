@@ -277,3 +277,13 @@ Accepted behavior:
 - Diagnostics export should redact protected paths by default.
 - Secret-like path segments should be redacted.
 - Diagnostics export must not include raw `.env`, credentials, private keys, or hidden/protected contents by default.
+
+## Crash recovery protected path baseline
+
+Accepted behavior:
+
+- Protected path recovery content is local-only by default.
+- Protected path recovery content is not included in diagnostics export by default.
+- Protected path recovery content is hidden from AI/extensions by default.
+- Recovery UI may redact protected paths and show privacy warnings.
+- Secret-like recovered content should trigger security warnings where practical.

@@ -495,3 +495,12 @@ Accepted behavior:
 - Large File Mode, Very Large File Mode, feature disabled states, search limits, compare limits, memory/cache pressure, and read-only fallback should produce clear warnings where useful.
 - Large file warnings should be informative without becoming noisy.
 - Large file warnings must respect notification fatigue controls.
+
+## Crash recovery relationship
+
+Accepted behavior:
+
+- Large file recovery must respect memory/cache limits.
+- Very Large File Mode may limit recovery behavior.
+- Large File Mode recovery warnings are required where useful.
+- Recovery must not copy huge files blindly when that would be unsafe or too expensive.

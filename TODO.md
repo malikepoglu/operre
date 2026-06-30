@@ -68,7 +68,8 @@ Current project phase:
 | OPR-SPEC-0028 | QUEUED | Revisit display/DPI/scaling/responsive ergonomics during detailed UI implementation. |
 | OPR-SPEC-0029 | DONE | Define error, warning, notification, and problem reporting behavior. |
 | OPR-SPEC-0030 | DONE | Define detailed logs and diagnostics export behavior. |
-| OPR-SPEC-0031 | QUEUED | Define crash recovery and unsaved work recovery behavior. |
+| OPR-SPEC-0031 | DONE | Define crash recovery and unsaved work recovery behavior. |
+| OPR-SPEC-0032 | QUEUED | Define Auto Save, file saving, atomic write, and backup behavior. |
 
 ## Implementation queue
 

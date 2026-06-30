@@ -2598,3 +2598,32 @@ Accepted decisions:
 Next topic:
 
 - define detailed crash recovery and unsaved work recovery behavior.
+
+## 74. Crash recovery and unsaved work recovery behavior
+
+`docs/OPERRE_CRASH_RECOVERY_AND_UNSAVED_WORK_BEHAVIOR.md` defines Crash Recovery, Unsaved Work Recovery, Hot Exit, Session Restore, recovery privacy, conflict handling, Safe Mode, atomic write requirements, and recovery relationship with logs, diagnostics, AI, extensions, protected paths, and Settings.
+
+Accepted decisions:
+
+- crash recovery and unsaved work recovery behavior must have a dedicated specification;
+- user-created unsaved work should not be lost easily;
+- Crash Recovery, Auto Save, Hot Exit, and Session Restore are separate concepts;
+- Crash Recovery is ON by default;
+- Hot Exit is ON by default;
+- Auto Save remains separate and configurable;
+- recovery data is local-only and machine-local by default;
+- recovery content is not included in diagnostics export by default;
+- AI and extensions cannot access recovery content by default;
+- recovery UI/panel is required after crash when recoverable work exists;
+- Recover, Compare, Save As, Keep Both, and Discard actions should be supported;
+- disk conflict handling is required;
+- untitled documents must be recoverable;
+- atomic write is required for settings and keybindings;
+- large file recovery must respect memory/cache limits;
+- protected/secret-like file recovery requires strict privacy boundaries;
+- Safe Mode is required by design;
+- destructive recovery actions require confirmation.
+
+Next topic:
+
+- define Auto Save, file saving, atomic write, and backup behavior.

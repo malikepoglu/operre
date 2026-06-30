@@ -428,3 +428,13 @@ Accepted extension behavior:
 - Extension secrets must not be logged.
 - Extension telemetry remains denied by default.
 - Extension access to logs/diagnostics history is denied by default.
+
+## Extension recovery boundary baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access recovery content by default.
+- Extensions cannot scan recovery storage by default.
+- Extensions cannot export recovery content by default.
+- Extension crash reports must not include recovery content by default.
+- Extension APIs for recovery content, if ever added, require explicit permission.

@@ -611,3 +611,13 @@ Accepted behavior:
 - Crash upload is OFF by default.
 - File contents, secrets, and AI prompts/responses are not included automatically.
 - Diagnostics export should include preview/summary and redaction status.
+
+## Crash recovery error/warning relationship
+
+Accepted behavior:
+
+- Crash Recovery should report recoverable work clearly.
+- Recovery conflicts should appear as actionable warnings or Problems where useful.
+- Discarding recovered content requires confirmation.
+- Overwriting disk files with recovered content requires strong confirmation.
+- Safe Mode should be offered for crash loops.

@@ -930,3 +930,18 @@ Accepted behavior:
 - file contents are not included by default.
 - AI prompts/responses are not included by default.
 - secrets must be redacted.
+
+## Crash recovery and unsaved work settings relationship
+
+Accepted behavior:
+
+- Settings must expose Crash Recovery where safe.
+- Settings must expose Hot Exit.
+- Settings must expose Session Restore.
+- Auto Save remains separate and configurable.
+- Settings should expose recovery retention days and max recovery size.
+- Settings should expose Clear Recovery Data with confirmation.
+- Recovery data is local-only and machine-local by default.
+- Recovery content is not included in diagnostics export by default.
+- AI and extensions cannot access recovery content by default.
+- Disabling Crash Recovery or Hot Exit requires clear warning.

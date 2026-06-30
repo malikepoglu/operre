@@ -259,3 +259,13 @@ Accepted AI behavior:
 - AI provider credentials are never included.
 - AI read-file lists may be redacted or summarized.
 - AI access to logs/diagnostics history is denied by default.
+
+## AI recovery boundary baseline
+
+Accepted AI behavior:
+
+- AI cannot access recovery content by default.
+- AI cannot silently read recovered buffers.
+- AI cannot include recovery content in prompts automatically.
+- AI proposed edits to recovered content require user review.
+- AI recovery access, if ever added, requires explicit scoped permission.

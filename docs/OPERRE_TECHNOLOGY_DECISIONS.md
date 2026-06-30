@@ -302,3 +302,14 @@ Accepted technology direction:
 - Log rotation and retention are required by design.
 - Structured diagnostics manifest should be supported by design.
 - Crash recovery data is a separate behavior area.
+
+## Crash recovery architecture baseline
+
+Accepted technology direction:
+
+- Crash Recovery, Auto Save, Hot Exit, and Session Restore are separate concepts.
+- Recovery data is local-only and machine-local by default.
+- Atomic write is required for settings and keybindings.
+- Safe Mode is required by design.
+- Recovery conflict detection is required by design.
+- AI and extensions cannot access recovery content by default.

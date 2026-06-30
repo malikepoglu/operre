@@ -480,3 +480,13 @@ Accepted decisions:
 - Command Palette must expose Open Logs Folder, Clear Logs, Export Diagnostics, and related diagnostics commands.
 - Extension/AI/security events may be included as summaries where safe.
 - Detailed crash recovery and unsaved work recovery behavior should be decided next.
+
+## Crash recovery and logs relationship
+
+Accepted behavior:
+
+- Crash summary may be logged.
+- Recovery content must not be logged.
+- Recovery content is not included in diagnostics export by default.
+- Recovery metadata may be included only as redacted/summarized information.
+- Safe Mode launch summary may be included in diagnostics where safe.

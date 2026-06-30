@@ -484,3 +484,13 @@ Accepted behavior:
 - Private mode can temporarily disable writing new recent history.
 - Settings sync must not sync recent history by default.
 - Recent history export is not first core and must exclude sensitive/protected entries by default if added later.
+
+## Crash recovery and session restore relationship
+
+Accepted behavior:
+
+- Recovery entries are not the same as Recent Files.
+- Recovered files become recent only after user opens or saves them.
+- Clearing recent files does not necessarily clear recovery data.
+- Session Restore is separate from Recent Files and separate from Crash Recovery.
+- Clearing recovery data requires separate confirmation.

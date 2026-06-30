@@ -408,3 +408,14 @@ Accepted storage behavior:
 - File contents are not included by default.
 - AI prompts/responses are not included by default.
 - Secrets must be redacted before export.
+
+## Crash recovery storage baseline
+
+Accepted storage behavior:
+
+- Recovery data is machine-local state.
+- Recovery data is local-only by default.
+- Recovery data does not sync by default.
+- Recovery content is not included in diagnostics export by default.
+- Recovery content is not exposed to AI/extensions by default.
+- Recovery retention and max size must be configurable by design.

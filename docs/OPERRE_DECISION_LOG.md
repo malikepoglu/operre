@@ -426,3 +426,30 @@ Accepted memory:
 Next continuation point:
 
 - define detailed crash recovery and unsaved work recovery behavior.
+
+### Crash recovery and unsaved work recovery behavior decided
+
+Accepted memory:
+
+- Crash Recovery and Unsaved Work Recovery behavior must have a dedicated specification.
+- User-created unsaved work should not be lost easily.
+- Crash Recovery, Auto Save, Hot Exit, and Session Restore are separate concepts.
+- Crash Recovery is ON by default.
+- Hot Exit is ON by default.
+- Auto Save remains separate and configurable.
+- Recovery data is local-only and machine-local by default.
+- Recovery content is not included in diagnostics export by default.
+- AI and extensions cannot access recovery content by default.
+- Recovery UI/panel is required after crash when recoverable work exists.
+- Recover, Compare, Save As, Keep Both, and Discard actions should be supported.
+- Disk conflict handling is required.
+- Untitled documents must be recoverable.
+- Atomic write is required for settings and keybindings.
+- Large file recovery must respect memory/cache limits.
+- Protected/secret-like file recovery requires strict privacy boundaries.
+- Safe Mode is required by design.
+- Destructive recovery actions require confirmation.
+
+Next continuation point:
+
+- define Auto Save, file saving, atomic write, and backup behavior.

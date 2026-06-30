@@ -423,3 +423,14 @@ Accepted UI behavior:
 - Open Logs Folder, Clear Logs, and Export Diagnostics must be reachable from Command Palette.
 - Diagnostics upload is OFF by default.
 - Crash upload is OFF by default.
+
+## Crash recovery and unsaved work UI baseline
+
+Accepted UI behavior:
+
+- Recovery UI/panel is required after crash when recoverable work exists.
+- Recovery UI must expose Recover, Compare, Save As, Keep Both, and Discard actions where practical.
+- Disk conflict handling must be understandable.
+- Destructive recovery actions require confirmation.
+- Safe Mode is required by design.
+- Recovery UI must be keyboard, touch, high-DPI, high-contrast, and on-screen-keyboard compatible.
