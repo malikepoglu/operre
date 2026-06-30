@@ -144,3 +144,7 @@ Topic-focused project memory is stored under [`docs/`](./docs/):
 - NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior.
 
 OPR-SPEC-0035 records the workbench layout model. Operre should keep the useful interaction patterns proven by VS Code, but reduce complexity through fewer default surfaces, clearer view ownership, stricter privacy, explicit extension contribution points, permission-scoped view access, and machine-local layout persistence by default.
+
+## Periodic repository audit cadence
+
+Operre uses a strict periodic audit rule: after every 20 completed meaningful repository workflow steps, a detailed terminal-based GitHub repository audit must be run before continuing. The audit compares local HEAD, origin/main, live remote main, TODO state, current and next topic markers, documentation indexes, decision logs, specification summaries, privacy/security markers, and possible duplicate or contradictory decisions.

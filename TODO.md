@@ -96,3 +96,9 @@ Implementation starts only after:
 ## Current next topic
 
 NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior
+
+## Meta discipline queue
+
+| ID | Status | Item |
+| --- | --- | --- |
+| OPR-META-0001 | DONE | Document the rule that every 20 completed meaningful repository workflow steps require a detailed terminal-based GitHub repository audit before continuing. |

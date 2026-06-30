@@ -550,3 +550,13 @@ Key decisions:
 - These language toolchain/runtime capabilities must remain extension-driven, Workspace-Trust-aware, permission-scoped, audited, and never required by Operre core.
 
 Next topic: Menus, toolbar, titlebar, status bar, and workbench chrome behavior.
+
+## OPR-META-0001 - Periodic repository audit cadence
+
+Decision: Accepted.
+
+Operre must run a detailed terminal-based GitHub repository audit after every 20 completed meaningful repository workflow steps. This rule exists to prevent repeated planning loops, contradictory specifications, stale TODO state, missing next-topic markers, local/remote drift, and hidden documentation inconsistencies.
+
+The audit may be run earlier after failed audits, failed pushes, unexpected dirty worktrees, new conversation handoffs, major scope changes, overlapping topics, or before implementation begins.
+
+After the audit, work should continue only after a done/queued/risk/next-action summary is produced.

@@ -147,3 +147,51 @@ Accepted operational rules:
 - Each source review updates TODO and documentation.
 - Post-push audit confirms remote state.
 - UI rendering errors must not be confused with terminal/git failures.
+
+## Periodic full repository audit cadence
+
+To avoid circular planning, repeated decisions, contradictory specifications, stale TODO state, and hidden drift between local and remote repository state, Operre must run a detailed terminal-based GitHub repository audit after every 20 completed meaningful repository workflow steps.
+
+A meaningful repository workflow step includes:
+
+- accepted specification topic commits;
+- source review processing commits;
+- repository discipline commits;
+- TODO queue restructuring commits;
+- cross-document consistency repairs;
+- security/privacy model decisions;
+- implementation milestone freeze decisions;
+- any other committed repository memory change that affects future work.
+
+The periodic audit must compare:
+
+- local HEAD;
+- origin/main;
+- live remote main;
+- latest commit subject;
+- clean worktree status;
+- TODO DONE and QUEUED state;
+- current and next topic markers;
+- required root files;
+- required documentation files;
+- documentation index consistency;
+- decision log consistency;
+- specification summary consistency;
+- privacy/security markers;
+- extension and AI permission markers;
+- language hygiene for English-only repository documentation;
+- raw transcript exclusion rules;
+- duplicate, obsolete, or contradictory decisions.
+
+The audit may be run earlier than 20 steps when:
+
+- a conversation is moved to a new page;
+- an audit fails;
+- a push fails;
+- the worktree is dirty unexpectedly;
+- a topic appears to overlap with a previous topic;
+- the next topic marker is missing;
+- a major scope change is proposed;
+- implementation is about to begin.
+
+After each periodic audit, the assistant must produce a short done/queued/risk/next-action summary before continuing to new specification or implementation work.
