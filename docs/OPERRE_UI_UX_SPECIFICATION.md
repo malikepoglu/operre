@@ -466,3 +466,18 @@ Accepted UI behavior:
 - Dangerous Explorer actions require confirmation.
 - Large workspace lazy loading and tree virtualization are required by design.
 - AI and extensions cannot access Explorer tree or navigation history by default.
+
+## Workbench layout and view management
+
+Operre should use a simple workbench layout model: Activity Bar, primary sidebar, editor area, and bottom panel. The design should keep the useful parts of VS Code's workbench model while reducing complexity, default noise, hidden state, and unclear ownership.
+
+Required UI principles:
+
+- Activity Bar entries map to view containers.
+- View containers own views and panels through stable IDs.
+- Major view actions use the central command registry.
+- Sidebar and panel collapse/resize behavior must be predictable.
+- Reset Layout and Restore Default Layout must be available.
+- Layout state is machine-local by default.
+- Touch, high-DPI, keyboard focus, and narrow layouts must be considered from the start.
+- Terminal, Debug, Git, AI, and language runtime surfaces are not v0.1 core surfaces.

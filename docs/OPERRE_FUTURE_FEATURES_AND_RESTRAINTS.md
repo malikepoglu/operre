@@ -110,3 +110,36 @@ This is not final.
 ## Restraint rule
 
 Do not create application scaffolding until specification and first implementation TODO are approved.
+
+## Future programming language toolchain/runtime extension track
+
+After the standard/core Operre functions become usable, Operre may support optional programming language toolchain/runtime extensions.
+
+Possible capabilities:
+
+- compilers;
+- interpreters;
+- simulators;
+- emulators;
+- linkers;
+- executable builders;
+- package builders;
+- live runtime surfaces;
+- REPL surfaces;
+- language servers;
+- debuggers;
+- build runners;
+- test runners;
+- benchmark runners;
+- problem matchers;
+- formatters;
+- linters;
+- language-specific project templates.
+
+Restraints:
+
+- These capabilities are extensions, not core dependencies.
+- Workspace Trust is required before build, run, debug, terminal-like execution, or executable generation.
+- AI cannot use these tools without explicit scoped permission.
+- Process execution, filesystem writes, network access, environment access, and protected path access must be separately controlled.
+- Runtime output, build output, and diagnostics must follow privacy-first redaction rules.

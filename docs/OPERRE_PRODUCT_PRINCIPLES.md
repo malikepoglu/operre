@@ -102,3 +102,9 @@ The `2.odt` review confirms the product baseline:
 - Ideboard remains separate.
 - GitHub remains optional.
 - LogisticSearch can continue in parallel.
+
+## VS Code reference without complexity inheritance
+
+Operre may learn from the useful parts of VS Code: fast navigation, Activity Bar, sidebars, panels, command palette, keyboard-first behavior, view containers, Problems/Output style surfaces, layout reset, and extension contribution discipline.
+
+Operre must not inherit VS Code's full complexity by default. The core should remain small, calm, local-first, privacy-first, and immediately useful for text editing. Advanced surfaces such as Terminal, Debug, Git, AI, compilers, interpreters, simulators, emulators, linkers, executable builders, and live runtimes belong to later optional extensions or connectors.

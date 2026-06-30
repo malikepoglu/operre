@@ -530,3 +530,23 @@ Accepted memory:
 Next continuation point:
 
 - define panels, sidebars, activity bar, layout persistence, and view management behavior.
+
+## OPR-SPEC-0035 - Panels, Sidebars, Activity Bar, Layout Persistence, and View Management
+
+Decision: Accepted.
+
+Operre will define a workbench model using Activity Bar entries, view containers, sidebars, panels, editor area, command IDs, persisted machine-local layout state, and permission-scoped view ownership.
+
+Key decisions:
+
+- VS Code is a useful reference for proven workbench patterns, not a complexity target.
+- Operre should keep useful patterns such as activity-driven navigation, view containers, command-driven focus, resettable layout, Problems/Logs/Diagnostics surfaces, and keyboard-first flow.
+- Operre should improve the model through fewer default surfaces, clearer labels, stricter privacy, explicit extension boundaries, and local-only layout state by default.
+- v0.1 includes Activity Bar, primary sidebar, Explorer, Search, Recent, Problems, Extensions shell, Settings, basic bottom panel, Problems, Logs, Diagnostics, Search Results, collapse/resize behavior, layout reset, keyboard navigation, and touch/high-DPI baseline.
+- Terminal, Debug, Git, AI, secondary sidebar, and language toolchain/runtime features remain later optional extension or connector surfaces.
+- Layout state is machine-local by default and not synced by default.
+- AI and extensions cannot read layout state, Recent history, Explorer state, Problems, Logs, or Diagnostics by default.
+- The later programming language toolchain/runtime extension track may include compilers, interpreters, simulators, emulators, linkers, executable builders, package builders, live runtime/REPL surfaces, language servers, debuggers, build/test runners, problem matchers, formatters, linters, and language-specific project templates.
+- These language toolchain/runtime capabilities must remain extension-driven, Workspace-Trust-aware, permission-scoped, audited, and never required by Operre core.
+
+Next topic: Menus, toolbar, titlebar, status bar, and workbench chrome behavior.

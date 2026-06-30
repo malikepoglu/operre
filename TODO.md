@@ -72,7 +72,8 @@ Current project phase:
 | OPR-SPEC-0032 | DONE | Define Auto Save, file saving, atomic write, and backup behavior. |
 | OPR-SPEC-0033 | DONE | Define symlink, hardlink, special file, and file watcher behavior. |
 | OPR-SPEC-0034 | DONE | Define File Explorer, workspace tree, File Info, tabs, and navigation behavior. |
-| OPR-SPEC-0035 | QUEUED | Define panels, sidebars, activity bar, layout persistence, and view management behavior. |
+| OPR-SPEC-0035 | DONE | Define panels, sidebars, activity bar, layout persistence, and view management behavior. |
+| OPR-SPEC-0036 | QUEUED | Define menus, toolbar, titlebar, status bar, and workbench chrome behavior. |
 
 ## Implementation queue
 
@@ -84,3 +85,14 @@ Implementation starts only after:
 2. core scope is frozen for the first milestone;
 3. repository discipline is accepted;
 4. first implementation TODO list is generated.
+
+
+## Future extension track
+
+- Future programming language toolchain/runtime extension track:
+  after the standard/core Operre functions become usable, Operre may support optional extensions for compilers, interpreters, simulators, emulators, linkers, executable/package builders, live runtime/REPL surfaces, language servers, debuggers, build/test runners, problem matchers, formatters, linters, and language-specific project templates. These capabilities must remain extension-driven, permission-scoped, Workspace-Trust-aware, audited, and never required by Operre core.
+
+
+## Current next topic
+
+NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior

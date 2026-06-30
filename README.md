@@ -136,3 +136,11 @@ Topic-focused project memory is stored under [`docs/`](./docs/):
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md)
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md)
 - [`docs/source-reviews/OPERRE_SOURCE_REVIEW_5_ODT.md`](./docs/source-reviews/OPERRE_SOURCE_REVIEW_5_ODT.md)
+
+## Current specification status
+
+- Current completed topic: OPR-SPEC-0035 - Panels, Sidebars, Activity Bar, Layout Persistence, and View Management.
+- Latest specification document: `docs/OPERRE_PANELS_SIDEBARS_ACTIVITY_BAR_LAYOUT_PERSISTENCE_AND_VIEW_MANAGEMENT_BEHAVIOR.md`
+- NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior.
+
+OPR-SPEC-0035 records the workbench layout model. Operre should keep the useful interaction patterns proven by VS Code, but reduce complexity through fewer default surfaces, clearer view ownership, stricter privacy, explicit extension contribution points, permission-scoped view access, and machine-local layout persistence by default.

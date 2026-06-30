@@ -2710,3 +2710,27 @@ Accepted decisions:
 Next topic:
 
 - define panels, sidebars, activity bar, layout persistence, and view management behavior.
+
+## OPR-SPEC-0035 - Panels, Sidebars, Activity Bar, Layout Persistence, and View Management
+
+Operre must provide a simple but extensible workbench model built around Activity Bar entries, view containers, sidebars, panels, an editor area, command IDs, and machine-local layout state.
+
+Accepted decisions:
+
+- The Activity Bar is the primary workbench navigation surface.
+- v0.1 Activity Bar entries are Explorer, Search, Recent, Problems, Extensions, and Settings.
+- Source Control, AI, Terminal, Debug, and language toolchain surfaces are later optional extensions or connectors.
+- v0.1 includes a primary sidebar, but secondary sidebar support remains future-compatible.
+- v0.1 includes a basic bottom panel for Problems, Search Results, Logs, and Diagnostics.
+- Terminal is later and risky until the safe process execution model is specified.
+- Layout persistence is machine-local by default and must not sync by default.
+- Window geometry, sidebar width, panel height, active activity, and active panel are layout state, not ordinary workspace settings.
+- Open tabs, dirty buffers, recent history, crash recovery, and layout state are separate systems.
+- Reset Layout and Restore Default Layout commands are required.
+- Activity Bar, sidebar, panel, and view focus commands must use the central command registry.
+- Operre should keep useful VS Code interaction patterns but reduce complexity with fewer default surfaces, clearer naming, stronger privacy, and safer extension boundaries.
+- Extension views must be declared, permission-scoped, and unable to bypass Workspace Trust.
+- AI cannot read layout state, Explorer state, Recent history, Problems, Logs, or Diagnostics by default.
+- Future programming language toolchain/runtime features must be extension-driven and not core dependencies.
+
+NEXT_TOPIC: Menus, toolbar, titlebar, status bar, and workbench chrome behavior

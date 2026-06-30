@@ -45,3 +45,7 @@ Implementation must wait until the specification baseline is stable and the firs
 - `source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md`
 - `source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md`
 - `source-reviews/OPERRE_SOURCE_REVIEW_5_ODT.md`
+
+## Workbench layout and view management
+
+- `OPERRE_PANELS_SIDEBARS_ACTIVITY_BAR_LAYOUT_PERSISTENCE_AND_VIEW_MANAGEMENT_BEHAVIOR.md` - defines Activity Bar entries, sidebars, panels, view containers, layout persistence, view management commands, accessibility, privacy boundaries, extension view restrictions, and the later programming language toolchain/runtime extension track.

@@ -469,3 +469,11 @@ Accepted extension behavior:
 - Extension context menu items require permission.
 - Extensions cannot bypass dangerous Explorer confirmations.
 - Protected paths are excluded by default.
+
+## View contribution and programming language toolchain extension constraints
+
+Extension-contributed views must be explicit contribution points, not arbitrary UI injection. Extension views must declare stable IDs, titles, default locations, required permissions, and restricted states. Extensions cannot read Explorer state, Recent history, Search results, Problems, Logs, Diagnostics, layout state, or protected path indicators unless the permission model grants that exact scope.
+
+Future programming language toolchain/runtime extensions may support compilers, interpreters, simulators, emulators, linkers, executable builders, package builders, live runtime/REPL surfaces, language servers, debuggers, build/test runners, problem matchers, formatters, linters, and language-specific project templates.
+
+These capabilities require Workspace Trust, explicit process execution permissions, environment handling, secrets protection, resource limits, output limits, audit logging, and AI restrictions. They must never become required Operre core dependencies.
