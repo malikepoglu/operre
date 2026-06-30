@@ -2388,3 +2388,29 @@ Accepted decisions:
 Next topic:
 
 - define Recent files/projects behavior.
+
+## 66. Large file memory and cache behavior
+
+`docs/OPERRE_LARGE_FILE_MEMORY_AND_CACHE_BEHAVIOR.md` defines how Operre should open, search, compare, preview, and cache very large files.
+
+Accepted decisions:
+
+- large file support must be part of architecture from the beginning;
+- very large files must not be loaded fully into RAM blindly;
+- Large File Mode is required;
+- Very Large File Mode / streaming mode is required as a design target;
+- read-only fallback is required;
+- streaming/chunked reading is required as a design target;
+- lazy syntax highlighting is required for large files;
+- minimap and semantic tooling may be disabled above thresholds;
+- large file search should be streaming-capable;
+- large file compare should be line/chunk first;
+- word/character diff may be disabled automatically for large files;
+- cache must be bounded, cleanable, local-only, and protected;
+- memory budget settings are required;
+- user must be able to configure thresholds and behavior;
+- AI and extensions cannot access large file content without explicit scoped permission.
+
+Next topic:
+
+- define Recent files/projects behavior.

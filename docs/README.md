@@ -19,6 +19,7 @@ The root `specifications.md` remains the consolidated specification during the p
 - `OPERRE_CONVERSATION_IMPORT_AND_SOURCE_PROCESSING.md`
 - `OPERRE_FILE_VISIBILITY_AND_PROTECTED_PATHS.md`
 - `OPERRE_SEARCH_AND_FILE_COMPARE_BEHAVIOR.md`
+- `OPERRE_LARGE_FILE_MEMORY_AND_CACHE_BEHAVIOR.md`
 
 ## Current phase
 

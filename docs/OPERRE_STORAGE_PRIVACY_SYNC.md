@@ -319,3 +319,16 @@ Accepted storage behavior:
 - `.operre/local-state/` is always protected.
 - `.operre/snapshots/` is always protected.
 - Protected paths are excluded from normal search, recent history, automatic indexing, AI context, diagnostics, and sync by default.
+
+## Large file cache baseline
+
+Accepted storage/cache behavior:
+
+- Large file cache is local-only.
+- Cache must be bounded by size limits.
+- Cache must be cleanable by the user.
+- Cache must not be synced by default.
+- Cache must not be committed.
+- Cache must not store secrets by design.
+- Cache follows protected path rules.
+- Workspace/project isolation must be respected.

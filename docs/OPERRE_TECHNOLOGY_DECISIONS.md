@@ -218,3 +218,16 @@ Future implementation tests required:
 - WebView behavior differences;
 - packaging size;
 - security permission model fit.
+
+## Large file architecture baseline
+
+Accepted technology direction:
+
+- Operre must not require full-file memory loading for very large files.
+- File access should support streaming/chunked readers.
+- Editor state should support Large File Mode flags.
+- Long-running indexing/search/compare operations must be cancellable.
+- Very large file search should be streaming-capable.
+- Very large file compare should be line/chunk first.
+- Cache and memory budgets must be configurable.
+- UI must remain responsive during large file operations.

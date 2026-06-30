@@ -323,3 +323,14 @@ Accepted UI behavior:
 - Same/identical content may optionally use green background-color.
 - Compare settings must allow detailed user control.
 - Compare must provide accessibility-friendly indicators in addition to color where practical.
+
+## Large file UI baseline
+
+Accepted UI behavior:
+
+- Large files show a warning before expensive operations where practical.
+- Large File Mode badge/status indicator is required.
+- Read-only fallback is visible to the user.
+- Feature-limited state must be visible.
+- User can choose Open in Large File Mode, Open Read-only, Open normally anyway, or Cancel where practical.
+- Settings must expose large file thresholds and behavior.

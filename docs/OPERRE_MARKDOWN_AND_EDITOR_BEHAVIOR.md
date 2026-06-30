@@ -233,3 +233,14 @@ Accepted Markdown preview security:
 Dependency rule:
 
 - Markdown parser/renderer must be license-audited before implementation.
+
+## Large file editor behavior baseline
+
+Accepted editor behavior:
+
+- Large files may disable expensive editor features.
+- Lazy syntax highlighting is required for large files.
+- Full-document analysis may be disabled above thresholds.
+- Minimap may be disabled above thresholds.
+- Read-only fallback is allowed for very large files.
+- User can override with warning where practical.

@@ -188,3 +188,13 @@ Accepted AI behavior:
 - AI cannot access compared file contents by default.
 - AI cannot use search/compare as hidden workspace context without explicit scoped permission.
 - Protected/sensitive paths remain denied by default even if AI is granted normal workspace context.
+
+## Large file AI access baseline
+
+Accepted AI behavior:
+
+- AI cannot access large file content by default.
+- AI access to large files must be scoped and explicit.
+- Selected ranges are preferred over whole large files.
+- User must see what content is sent where practical.
+- Protected/sensitive paths remain denied by default.

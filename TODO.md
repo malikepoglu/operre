@@ -60,6 +60,7 @@ Current project phase:
 | OPR-SPEC-0020 | DONE | Define hidden files, dotfiles, and protected path visibility behavior. |
 | OPR-SPEC-0021 | DONE | Define detailed search, replace, and file compare behavior. |
 | OPR-SPEC-0022 | QUEUED | Define Recent files/projects behavior. |
+| OPR-SPEC-0023 | DONE | Define large file memory and cache behavior. |
 
 ## Implementation queue
 

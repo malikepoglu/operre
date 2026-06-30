@@ -364,3 +364,15 @@ Accepted decisions:
 - Compare UI details must be user-configurable.
 - Compare follows hidden/protected path safety rules.
 - AI and extensions cannot access search/compare contents without explicit scoped permission.
+
+## Large file search and compare baseline
+
+Accepted behavior:
+
+- Large file search should be streaming-capable.
+- Large file search should show progress and allow cancel.
+- Large file search may limit initial result count.
+- Large file compare should be line/chunk first.
+- Word/character diff may be disabled automatically above thresholds.
+- Detailed diff may be offered for selected ranges later.
+- Full multi-file compare of very large files should be carefully limited and cancellable.

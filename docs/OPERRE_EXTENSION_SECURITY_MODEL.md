@@ -361,3 +361,11 @@ Accepted extension behavior:
 - Extensions cannot receive compared file contents by default.
 - Extensions require explicit scoped permission to contribute search providers, compare viewers, compare exporters, or external compare integrations.
 - Sending search/compare data outside the machine requires separate network permission.
+
+## Large file extension access baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access large file content by default.
+- Extensions need explicit permission for reading, indexing, comparing, exporting, or externally sending large file content.
+- Large file extension operations must respect memory/cache budgets where practical.

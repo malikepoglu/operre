@@ -232,3 +232,27 @@ Accepted memory:
 Next continuation point:
 
 - define Recent files/projects behavior.
+
+### Large file memory and cache behavior decided
+
+Accepted memory:
+
+- Large file support must be part of architecture from the beginning.
+- Very large files must not be loaded fully into RAM blindly.
+- Large File Mode is required.
+- Very Large File Mode / streaming mode is required as a design target.
+- Read-only fallback is required.
+- Streaming/chunked reading is required as a design target.
+- Lazy syntax highlighting is required for large files.
+- Minimap and semantic tooling may be disabled above thresholds.
+- Large file search should be streaming-capable.
+- Large file compare should be line/chunk first.
+- Word/character diff may be disabled automatically for large files.
+- Cache must be bounded, cleanable, local-only, and protected.
+- Memory budget settings are required.
+- User must be able to configure thresholds and behavior.
+- AI and extensions cannot access large file content without explicit scoped permission.
+
+Next continuation point:
+
+- define Recent files/projects behavior.
