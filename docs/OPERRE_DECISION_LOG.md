@@ -189,3 +189,22 @@ Accepted memory extracted from `5.odt`:
 Next continuation point:
 
 - continue product decisions after delete behavior.
+
+### Hidden files and protected paths decided
+
+Accepted memory:
+
+- Hidden files and dotfiles are hidden by default.
+- Explorer requires a Show Hidden Files toggle.
+- `.operre/` is hidden by default and protected when visible.
+- `.git/` is hidden by default and protected when visible.
+- `.operre/audit/`, `.operre/secrets/`, `.operre/cache/`, `.operre/local-state/`, and `.operre/snapshots/` are always protected.
+- `.operre/shared/` is the only optional shared/tracked `.operre` subtree.
+- Sensitive dotfiles such as `.env` are hidden and excluded from search/recent by default where practical.
+- Search excludes hidden/protected paths by default.
+- Recent history excludes protected paths by default.
+- AI and extensions cannot access hidden/protected paths without explicit scoped permission.
+
+Next continuation point:
+
+- define detailed search behavior.

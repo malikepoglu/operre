@@ -170,3 +170,12 @@ Prompt/response logging:
 - optional per project/per agent;
 - redacted preferred;
 - full mode only with explicit warning.
+
+## Hidden/protected path AI baseline
+
+Accepted AI behavior:
+
+- AI agents cannot access hidden/protected paths by default.
+- AI default exclusions include `.git/`, `.operre/`, `.env`, `.env.*`, `.ssh/`, secrets, tokens, credentials, private keys, caches, logs, and snapshots.
+- AI access to hidden files requires explicit scoped permission.
+- AI access to protected secrets remains denied by default.

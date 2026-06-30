@@ -295,3 +295,14 @@ Accepted delete baseline:
 - Permanent Delete is a separate command.
 - Every delete requires confirmation.
 - Folder delete requires extra warning.
+
+## Hidden files / dotfiles UI baseline
+
+Accepted UI behavior:
+
+- Explorer hides hidden files and dotfiles by default.
+- Explorer provides a Show Hidden Files toggle.
+- `.operre/` and `.git/` become visible only when hidden files are shown.
+- `.operre/` and `.git/` must display protected metadata indicators when visible.
+- Sensitive dotfiles such as `.env` should display warnings before open/preview where practical.
+- Protected metadata paths should not look like normal user folders.

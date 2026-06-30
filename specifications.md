@@ -2341,3 +2341,24 @@ Processing status:
 Next continuation point:
 
 - continue product decisions after delete behavior.
+
+## 64. Hidden files, dotfiles, and protected paths
+
+`docs/OPERRE_FILE_VISIBILITY_AND_PROTECTED_PATHS.md` defines the accepted file visibility behavior after the delete behavior baseline.
+
+Accepted decisions:
+
+- hidden files and dotfiles are hidden by default;
+- Explorer must provide a Show Hidden Files toggle;
+- `.operre/` is hidden by default and protected when visible;
+- `.git/` is hidden by default and protected when visible;
+- `.operre/audit/`, `.operre/secrets/`, `.operre/cache/`, `.operre/local-state/`, and `.operre/snapshots/` are always protected;
+- `.operre/shared/` is the only optional shared/tracked `.operre` subtree;
+- sensitive dotfiles such as `.env` are hidden and excluded from search/recent by default where practical;
+- search excludes hidden/protected paths by default;
+- recent history excludes protected paths by default;
+- AI and extensions cannot access hidden/protected paths without explicit scoped permission.
+
+Next topic:
+
+- define detailed search behavior.

@@ -56,7 +56,9 @@ Current project phase:
 | OPR-SOURCE-0004 | DONE | Process 4.odt into dedicated source review memory document. |
 | OPR-SOURCE-0005 | DONE | Process 5.odt into dedicated source review memory document. |
 | OPR-SPEC-0018 | DONE | Complete ordered source review pass for 1.odt through 5.odt. |
-| OPR-SPEC-0019 | QUEUED | Resume product decisions after delete behavior. |
+| OPR-SPEC-0019 | DONE | Resume product decisions after delete behavior. |
+| OPR-SPEC-0020 | DONE | Define hidden files, dotfiles, and protected path visibility behavior. |
+| OPR-SPEC-0021 | QUEUED | Define detailed search behavior. |
 
 ## Implementation queue
 

@@ -343,3 +343,12 @@ Possible extension host direction:
 - connector-extension-host.
 
 This may be simplified in the first version, but the architecture must not block future isolation.
+
+## Hidden/protected path extension baseline
+
+Accepted extension behavior:
+
+- Extensions cannot access hidden/protected paths by default.
+- Extensions must request explicit permissions for hidden files, workspace metadata, Git metadata, Operre metadata, credentials, secrets, cache, and snapshot areas.
+- `.git/` and `.operre/` access must be scoped and auditable.
+- Default permission remains deny all.

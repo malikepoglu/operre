@@ -306,3 +306,16 @@ Accepted `.operre/` Git model:
 - `.operre/cache/` always ignored.
 - `.operre/local-state/` always ignored.
 - `.operre/snapshots/` always ignored.
+
+## Hidden/protected path storage baseline
+
+Accepted storage behavior:
+
+- `.operre/` is hidden by default.
+- `.operre/shared/` is the only optional shared/tracked subtree.
+- `.operre/audit/` is always protected.
+- `.operre/secrets/` is always protected.
+- `.operre/cache/` is always protected.
+- `.operre/local-state/` is always protected.
+- `.operre/snapshots/` is always protected.
+- Protected paths are excluded from normal search, recent history, automatic indexing, AI context, diagnostics, and sync by default.
