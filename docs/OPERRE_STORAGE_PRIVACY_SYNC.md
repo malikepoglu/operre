@@ -283,3 +283,26 @@ Operre servers may still exist for:
 - account services.
 
 These services must not turn core local work into mandatory cloud work.
+
+## Source 3 privacy and metadata baseline
+
+The `3.odt` review confirms the privacy/logging and `.operre/` metadata baseline.
+
+Accepted privacy defaults:
+
+- Strict Privacy default.
+- Crash upload OFF.
+- Telemetry OFF.
+- Diagnostics upload OFF.
+- Local safe logs ON.
+- Extension telemetry denied by default.
+
+Accepted `.operre/` Git model:
+
+- `.operre/` ignored by default.
+- `.operre/shared/` may be tracked if explicitly chosen.
+- `.operre/audit/` always ignored.
+- `.operre/secrets/` always ignored.
+- `.operre/cache/` always ignored.
+- `.operre/local-state/` always ignored.
+- `.operre/snapshots/` always ignored.

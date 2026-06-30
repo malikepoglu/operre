@@ -127,3 +127,25 @@ Accepted memory extracted from `2.odt`:
 - Platform order is Linux Desktop, Windows Desktop, macOS Desktop, tablet/mobile later.
 - Monaco performance is not the main mobile concern; ergonomics are.
 - Sync should be local-first, privacy-first, optional, and user-owned when possible.
+
+### 3.odt processed
+
+Accepted memory extracted from `3.odt`:
+
+- Default privacy mode is Strict Privacy.
+- Crash upload, telemetry, diagnostics upload are OFF by default.
+- Local safe logs are ON.
+- Extension telemetry is denied by default.
+- Product categories are Core, Built-in Features, Extensions, Connectors, Services.
+- Extension system is VS Code-like but stricter.
+- Default extension permission is deny all.
+- Extensions must declare manifest, activation events, contributions, capabilities, permissions, language scopes, and extension type.
+- Workspace Trust and Publisher Trust are required concepts.
+- Webviews must be sandboxed and CSP controlled.
+- Secret Vault is required.
+- AI agents are optional Connector Extensions.
+- AI access must be selected/scope-based only.
+- AI edits require diff before apply.
+- Every AI action must be logged.
+- Prompt/response logging is OFF by default and optional per project/per agent.
+- `.operre/` uses hybrid Git model with audit/secrets/cache/local-state/snapshots always ignored.

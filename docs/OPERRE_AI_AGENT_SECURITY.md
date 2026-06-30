@@ -142,3 +142,31 @@ AI cannot silently:
 - access secrets;
 - change settings;
 - approve its own diff.
+
+## Source 3 AI security baseline
+
+The `3.odt` review confirms the AI agent baseline.
+
+Accepted principles:
+
+- AI agents are optional Connector Extensions.
+- AI is not core.
+- AI cannot read the full workspace by default.
+- AI cannot edit files by default.
+- AI cannot run commands by default.
+- AI cannot access Git by default.
+- AI cannot access terminal by default.
+- AI cannot access secrets by default.
+- AI cannot send data by default.
+- AI cannot push or commit by default.
+- AI edits require diff before apply.
+- AI cannot silently change anything.
+- AI cannot approve its own diff.
+- Every AI action must be logged one by one.
+
+Prompt/response logging:
+
+- default OFF;
+- optional per project/per agent;
+- redacted preferred;
+- full mode only with explicit warning.

@@ -2227,7 +2227,7 @@ Processing status:
 
 - 1.odt: processed into repository memory.
 - 2.odt: processed into repository memory.
-- 3.odt: pending dedicated review.
+- 3.odt: processed into repository memory.
 - 4.odt: pending dedicated review.
 - 5.odt: pending dedicated review.
 
@@ -2250,6 +2250,36 @@ Processing status:
 
 - 1.odt: processed into repository memory.
 - 2.odt: processed into repository memory.
-- 3.odt: pending dedicated review.
+- 3.odt: processed into repository memory.
+- 4.odt: pending dedicated review.
+- 5.odt: pending dedicated review.
+
+## 61. Source review: 3.odt
+
+`docs/source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md` records the third source-file review from the uploaded five-part ODT transcript.
+
+It covers:
+
+- global logs/audit paths;
+- Strict Privacy crash/telemetry policy;
+- extension telemetry restrictions;
+- Core / Built-in Features / Extensions / Connectors / Services terminology;
+- VS Code-like but stricter extension model;
+- manifest, activation events, contribution points, extension host planning;
+- explicit permission model;
+- Workspace Trust and Publisher Trust;
+- language/file-scoped commands;
+- webview sandbox rules;
+- Secret Vault rules;
+- AI agent connector security;
+- AI action logging and prompt/response logging;
+- `.operre/` hybrid Git model;
+- default workspace folder structure.
+
+Processing status:
+
+- 1.odt: processed into repository memory.
+- 2.odt: processed into repository memory.
+- 3.odt: processed into repository memory.
 - 4.odt: pending dedicated review.
 - 5.odt: pending dedicated review.

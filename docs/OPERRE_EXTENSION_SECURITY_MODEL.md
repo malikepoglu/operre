@@ -304,3 +304,42 @@ Future marketplace requirements:
 - update integrity checks;
 - rollback support;
 - license metadata.
+
+## Source 3 extension security baseline
+
+The `3.odt` review confirms the extension security baseline.
+
+Accepted principles:
+
+- VS Code-like usability.
+- Stricter-than-VS-Code security.
+- Default deny permissions.
+- Explicit permission declaration.
+- Workspace Trust.
+- Publisher Trust.
+- Language/file scoped commands.
+- Sandboxed webviews.
+- Secret Vault.
+- Marketplace-ready metadata.
+
+Required manifest fields:
+
+- id;
+- name;
+- publisher;
+- version;
+- extensionType;
+- activationEvents;
+- contributes;
+- capabilities;
+- permissions;
+- languageScopes;
+- connector scopes if applicable.
+
+Possible extension host direction:
+
+- ui-extension-host;
+- workspace-extension-host;
+- connector-extension-host.
+
+This may be simplified in the first version, but the architecture must not block future isolation.
