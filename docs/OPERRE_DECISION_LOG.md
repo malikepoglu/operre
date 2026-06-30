@@ -169,3 +169,23 @@ Accepted memory extracted from `4.odt`:
 - Explorer/folder tree first version accepted.
 - Delete behavior baseline accepted: OS Trash/Recycle Bin by default, Permanent Delete separate, confirmations required.
 - Initial GitHub documentation/memory direction accepted.
+
+### 5.odt processed
+
+Accepted memory extracted from `5.odt`:
+
+- Initial repository documentation baseline succeeded.
+- Operre repo path is `/home/mak/operre/repo`.
+- GitHub SSH workflow works.
+- Post-push audit is mandatory.
+- Conversation import area is local-only.
+- Raw full transcript must not be committed by default.
+- Documentation should preserve accepted decisions, not raw chat dumps.
+- Source files must be processed in order from 1.odt to 5.odt.
+- Terminal code blocks must be Bash-compatible and prompt-safe.
+- UI rendering errors must be verified against terminal/git audit.
+- Ordered source review pass is complete through 5.odt.
+
+Next continuation point:
+
+- continue product decisions after delete behavior.

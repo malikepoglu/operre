@@ -16,6 +16,7 @@ The root `specifications.md` remains the consolidated specification during the p
 - `OPERRE_MARKDOWN_AND_EDITOR_BEHAVIOR.md`
 - `OPERRE_FUTURE_FEATURES_AND_RESTRAINTS.md`
 - `OPERRE_DECISION_LOG.md`
+- `OPERRE_CONVERSATION_IMPORT_AND_SOURCE_PROCESSING.md`
 
 ## Current phase
 
@@ -29,3 +30,4 @@ Implementation must wait until the specification baseline is stable and the firs
 - `source-reviews/OPERRE_SOURCE_REVIEW_2_ODT.md`
 - `source-reviews/OPERRE_SOURCE_REVIEW_3_ODT.md`
 - `source-reviews/OPERRE_SOURCE_REVIEW_4_ODT.md`
+- `source-reviews/OPERRE_SOURCE_REVIEW_5_ODT.md`

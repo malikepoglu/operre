@@ -133,3 +133,17 @@ Accepted repository writing model:
 - implementation TODO comes after specification stabilization;
 - repository docs are English-only;
 - terminal workflow follows LogisticSearch-like audit/write/commit/push discipline.
+
+## Source 5 import and verification baseline
+
+The `5.odt` review confirms repository execution and source import discipline.
+
+Accepted operational rules:
+
+- Initial repository baseline must be verified by commit hash and remote ref.
+- Conversation import area is local-only.
+- Raw full transcript must not be committed by default.
+- Source files are processed one by one in order.
+- Each source review updates TODO and documentation.
+- Post-push audit confirms remote state.
+- UI rendering errors must not be confused with terminal/git failures.
