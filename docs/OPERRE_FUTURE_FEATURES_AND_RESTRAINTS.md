@@ -143,3 +143,7 @@ Restraints:
 - AI cannot use these tools without explicit scoped permission.
 - Process execution, filesystem writes, network access, environment access, and protected path access must be separately controlled.
 - Runtime output, build output, and diagnostics must follow privacy-first redaction rules.
+
+## Brokered external toolchain and runtime extensions
+
+Future extensions may coordinate C, C++, Python, JavaScript runtimes, database tools, web development servers, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, live runtime surfaces, and REPL surfaces. These are not core in-process plugins. They must be brokered, desktop/workstation-oriented, Workspace-Trust-aware, permission-scoped, resource-limited, redacted, audited, and license-compatible.

@@ -304,3 +304,7 @@ Accepted AI behavior:
 ## AI access to operational panels
 
 AI cannot read Problems, Search Results, Output, Logs, or Diagnostics by default. The user must grant scoped access to a specific panel, session, and content type before AI can summarize or act on that data. Safe summaries may be exposed only through explicit permission. Protected path details, secrets, full logs, full output, diagnostics bundles, AI prompts, and AI responses remain denied or redacted by default.
+
+## AI and extension boundary
+
+Extensions cannot grant AI access to data that the user did not explicitly authorize. AI connectors are high-risk extensions and must require scoped permission, audit logging, privacy summaries, and Workspace Trust where project data or tool execution is involved. Open UI does not imply AI data access.

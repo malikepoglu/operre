@@ -603,3 +603,24 @@ Key decisions:
 - Open UI does not imply data access.
 
 Next topic: Extension contribution points and manifest schema.
+
+## OPR-SPEC-0038 - Extension Contribution Points and Manifest Schema
+
+Decision: Accepted.
+
+Operre will use a manifest-driven extension architecture with TypeScript/JavaScript as the core extension control plane, sandboxed extension hosts, default-deny permissions, explicit contribution points, local install support, private registry planning, profile-aware sync planning, and later brokered desktop/workstation external toolchain integration.
+
+Key decisions:
+
+- TypeScript/JavaScript is the core extension control plane.
+- C, C++, Python, JavaScript runtimes, database tools, web tools, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, and live runtime tools are later external toolchain/runtime integrations, not core in-process plugin runtimes.
+- Operre should coordinate license-compatible external tools through brokers instead of embedding unsafe native runtimes into the core.
+- A public marketplace is not required for early use; local unpacked folders, local packages, development paths, and a private registry are enough for early extension testing and distribution.
+- A single VPS can support the first private registry.
+- Package trust must rely on signatures, hashes, publisher identity, compatibility metadata, revocation metadata, and client-side verification; client-side verification is required.
+- Sync must be profile-aware and device-aware.
+- Phone and tablet extension capability is intentionally limited.
+- Workspace Trust gates risky capabilities.
+- Open UI does not imply data access.
+
+Next topic: Extension permission UI and approval flow.

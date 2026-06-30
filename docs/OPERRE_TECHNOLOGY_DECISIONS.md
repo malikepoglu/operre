@@ -344,3 +344,9 @@ Accepted technology direction:
 - Watcher events must update Explorer through debounce/rescan behavior.
 - Tab identity must not be only a path string.
 - Multi-root workspace is future-compatible but not required in v0.1.
+
+## Extension technology direction
+
+Operre's extension technology direction is manifest-driven TypeScript/JavaScript for the core extension control plane, with optional future WASM for safe compute and later brokered desktop/workstation external toolchain integration for C, C++, Python, JavaScript runtimes, database tools, web tooling, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, and live runtime tools.
+
+The core must not depend on native in-process plugins for extension v1.

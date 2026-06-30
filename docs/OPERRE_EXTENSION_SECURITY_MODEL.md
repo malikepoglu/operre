@@ -489,3 +489,11 @@ Runtime, compiler, interpreter, simulator, emulator, linker, executable builder,
 Extensions may contribute Problems, Output channels, Logs summaries, and Diagnostics summaries only through declared contribution points and permission-scoped APIs. Extensions cannot read Problems, Search Results, Output, Logs, or Diagnostics by default. Open UI does not imply extension data access.
 
 Build output, runtime output, compiler diagnostics, interpreter diagnostics, simulator diagnostics, emulator diagnostics, linker diagnostics, executable builder output, test output, terminal output, and debug output remain later extension or process-execution topics with Workspace Trust, explicit permissions, redaction, and audit logging.
+
+## Extension manifest and runtime security baseline
+
+Operre extensions must be manifest-driven, permission-scoped, and deny-by-default. TypeScript/JavaScript is the core extension control-plane direction. Extension code must run through a sandboxed extension host and must use the Permission Broker to access Operre APIs.
+
+C, C++, Python, JavaScript runtimes outside the sandbox, database tools, web servers, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, live runtime surfaces, terminal-like tools, and debuggers are not core extension runtime features. They are later desktop/workstation-only brokered integrations requiring Workspace Trust, explicit permissions, resource limits, redaction, and audit logging.
+
+Extensions must not read files, workspace trees, Search Results, Problems, Output, Logs, Diagnostics, secrets, protected paths, AI prompts, AI responses, or environment variables by default.

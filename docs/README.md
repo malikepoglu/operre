@@ -57,3 +57,7 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Problems, Search Results, Output, Logs, and Diagnostics panels
 
 - `OPERRE_PROBLEMS_SEARCH_RESULTS_OUTPUT_LOGS_AND_DIAGNOSTICS_PANEL_BEHAVIOR.md` - defines structured Problems, Search Results, Output channels, Logs, Diagnostics, Visual Studio-like future diagnostic depth on desktop/workstation platforms, privacy-first redaction, AI/extension access restrictions, and limited phone/tablet panel capabilities.
+
+## Extension contribution points and manifest schema
+
+- `OPERRE_EXTENSION_CONTRIBUTION_POINTS_AND_MANIFEST_SCHEMA.md` - defines Operre's extension classes, TypeScript/JavaScript control-plane direction, manifest schema, contribution points, permission defaults, external toolchain broker direction, local install flow, private registry bootstrap, single-VPS feasibility, profile-aware sync planning, and phone/tablet capability limits.

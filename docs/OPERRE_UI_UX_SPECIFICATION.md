@@ -493,3 +493,7 @@ The UI must provide compact, comfortable, and touch-oriented density modes. Tool
 Problems, Search Results, Output, Logs, and Diagnostics panels must remain usable across desktop, high-DPI displays, tablets, phones, MacBooks, external monitors, and mixed-DPI environments. Desktop can use richer tables and channels. Tablet should prefer drawers or stacked views with safe summaries. Phone should prefer cards, full-screen sheets, and restricted summaries.
 
 Panels must avoid microscopic toolbar buttons, clipped filter inputs, hover-only actions on touch, dense desktop tables on phone, and unbounded rendering of large result sets.
+
+## Extension ergonomics and device limits
+
+Extension UI contributions must not damage Operre ergonomics. Extensions cannot make menus, toolbar items, status bar items, panels, views, buttons, icons, or labels microscopic, clipped, overlapping, unreachable, or unusable. Phone and tablet extension support is intentionally limited to safe summaries, themes, syntax, snippets, and lightweight helpers by default.

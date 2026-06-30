@@ -75,7 +75,8 @@ Current project phase:
 | OPR-SPEC-0035 | DONE | Define panels, sidebars, activity bar, layout persistence, and view management behavior. |
 | OPR-SPEC-0036 | DONE | Define menus, toolbar, titlebar, status bar, and workbench chrome behavior. |
 | OPR-SPEC-0037 | DONE | Define problems, search results, output, logs, and diagnostics panel detailed behavior. |
-| OPR-SPEC-0038 | QUEUED | Define extension contribution points and manifest schema as the detailed successor to the earlier extension manifest planning item. |
+| OPR-SPEC-0038 | DONE | Define extension contribution points and manifest schema as the detailed successor to the earlier extension manifest planning item. |
+| OPR-SPEC-0039 | QUEUED | Define extension permission UI and approval flow. |
 
 ## Implementation queue
 
@@ -97,7 +98,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Extension contribution points and manifest schema
+NEXT_TOPIC: Extension permission UI and approval flow
 
 ## Meta discipline queue
 

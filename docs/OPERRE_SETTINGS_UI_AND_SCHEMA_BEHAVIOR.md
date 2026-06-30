@@ -997,3 +997,7 @@ Accepted behavior:
 Workbench chrome settings should include window.menuBarVisibility, workbench.toolbar.visible, workbench.toolbar.compact, workbench.toolbar.overflowBehavior, workbench.statusBar.visible, workbench.statusBar.compact, workbench.statusBar.showSecurityIndicators, workbench.statusBar.showEncoding, workbench.statusBar.showLineEndings, workbench.statusBar.showLanguageMode, workbench.titleBar.style, workbench.uiScale, workbench.touchMode, workbench.compactMode, workbench.reduceAnimations, workbench.minTouchTarget, workbench.autoDetectHighDPI, workbench.warnWhenChromeTooSmall, workbench.phoneLayoutMode, and workbench.tabletLayoutMode.
 
 Invalid chrome settings must not make Operre unusable. Safe reset commands must remain available.
+
+## Extension sync and device profile settings
+
+Extension sync must be profile-aware and device-aware. Safe settings, keybindings, theme, extension IDs, extension enabled state, and extension version preferences may sync. UI scale, layout dimensions, panel size, sidebar width, touch mode, compact mode, window geometry, recent files, workspace trust, logs, diagnostics, secrets, local toolchain paths, runtime paths, and external process configuration remain machine-local by default.

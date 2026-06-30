@@ -2782,3 +2782,29 @@ Accepted decisions:
 - Panel UI must follow high-DPI, phone, tablet, MacBook, on-screen keyboard, and mixed-DPI ergonomic rules.
 
 NEXT_TOPIC: Extension contribution points and manifest schema
+
+## OPR-SPEC-0038 - Extension Contribution Points and Manifest Schema
+
+Operre must use a safe, ergonomic, high-performance extension architecture that can later support Operre-related products and Ideboard-like integrations without locking the model to one narrow application shell.
+
+Accepted decisions:
+
+- Core extension control logic should use TypeScript or JavaScript.
+- Extension contributions must be manifest-driven and declared through contribution points.
+- The extension host must be sandboxed and must not directly mutate Operre core internals.
+- The default permission model is deny-by-default.
+- Open UI does not imply data access.
+- C, C++, Python, JavaScript runtimes, database tools, web technology tools, compilers, interpreters, simulators, emulators, linkers, executable builders, package managers, live runtime surfaces, and REPL surfaces are not core extension runtime features.
+- External tools may later be controlled by Operre through a desktop/workstation-only Toolchain Broker and Process Execution Broker.
+- Operre should act as a safe coordinator or remote-control surface for license-compatible external tools.
+- Workspace Trust is required for risky capabilities such as process execution, build, run, debug, terminal-like access, protected path access, and external toolchain sessions.
+- A public marketplace is not required for early extension use.
+- Early extension installation can use local unpacked folders, local signed packages, development-mode extension paths, and a private registry.
+- A single VPS can support the first private registry with metadata, package downloads, signatures, hashes, compatibility data, and revocation metadata.
+- Package signatures and client-side verification are required trust foundations; client-side verification is required.
+- Sync should be profile-aware: safe settings, keybindings, theme, extension IDs, enabled state, and version preferences may sync; layout, UI scale, touch mode, recent files, workspace trust, secrets, logs, diagnostics, and local toolchain paths remain machine-local by default.
+- Phone and tablet extension support is intentionally limited to safe summaries, themes, syntax, snippets, and lightweight helpers.
+- Phone and tablet modes must not expose full process execution, compiler execution, interpreter execution, terminal, debugger, full Output streaming, or unbounded Logs by default.
+- Extension dependencies must be declared, hashed where practical, and must not run arbitrary install scripts in the user workspace by default.
+
+NEXT_TOPIC: Extension permission UI and approval flow
