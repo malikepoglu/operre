@@ -870,3 +870,11 @@ Project Dashboard may summarize Problems, Output, Logs, and Diagnostics,
 but detailed diagnostics remain governed by panel access, Workspace
 Trust, permission grants, AI access state, extension access state, and
 log redaction policy. Dashboard visibility does not grant data access.
+
+## Diagnostics Dashboard deep relationship
+
+Diagnostics Dashboard interprets Problems, Output, Logs, toolchain
+events, resource events, trust events, permission events, production
+guard events, and later remote events. Dashboard visibility does not
+grant raw log, raw output, AI, extension, secret, or production data
+access.

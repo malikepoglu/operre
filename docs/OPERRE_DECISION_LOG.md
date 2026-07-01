@@ -783,3 +783,33 @@ Key decisions:
 - First implementation starts with skeleton and ergonomic guidance.
 
 Next topic: Diagnostics dashboard deep behavior.
+
+## OPR-SPEC-0044 - Diagnostics Dashboard Deep Behavior
+
+Decision: Accepted.
+
+Diagnostics Dashboard is required as a deep project health surface.
+Diagnostics remains separate from Problems, Output, Logs, and Project
+Dashboard.
+
+Key decisions:
+
+- Diagnostics Dashboard is required.
+- Diagnostics is an interpreted project health surface, not only an error
+  list.
+- Diagnostics items must carry severity and confidence.
+- Every diagnostics item must show its source.
+- AI cannot read Diagnostics by default.
+- Extensions may contribute diagnostics only through declared providers
+  and permissions.
+- Fix actions must not run hidden commands.
+- Noise control is required.
+- Retention, privacy, redaction, and export controls are required.
+- Production diagnostics require production guard.
+- Remote diagnostics are planned, disabled by default, and must not be
+  forgotten.
+- Phone and tablet show safe diagnostics summaries.
+- First implementation starts with diagnostics schema and dashboard
+  skeleton.
+
+Next topic: Extension marketplace package signing and update distribution behavior.

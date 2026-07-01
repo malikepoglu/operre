@@ -333,3 +333,11 @@ commands, and draft rollback plans. AI cannot directly execute toolchains
 by default. Future AI-assisted execution requires explicit settings,
 Workspace Trust, permission grants, command preview, user approval,
 audit logging, and production guard where relevant.
+
+## AI and Diagnostics Dashboard relationship
+
+AI cannot read Diagnostics by default. Future AI diagnostics assistance
+requires explicit permission, Workspace Trust when workspace data is
+involved, item or category scope, redaction, audit logging, and separate
+permission for raw logs or raw output. AI suggestions remain advisory
+unless a later guarded fix flow is explicitly approved.

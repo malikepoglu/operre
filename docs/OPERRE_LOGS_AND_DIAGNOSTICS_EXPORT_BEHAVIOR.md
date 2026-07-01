@@ -529,3 +529,10 @@ Accepted behavior:
 Diagnostics and Output are separate but related surfaces. Output may later provide structured desktop/workstation channels for build, test, runtime, task, extension, and problem matcher sessions. Diagnostics may later provide local Visual Studio-like issue snapshots, timelines, component health, extension health, performance summaries, redaction previews, and safe support bundles.
 
 These capabilities are local-first, user-initiated, permission-scoped, and redacted by default. Diagnostics upload, crash upload, and telemetry remain OFF by default. Phone and tablet modes are limited to safe summaries and restricted diagnostics unless a later trusted workflow is explicitly designed.
+
+## Diagnostics Dashboard export relationship
+
+Diagnostics export must respect redaction, source attribution, severity,
+confidence, retention policy, AI access state, extension access state,
+production guard, and remote diagnostics state. Secrets must not be
+exported by default.

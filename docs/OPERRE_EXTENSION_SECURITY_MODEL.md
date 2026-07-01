@@ -522,3 +522,10 @@ diagnostics parsers, problem matchers, output parsers, setup guides, and
 recommended settings. Extensions cannot force executable paths, execute
 hidden commands, read raw environment, read secrets, install packages, or
 run before Toolchain Broker approval.
+
+## Extension diagnostics safety
+
+Extensions may contribute diagnostics only through declared providers and
+permissions. Extensions cannot read raw logs, raw output, secrets, other
+extension diagnostics, production diagnostics, or remote diagnostics by
+default. Diagnostics contributions do not grant command execution.

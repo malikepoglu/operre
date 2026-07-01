@@ -594,3 +594,10 @@ boundaries, template application, dashboard state, toolchain summaries,
 and project-level safe reset must respect Workspace Trust. Creating or
 opening a project does not grant execution, extension, AI, or toolchain
 access by itself.
+
+## Diagnostics trust relationship
+
+Workspace Trust may be required before workspace diagnostics can expose
+file paths, source snippets, toolchain data, logs, outputs, environment
+state, production labels, or remote target state. Trust does not grant AI
+or extension access by itself.

@@ -529,3 +529,11 @@ Diagnostics, Problems, Artifacts, Security, Workspace Trust,
 Permissions, Production Guard, Resource Usage, and Safe Reset using
 readable cards, progressive disclosure, safe actions, and responsive
 phone and tablet layouts.
+
+## Diagnostics Dashboard visual relationship
+
+Diagnostics Dashboard should combine health summaries, cards, tables,
+detail panels, filters, grouping, lifecycle views, related evidence, and
+safe next actions. The UI must remain readable, accessible, responsive,
+and useful on desktop, tablet, and phone without exposing restricted
+data.

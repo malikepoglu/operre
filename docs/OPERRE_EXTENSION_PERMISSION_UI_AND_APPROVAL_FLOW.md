@@ -610,3 +610,10 @@ C compiler, C++ compiler, linker, package manager, database client,
 NoSQL client, web server, migration tool, live runtime, simulator,
 emulator, remote toolchain, and production action permissions must be
 separate where risk differs.
+
+## Diagnostics permission relationship
+
+Diagnostics permissions should separate summary access, item access, raw
+log access, raw output access, production diagnostic access, remote
+diagnostic access, AI diagnostic access, and extension provider access.
+Higher-risk categories require stronger prompts and clearer scope.

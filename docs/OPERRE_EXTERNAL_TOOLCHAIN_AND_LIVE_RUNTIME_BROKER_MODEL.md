@@ -1368,3 +1368,11 @@ Toolchain Broker for outputs, logs, artifacts, project dashboards,
 profile summaries, safe setup guidance, and non-invasive external
 workspace behavior. Toolchain execution still requires profile approval,
 Workspace Trust, permissions, Resource Governor policy, and audit logs.
+
+## Deep diagnostics relationship
+
+Toolchain Broker, live runtime sessions, Resource Governor, package
+managers, database tools, web development servers, production guard, and
+future remote toolchains may feed Diagnostics Dashboard. Each diagnostic
+must reference source, severity, confidence, profile, session, log, and
+permission state where applicable.

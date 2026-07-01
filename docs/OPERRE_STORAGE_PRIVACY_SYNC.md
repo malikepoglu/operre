@@ -468,3 +468,11 @@ Managed project metadata may later have shared and local parts.
 protected by default. Project templates may sync later, but secrets,
 dangerous approvals, executable paths, production approvals, and local
 safe reset state must not sync silently.
+
+## Diagnostics retention and sync behavior
+
+Detailed diagnostics history is app-local by default. Project-local
+diagnostics history requires approval. Raw logs, raw output, secrets,
+production details, remote details, AI diagnostics access state, and
+extension diagnostics access state must not sync silently. Redacted
+summary export may be allowed.

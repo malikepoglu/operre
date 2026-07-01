@@ -3018,3 +3018,43 @@ Accepted decisions:
   guidance before real toolchain execution.
 
 NEXT_TOPIC: Diagnostics dashboard deep behavior
+
+## OPR-SPEC-0044 - Diagnostics Dashboard Deep Behavior
+
+Diagnostics Dashboard is the deep project health and technical control
+surface.
+
+Accepted decisions:
+
+- Diagnostics Dashboard is required.
+- Diagnostics is an interpreted project health surface, not only an
+  error list.
+- Problems, Output, Logs, Diagnostics, and Project Dashboard remain
+  separate surfaces.
+- Diagnostics categories include syntax, compiler, linker, runtime,
+  test, package, dependency, security, performance, memory, CPU, disk,
+  network, port, database, migration, environment, configuration,
+  permission, Workspace Trust, extension, AI, resource, crash, flaky
+  test, production guard, and remote diagnostics later.
+- Diagnostics items must carry severity and confidence.
+- Every diagnostics item must show its source.
+- Severity values include info, hint, warning, error, critical, blocked,
+  security, and production-critical.
+- Confidence values include confirmed, likely, possible, heuristic, and
+  unknown.
+- AI cannot read Diagnostics by default.
+- Extensions may contribute diagnostics only through declared providers
+  and permissions.
+- Diagnostics Dashboard uses health summaries, cards, tables, detail
+  panels, filtering, grouping, lifecycle, history, and related evidence.
+- Fix actions must not run hidden commands.
+- Noise control is required.
+- Retention, privacy, redaction, and export controls are required.
+- Production diagnostics require production guard.
+- Remote diagnostics are planned, disabled by default, and must not be
+  forgotten.
+- Phone and tablet show safe diagnostics summaries.
+- First implementation starts with diagnostics schema and dashboard
+  skeleton.
+
+NEXT_TOPIC: Extension marketplace package signing and update distribution behavior

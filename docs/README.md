@@ -98,3 +98,12 @@ Implementation must wait until the specification baseline is stable and the firs
   security, Project Dashboard, Toolchains summary, outputs, logs,
   artifacts, cleanup, retention, public naming restraint, phone and
   tablet behavior, and project-level safe reset.
+
+## Diagnostics Dashboard deep behavior
+
+- `OPERRE_DIAGNOSTICS_DASHBOARD_DEEP_BEHAVIOR.md` - defines
+  Diagnostics Dashboard, diagnostics item schema, categories, severity,
+  confidence, source attribution, AI and extension access, visual layout,
+  filtering, grouping, lifecycle, fix-action safety, noise control,
+  retention, privacy, production diagnostics, remote diagnostics
+  planning, phone and tablet safe summaries, and v0.1 skeleton scope.

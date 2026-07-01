@@ -915,3 +915,10 @@ They may describe profile templates, command templates, parser
 capabilities, and limited-mode behavior. They must not grant execution
 authority by themselves. Toolchain execution requires profile approval,
 Workspace Trust, permissions, Resource Governor policy, and audit logs.
+
+## Diagnostics contribution relationship
+
+Diagnostics-related contribution points may declare providers, parsers,
+problem matchers, safe fix suggestions, dashboard cards, and summary
+providers. They must declare data access needs and cannot execute fixes
+or commands by themselves.

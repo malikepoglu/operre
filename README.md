@@ -185,3 +185,11 @@ need-driven behavior, protects `.operre` boundaries, keeps templates
 declarative, provides a Project Dashboard, links Toolchains Dashboard,
 manages outputs, logs, artifacts, cleanup, retention, phone and tablet
 safe summaries, public naming restraint, and mandatory project safe reset.
+
+OPR-SPEC-0044 records Diagnostics Dashboard deep behavior. Operre keeps
+Problems, Output, Logs, Diagnostics, and Project Dashboard separate,
+uses structured diagnostics items with severity, confidence, source,
+lifecycle, privacy, retention, fix-action safety, AI and extension
+access controls, production guard, remote diagnostics disabled by
+default, phone and tablet safe summaries, and a skeleton-first
+implementation direction.

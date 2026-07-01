@@ -748,3 +748,11 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Diagnostics Dashboard relationship
+
+Project Dashboard may show diagnostics summaries, but Diagnostics
+Dashboard provides the deeper project health surface. Diagnostics access,
+raw log access, raw output access, AI access, extension access,
+production detail access, and remote detail access remain separately
+permissioned and redacted.
