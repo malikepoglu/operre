@@ -177,3 +177,11 @@ database and NoSQL guards, live runtime sessions, organized outputs,
 logs, artifacts, Resource Governor, layered sandbox planning, production
 guard, remote toolchain planning, limited profile sync, per-project
 Toolchains dashboard, and mandatory safe reset.
+
+OPR-SPEC-0043 records managed Works projects, templates, and dashboard
+behavior. Operre separates managed projects from external workspaces,
+uses operre.worksRoot, creates folders through template-driven and
+need-driven behavior, protects `.operre` boundaries, keeps templates
+declarative, provides a Project Dashboard, links Toolchains Dashboard,
+manages outputs, logs, artifacts, cleanup, retention, phone and tablet
+safe summaries, public naming restraint, and mandatory project safe reset.

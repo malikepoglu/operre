@@ -459,3 +459,12 @@ silently. Toolchain sync must be device-aware, profile-aware, and
 security-aware.
 
 Profile templates may sync, but executable approvals, paths, secrets, and production approvals must not sync silently.
+
+## Managed project sync behavior
+
+Managed project metadata may later have shared and local parts.
+`.operre/shared` is the explicit shared area. `.operre/local-state`,
+`.operre/cache`, `.operre/audit`, and `.operre/secrets` are local or
+protected by default. Project templates may sync later, but secrets,
+dangerous approvals, executable paths, production approvals, and local
+safe reset state must not sync silently.

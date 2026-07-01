@@ -1054,3 +1054,24 @@ sandbox.platformSandbox.enabledLater, python.preferProjectVenv,
 cpp.requireSeparateRunApproval, node.warnOnInstallScripts,
 database.productionGuardDefault, webServer.defaultBindAddress, and
 ai.toolchainAdvisoryOnly.
+
+## Managed project settings
+
+Managed project settings should include operre.worksRoot,
+projects.defaultMode, projects.createManagedByDefault,
+projects.externalWritePolicy, projects.folderCreationMode,
+projects.dashboard.defaultOpenMode, projects.dashboard.showOnFirstOpen,
+projects.dashboard.sidebarAccess, projects.dashboard.statusBarAccess,
+projects.dashboard.showSecuritySummary,
+projects.dashboard.showToolchainsSummary,
+projects.dashboard.showOutputsSummary, projects.dashboard.showLogsSummary,
+projects.dashboard.showArtifactsSummary,
+projects.dashboard.showResourceSummary, projects.dashboard.showSafeReset,
+projects.templates.enabled, projects.templates.allowLocalTemplates,
+projects.templates.allowImportedTemplates,
+projects.templates.allowMarketplaceTemplatesLater,
+projects.templates.requirePreview, projects.cleanup.enabled,
+projects.cleanup.maxLogAgeDays, projects.cleanup.maxLogBytes,
+projects.cleanup.maxOutputBytes, projects.cleanup.maxSpoolBytes,
+projects.cleanup.protectPinnedArtifacts, projects.safeReset.enabled, and
+projects.mobile.safeSummaryMode.

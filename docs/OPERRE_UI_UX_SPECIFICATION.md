@@ -520,3 +520,12 @@ states, missing tools, setup guidance, last run, current status, logs,
 diagnostics, outputs, artifacts, risk levels, Resource Governor state,
 production guard state, blocked profiles, review-needed profiles, and
 safe reset actions.
+
+## Project Dashboard relationship
+
+Project Dashboard is a central project control surface. It should show
+overview, files, recent activity, Toolchains, Tasks, Outputs, Logs,
+Diagnostics, Problems, Artifacts, Security, Workspace Trust,
+Permissions, Production Guard, Resource Usage, and Safe Reset using
+readable cards, progressive disclosure, safe actions, and responsive
+phone and tablet layouts.

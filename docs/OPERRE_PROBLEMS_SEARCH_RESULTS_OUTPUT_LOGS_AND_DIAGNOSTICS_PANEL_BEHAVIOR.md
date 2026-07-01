@@ -863,3 +863,10 @@ resource, port, network, crash, and flaky-test diagnostics. Diagnostics
 items should reference toolchain profile, process session ID, log ID,
 risk, permission state, Workspace Trust state, AI access state, and
 extension access state.
+
+## Project Dashboard diagnostics relationship
+
+Project Dashboard may summarize Problems, Output, Logs, and Diagnostics,
+but detailed diagnostics remain governed by panel access, Workspace
+Trust, permission grants, AI access state, extension access state, and
+log redaction policy. Dashboard visibility does not grant data access.

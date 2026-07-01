@@ -89,3 +89,12 @@ Implementation must wait until the specification baseline is stable and the firs
   Resource Governor, sandbox layers, production guard, remote toolchain
   planning, profile sync limits, per-project Toolchains dashboard, and
   safe reset behavior.
+
+## Managed Works projects, templates, and dashboard
+
+- `OPERRE_MANAGED_WORKS_PROJECTS_TEMPLATES_AND_DASHBOARD.md` -
+  defines managed projects, external workspaces, operre.worksRoot,
+  project folder creation, `.operre` boundaries, templates, template
+  security, Project Dashboard, Toolchains summary, outputs, logs,
+  artifacts, cleanup, retention, public naming restraint, phone and
+  tablet behavior, and project-level safe reset.

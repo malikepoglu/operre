@@ -586,3 +586,11 @@ writes, network, secrets, protected paths, production targets, remote
 targets, or live runtime sessions are involved. Trust alone does not
 approve a toolchain profile. Toolchain profile approval, permissions,
 Resource Governor policy, and audit logging are still required.
+
+## Managed project trust relationship
+
+Managed project identity, external workspace identity, `.operre`
+boundaries, template application, dashboard state, toolchain summaries,
+and project-level safe reset must respect Workspace Trust. Creating or
+opening a project does not grant execution, extension, AI, or toolchain
+access by itself.

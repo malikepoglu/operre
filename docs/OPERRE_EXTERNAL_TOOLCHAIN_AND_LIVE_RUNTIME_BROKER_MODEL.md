@@ -1360,3 +1360,11 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Managed Works project relationship
+
+Managed Works projects provide the organized project structure used by
+Toolchain Broker for outputs, logs, artifacts, project dashboards,
+profile summaries, safe setup guidance, and non-invasive external
+workspace behavior. Toolchain execution still requires profile approval,
+Workspace Trust, permissions, Resource Governor policy, and audit logs.

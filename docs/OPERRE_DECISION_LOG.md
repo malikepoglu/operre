@@ -752,3 +752,34 @@ Key decisions:
 - Safe reset is mandatory.
 
 Next topic: Managed Works projects templates and project dashboard behavior.
+
+## OPR-SPEC-0043 - Managed Works Projects Templates and Dashboard
+
+Decision: Accepted.
+
+Operre will support managed Works projects and external workspaces as
+separate modes. Managed projects use a predictable Works root, templates,
+dashboards, outputs, logs, artifacts, and safe reset. External workspaces
+remain non-invasive by default.
+
+Key decisions:
+
+- Managed projects and external workspaces are separate modes.
+- Managed projects are required.
+- operre.worksRoot defines the managed Works root.
+- Folder creation uses C plus B by default.
+- The `.operre` protected local shared boundaries are required.
+- External workspaces are not modified by default.
+- Templates are declarative and do not execute commands.
+- Project Dashboard is a central project control surface.
+- Dashboard default behavior is C plus B.
+- Dashboard includes security summary.
+- Project Dashboard links to Toolchains Dashboard.
+- Outputs, logs, and artifacts are visible and manageable.
+- Cleanup and retention policy is required.
+- Special project names stay out of public specification.
+- Project-level safe reset is mandatory.
+- Phone and tablet show safe project summaries.
+- First implementation starts with skeleton and ergonomic guidance.
+
+Next topic: Diagnostics dashboard deep behavior.

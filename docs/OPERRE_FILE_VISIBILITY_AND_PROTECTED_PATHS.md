@@ -320,3 +320,10 @@ Accepted behavior:
 ## Workspace Trust and protected paths
 
 Workspace Trust does not remove protected path restrictions. Protected path access remains separately gated. In untrusted workspaces, protected path access is locked. Trust decisions must not expose protected path contents, secrets, logs, diagnostics, AI prompts, or AI responses by default.
+
+## Managed project protected paths
+
+Managed projects use `.operre` as a protected boundary. `.operre/secrets`,
+`.operre/local-state`, `.operre/cache`, and `.operre/audit` are local or
+protected by default. `.operre/shared` is the explicit shared area.
+External workspaces are not modified by default.
