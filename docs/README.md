@@ -79,3 +79,13 @@ Implementation must wait until the specification baseline is stable and the firs
   process lifecycle; sudo/admin/root behavior; package manager policy;
   build/run/debug/test/live runtime categories; AI command limits;
   phone/tablet limits; and audit behavior.
+
+## External toolchain and live runtime broker model
+
+- `OPERRE_EXTERNAL_TOOLCHAIN_AND_LIVE_RUNTIME_BROKER_MODEL.md` -
+  defines Toolchain Broker, profile schema, profile states, discovery,
+  install modes, Works root, external workspace write policy, Python,
+  C, C++, Node, database and NoSQL tools, web servers, live runtimes,
+  Resource Governor, sandbox layers, production guard, remote toolchain
+  planning, profile sync limits, per-project Toolchains dashboard, and
+  safe reset behavior.

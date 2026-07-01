@@ -707,3 +707,48 @@ Key decisions:
 - Open UI does not imply data access.
 
 Next topic: External toolchain and live runtime broker model.
+
+## OPR-SPEC-0042 - External Toolchain and Live Runtime Broker Model
+
+Decision: Accepted.
+
+Operre will use a brokered external toolchain and live runtime model.
+Toolchains are profile-based, permission-gated, trust-aware,
+resource-governed, audited, and dashboard-visible.
+
+Key decisions:
+
+- Toolchain Broker is a separate security and coordination layer.
+- Every external tool uses a toolchain profile.
+- Profile states include discovered, pending review, approved, blocked,
+  quarantined, review needed, deprecated, and missing.
+- Toolchain install modes are A, B, C, and D with A plus B as default.
+- Auto discovery suggests profiles but does not approve them.
+- operre.worksRoot defines the managed Works root.
+- External workspaces are not modified by default.
+
+- External workspaces must not be modified with outputs, logs, or artifacts folders by default.
+- Python prefers project-local venv.
+- C and C++ build, run, debug, linker, and artifact profiles are
+  separated.
+- Node and package managers are supply-chain-sensitive.
+- MongoDB and NoSQL database tools are in scope.
+- Database tools are secret-aware and migration-risk-aware.
+- Web development servers are live runtime sessions.
+- Resource Governor is required.
+- Sandbox planning is layered.
+- Toolchain installation is detect-and-guide by default.
+- Extensions may contribute templates but cannot force execution.
+- AI is advisory by default.
+- Phone and tablet use safe summaries and desktop-required disabled
+  actions.
+- Production system guard is required.
+- Remote toolchains are later and disabled by default.
+- Profile templates may sync, but executable approvals, paths, secrets,
+  and production approvals must not sync silently.
+
+- Profile templates may sync, but executable approvals, paths, secrets, and production approvals must not sync silently.
+- Per-project Toolchains dashboard is required.
+- Safe reset is mandatory.
+
+Next topic: Managed Works projects templates and project dashboard behavior.

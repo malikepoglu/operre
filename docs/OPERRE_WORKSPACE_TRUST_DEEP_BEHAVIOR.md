@@ -578,3 +578,11 @@ data, external tools, build, run, debug, package managers, live runtime,
 or elevated execution are involved. Trust does not execute anything by
 itself. Execution still requires permission, command preview, broker
 approval, audit logging, and process lifecycle control.
+
+## External toolchain trust relationship
+
+External toolchains require Workspace Trust when workspace data, file
+writes, network, secrets, protected paths, production targets, remote
+targets, or live runtime sessions are involved. Trust alone does not
+approve a toolchain profile. Toolchain profile approval, permissions,
+Resource Governor policy, and audit logging are still required.

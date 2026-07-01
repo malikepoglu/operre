@@ -168,3 +168,12 @@ brokered, command preview is required for risky actions, logs have
 visible IDs and clickable paths, environments are sanitized, sudo/admin/root
 are disabled by default but can be enabled with critical approval,
 and AI cannot execute commands directly by default.
+
+OPR-SPEC-0042 records the external toolchain and live runtime broker
+model. Operre uses Toolchain Broker, profile-based execution, guarded
+discovery, project-local Python venv preference, separated C/C++ build
+and run profiles, supply-chain-aware Node and package managers,
+database and NoSQL guards, live runtime sessions, organized outputs,
+logs, artifacts, Resource Governor, layered sandbox planning, production
+guard, remote toolchain planning, limited profile sync, per-project
+Toolchains dashboard, and mandatory safe reset.

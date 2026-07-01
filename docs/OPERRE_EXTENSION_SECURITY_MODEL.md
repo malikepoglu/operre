@@ -514,3 +514,11 @@ Extensions cannot execute terminal commands directly. Extensions may
 contribute commands, tasks, terminal providers, or toolchain profiles
 only through declared contribution points and brokered execution. Process
 Execution Broker and Toolchain Broker remain the enforcement surfaces.
+
+## Toolchain broker and extension safety
+
+Extensions may contribute toolchain profile templates, command templates,
+diagnostics parsers, problem matchers, output parsers, setup guides, and
+recommended settings. Extensions cannot force executable paths, execute
+hidden commands, read raw environment, read secrets, install packages, or
+run before Toolchain Broker approval.

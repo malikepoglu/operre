@@ -79,7 +79,8 @@ Current project phase:
 | OPR-SPEC-0039 | DONE | Define extension permission UI and approval flow. |
 | OPR-SPEC-0040 | DONE | Define Workspace Trust deep behavior. |
 | OPR-SPEC-0041 | DONE | Define safe terminal and process execution model. |
-| OPR-SPEC-0042 | QUEUED | Define external toolchain and live runtime broker model. |
+| OPR-SPEC-0042 | DONE | Define external toolchain and live runtime broker model. |
+| OPR-SPEC-0043 | QUEUED | Define managed Works projects, templates, and project dashboard behavior. |
 
 ## Implementation queue
 
@@ -101,7 +102,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: External toolchain and live runtime broker model
+NEXT_TOPIC: Managed Works projects templates and project dashboard behavior
 
 ## Meta discipline queue
 

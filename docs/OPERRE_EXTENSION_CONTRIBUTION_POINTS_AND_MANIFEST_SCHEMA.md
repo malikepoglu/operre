@@ -907,3 +907,11 @@ Extension manifest permissions are declarations, not automatic grants. OPR-SPEC-
 ## Workspace Trust relationship
 
 Extension manifests must declare limited-mode behavior for untrusted or restricted workspaces. High-risk contribution points may be disabled until Workspace Trust and required permissions are granted. Desktop-only toolchain and live runtime contributions require Workspace Trust and later broker approval.
+
+## Toolchain contribution relationship
+
+Toolchain-related extension contribution points must be declarative.
+They may describe profile templates, command templates, parser
+capabilities, and limited-mode behavior. They must not grant execution
+authority by themselves. Toolchain execution requires profile approval,
+Workspace Trust, permissions, Resource Governor policy, and audit logs.

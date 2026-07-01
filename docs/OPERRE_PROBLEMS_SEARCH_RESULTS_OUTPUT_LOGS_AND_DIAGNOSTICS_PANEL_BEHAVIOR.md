@@ -854,3 +854,12 @@ Terminal stdout and stderr must route through structured Output channels.
 Large terminal output must be bounded, redacted, and spooled when needed.
 Problems and Diagnostics may parse process output later, but panel
 visibility does not grant AI or extension data access by default.
+
+## Toolchain diagnostics relationship
+
+Toolchain diagnostics may include compiler, linker, runtime, test,
+package, dependency, security, performance, migration, environment,
+resource, port, network, crash, and flaky-test diagnostics. Diagnostics
+items should reference toolchain profile, process session ID, log ID,
+risk, permission state, Workspace Trust state, AI access state, and
+extension access state.

@@ -799,3 +799,11 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## External toolchain broker relationship
+
+Terminal and process execution are the lower-level execution surface.
+Toolchain Broker adds profile identity, tool role, workspace policy,
+output policy, diagnostics policy, Resource Governor policy, production
+guard, remote planning, and per-project dashboard behavior. External
+toolchains must not bypass the process execution model.

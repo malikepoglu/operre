@@ -1031,3 +1031,26 @@ terminal.output.maxVisibleLines, terminal.output.maxBytes,
 terminal.process.maxConcurrent, terminal.process.defaultTimeoutSeconds,
 terminal.showLogLinks, terminal.showWorkingDirectoryLinks,
 terminal.phone.showSafeSummaries, and terminal.tablet.showSafeSummaries.
+
+## External toolchain settings
+
+External toolchain settings should include operre.worksRoot,
+toolchains.enabled, toolchains.discovery.enabled,
+toolchains.discovery.passive, toolchains.discovery.verified,
+toolchains.install.mode, toolchains.install.allowHelper,
+toolchains.install.allowCuratedInstaller,
+toolchains.requireProfileApproval, toolchains.requireWorkspaceTrust,
+toolchains.requireCommandPreview, toolchains.allowProfileTemplateSync,
+toolchains.syncExecutableApprovals, toolchains.syncExecutablePaths,
+toolchains.syncSecrets, toolchains.productionGuard.enabled,
+toolchains.remote.enabled, toolchains.dashboard.enabled,
+toolchains.safeReset.enabled, resourceGovernor.enabled,
+resourceGovernor.defaultTimeoutSeconds,
+resourceGovernor.defaultIdleTimeoutSeconds,
+resourceGovernor.maxOutputBytes, resourceGovernor.maxLogBytes,
+resourceGovernor.maxConcurrentProcesses, resourceGovernor.restartLimit,
+sandbox.fileScope.enabled, sandbox.networkScope.enabled,
+sandbox.platformSandbox.enabledLater, python.preferProjectVenv,
+cpp.requireSeparateRunApproval, node.warnOnInstallScripts,
+database.productionGuardDefault, webServer.defaultBindAddress, and
+ai.toolchainAdvisoryOnly.

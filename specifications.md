@@ -2916,3 +2916,68 @@ Accepted decisions:
 - Open UI does not imply data access.
 
 NEXT_TOPIC: External toolchain and live runtime broker model
+
+## OPR-SPEC-0042 - External Toolchain and Live Runtime Broker Model
+
+Operre must coordinate external development tools through a brokered,
+profile-based, observable, safe, ergonomic, and powerful model.
+
+Accepted decisions:
+
+- Toolchain Broker is a separate security and coordination layer.
+- No toolchain, extension, AI feature, task, panel, or command may
+  bypass Permission Broker, Workspace Trust Broker, Process Execution
+  Broker, Resource Governor, Output, Problems, Diagnostics, Logs, and
+  Audit Log.
+- Every external tool is represented by a toolchain profile.
+- Toolchain profiles include identity, executable, workspace,
+  permission, environment, output, log, risk, approval, resource, and UX
+  fields.
+- Profile states include discovered, pending review, approved, approved
+  for workspace, approved for machine, blocked, quarantined, review
+  needed, deprecated, and missing.
+- Toolchain install modes are A, B, C, and D with A plus B as the
+  recommended default.
+- Auto discovery suggests profiles but does not approve them.
+- Verified discovery is process execution and must be logged.
+- The setting operre.worksRoot defines the managed Works root.
+- External workspaces must not be modified with outputs, logs, or
+  artifacts folders by default.
+
+- External workspaces must not be modified with outputs, logs, or artifacts folders by default.
+- Python prefers workspace `.venv`, Operre-managed venv, user-selected
+  venv, then system Python with warning.
+- C and C++ use separate compiler, linker, build, run, debug, and
+  artifact profiles.
+- JavaScript, TypeScript, and Node package managers are
+  supply-chain-sensitive.
+- MongoDB and NoSQL database tools are in scope.
+- Database tools are secret-aware and migration-risk-aware.
+- Web development servers are live runtime sessions with port and
+  network policy.
+- Live runtime is a persistent session with session ID, log ID, output
+  channel, resource limits, stop, kill, and audit.
+- Resource Governor controls timeout, output limits, log limits,
+  concurrency, restarts, process cleanup, and later CPU, memory, disk,
+  and network limits.
+- Sandbox planning is layered across broker, process, file, network, and
+  later platform sandbox levels.
+- Operre does not silently download or install toolchains by default.
+- Extensions may contribute profile templates but cannot force execution.
+- AI begins as a powerful advisor and cannot directly execute toolchains
+  by default.
+- Phone and tablet support safe summaries and desktop-required disabled
+  actions.
+- Diagnostics are a project control surface and include toolchain
+  profile, process session ID, log ID, risk, permission, and access
+  state.
+- Production system guard is required for production-like targets.
+- Remote toolchain support is planned later and disabled by default.
+- Profile templates may sync, but executable approvals, paths, secrets,
+  and production approvals must not sync silently.
+
+- Profile templates may sync, but executable approvals, paths, secrets, and production approvals must not sync silently.
+- Per-project Toolchains dashboard is required for ergonomics.
+- Safe reset is mandatory for risky toolchain settings and profiles.
+
+NEXT_TOPIC: Managed Works projects templates and project dashboard behavior

@@ -449,3 +449,13 @@ Accepted storage behavior:
 - Explorer tree snapshots are not exported by default.
 - Protected raw paths may be redacted.
 - Session restore must re-check protected/missing/moved/symlink targets.
+
+## Toolchain sync behavior
+
+Toolchain profile templates may sync later, but executable approvals,
+executable paths, secrets, machine-local verification state, production
+approvals, remote target approvals, and dangerous overrides must not sync
+silently. Toolchain sync must be device-aware, profile-aware, and
+security-aware.
+
+Profile templates may sync, but executable approvals, paths, secrets, and production approvals must not sync silently.

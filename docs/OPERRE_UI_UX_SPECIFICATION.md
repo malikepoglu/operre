@@ -512,3 +512,11 @@ Terminal UI must show command preview, risk, trust state, log ID,
 clickable log path, clickable working directory path, stop action,
 kill action, exit code, and output routing. Full terminal mode must
 remain guarded and must not look like an uncontrolled shell.
+
+## Per-project Toolchains dashboard
+
+Operre should provide a per-project Toolchains dashboard showing profile
+states, missing tools, setup guidance, last run, current status, logs,
+diagnostics, outputs, artifacts, risk levels, Resource Governor state,
+production guard state, blocked profiles, review-needed profiles, and
+safe reset actions.

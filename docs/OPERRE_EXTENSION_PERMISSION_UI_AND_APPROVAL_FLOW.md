@@ -602,3 +602,11 @@ extension permissions. Risky commands require runtime prompts, command
 preview, duration choice, trust checks, output/log routing, and audit
 logging. Sudo, administrator, root, package manager, debugger, live
 runtime, and external toolchain permissions are high-risk or critical.
+
+## Toolchain permission relationship
+
+Toolchain permissions are scoped and role-specific. Python interpreter,
+C compiler, C++ compiler, linker, package manager, database client,
+NoSQL client, web server, migration tool, live runtime, simulator,
+emulator, remote toolchain, and production action permissions must be
+separate where risk differs.

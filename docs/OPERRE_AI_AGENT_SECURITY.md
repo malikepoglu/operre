@@ -324,3 +324,12 @@ explain risk, prepare safer alternatives, and summarize expected effects.
 Execution requires user approval, Workspace Trust, permission grants,
 command preview, audit logging, and safe defaults. AI must never hide
 command execution behind natural language.
+
+## AI and toolchain broker relationship
+
+AI may suggest toolchain profiles, explain commands, summarize risks,
+analyze logs if allowed, summarize diagnostics if allowed, propose safer
+commands, and draft rollback plans. AI cannot directly execute toolchains
+by default. Future AI-assisted execution requires explicit settings,
+Workspace Trust, permission grants, command preview, user approval,
+audit logging, and production guard where relevant.
