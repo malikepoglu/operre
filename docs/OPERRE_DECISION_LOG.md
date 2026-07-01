@@ -676,3 +676,34 @@ Key decisions:
 - Open UI does not imply data access.
 
 Next topic: Safe terminal and process execution model.
+
+## OPR-SPEC-0041 - Safe Terminal and Process Execution Model
+
+Decision: Accepted.
+
+Operre will support a powerful but brokered terminal and process execution
+model. The default remains safe, but advanced users can enable stronger
+terminal modes, including full guarded terminal mode, through settings.
+
+Key decisions:
+
+- Terminal modes A, B, C, and D are supported.
+- The recommended default is A plus B.
+- Terminal mode D is full guarded terminal with per-action approval.
+- Execution is brokered through Permission Broker, Workspace Trust Broker,
+  Process Execution Broker, and Toolchain Broker where applicable.
+- Silent shell launch is forbidden.
+- Command preview is required for risky commands.
+- Log ID and log file path must be visible.
+- Working directory path and log file path should be clickable.
+- Environment variables are sanitized by default.
+- Secrets are not injected automatically.
+- Sudo, administrator, and root are disabled by default but may be enabled
+  by advanced users with critical warnings and per-operation approval.
+- Package managers are high-risk or very-high-risk.
+- Build, run, debug, test, live runtime, and REPL are separate categories.
+- AI cannot directly execute commands by default.
+- Phone and tablet do not get full local terminal by default.
+- Open UI does not imply data access.
+
+Next topic: External toolchain and live runtime broker model.

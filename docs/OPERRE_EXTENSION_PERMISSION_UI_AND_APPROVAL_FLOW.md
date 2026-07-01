@@ -594,3 +594,11 @@ Likely later topics:
 ## Workspace Trust relationship
 
 Extension permission prompts must respect Workspace Trust. A permission grant does not bypass Workspace Trust. Dangerous operations such as process execution, AI workspace access, protected path access, network access with workspace data, diagnostics access, and external toolchain sessions require both appropriate permission and appropriate trust state.
+
+## Terminal permission relationship
+
+Terminal and process execution permissions are separate from generic
+extension permissions. Risky commands require runtime prompts, command
+preview, duration choice, trust checks, output/log routing, and audit
+logging. Sudo, administrator, root, package manager, debugger, live
+runtime, and external toolchain permissions are high-risk or critical.

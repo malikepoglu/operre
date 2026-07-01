@@ -505,3 +505,10 @@ Extension permission warnings must appear below the toolbar and above the editor
 ## Workspace Trust UI behavior
 
 Workspace Trust warnings can use red critical, yellow warning, and light-blue info bars below the toolbar and above the editor or working surface. Bars must include text, severity label, icon, action buttons, accessibility labels, keyboard focus support, and status bar fallback. Dismissing a bar does not grant trust.
+
+## Terminal UI safety behavior
+
+Terminal UI must show command preview, risk, trust state, log ID,
+clickable log path, clickable working directory path, stop action,
+kill action, exit code, and output routing. Full terminal mode must
+remain guarded and must not look like an uncontrolled shell.

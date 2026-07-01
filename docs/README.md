@@ -69,3 +69,13 @@ Implementation must wait until the specification baseline is stable and the firs
 ## Workspace Trust deep behavior
 
 - `OPERRE_WORKSPACE_TRUST_DEEP_BEHAVIOR.md` - defines scoped, revocable, device-local Workspace Trust; opening bars; runtime prompts; restricted mode; per-root multi-root trust; extension trust relationship; external toolchain and live runtime trust chain; trust review needed; phone/tablet limits; no trust sync; and audit behavior.
+
+## Safe terminal and process execution model
+
+- `OPERRE_SAFE_TERMINAL_AND_PROCESS_EXECUTION_MODEL.md` - defines
+  terminal modes A, B, C, and D; safe defaults; brokered execution;
+  command preview; environment sanitation; working directory policy;
+  structured output; log IDs; clickable log and working-directory paths;
+  process lifecycle; sudo/admin/root behavior; package manager policy;
+  build/run/debug/test/live runtime categories; AI command limits;
+  phone/tablet limits; and audit behavior.

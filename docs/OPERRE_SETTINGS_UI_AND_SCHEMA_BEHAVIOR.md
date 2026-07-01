@@ -1011,3 +1011,23 @@ Recommended defaults use update policy B, runtime prompts enabled, install summa
 ## Workspace Trust settings
 
 Workspace Trust settings should include workspace.trust.enabled, workspace.trust.showOpeningBar, workspace.trust.promptOnDangerousAction, workspace.trust.defaultState, workspace.trust.allowMachineTrust, workspace.trust.allowGlobalTrust, workspace.trust.syncTrust, workspace.trust.showStatusBarState, workspace.trust.showReviewNeeded, workspace.trust.showDisabledDesktopRequired, workspace.trust.requireAcknowledgeForCritical, workspace.trust.redactPathsInWarnings, workspace.trust.recheckOnRootChange, workspace.trust.recheckOnRemoteChange, and workspace.trust.recheckOnToolchainChange. Recommended defaults keep trust enabled, global trust disabled, trust sync disabled, status bar state enabled, review needed enabled, and critical acknowledgement required.
+
+## Terminal and process execution settings
+
+Terminal settings should include terminal.mode, terminal.availableModes,
+terminal.defaultProfile.linux, terminal.defaultProfile.macos,
+terminal.defaultProfile.windows, terminal.requireWorkspaceTrust,
+terminal.requireCommandPreview, terminal.confirmLowRisk,
+terminal.confirmMediumRisk, terminal.confirmHighRisk,
+terminal.confirmVeryHighRisk, terminal.confirmCritical,
+terminal.allowElevatedExecution, terminal.allowSudo,
+terminal.allowAdmin, terminal.allowRootShell,
+terminal.allowAiSuggestedCommands, terminal.allowAiApprovedExecution,
+terminal.sanitizeEnvironment, terminal.redactEnvironment,
+terminal.log.enabled, terminal.log.stdout, terminal.log.stderr,
+terminal.log.commandPreview, terminal.log.environmentSummary,
+terminal.log.retentionDays, terminal.log.maxSize,
+terminal.output.maxVisibleLines, terminal.output.maxBytes,
+terminal.process.maxConcurrent, terminal.process.defaultTimeoutSeconds,
+terminal.showLogLinks, terminal.showWorkingDirectoryLinks,
+terminal.phone.showSafeSummaries, and terminal.tablet.showSafeSummaries.

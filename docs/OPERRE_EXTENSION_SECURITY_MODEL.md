@@ -507,3 +507,10 @@ Extension update policy B is the default: an extension requesting new permission
 ## Workspace Trust relationship
 
 Extensions must respect Workspace Trust. Package verification, manifest permissions, user grants, and Workspace Trust are separate gates. Workspace Trust does not automatically grant extension permissions, and extension permission grants do not replace Workspace Trust. High-risk and very-high-risk extension actions require Workspace Trust where workspace data, process execution, AI access, diagnostics, logs, protected paths, or external tools are involved.
+
+## Safe terminal and process execution relationship
+
+Extensions cannot execute terminal commands directly. Extensions may
+contribute commands, tasks, terminal providers, or toolchain profiles
+only through declared contribution points and brokered execution. Process
+Execution Broker and Toolchain Broker remain the enforcement surfaces.

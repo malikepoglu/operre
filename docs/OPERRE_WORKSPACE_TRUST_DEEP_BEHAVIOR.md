@@ -570,3 +570,11 @@ Likely later topics:
 - marketplace and package signing details;
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Safe terminal relationship
+
+Terminal and process execution require Workspace Trust when workspace
+data, external tools, build, run, debug, package managers, live runtime,
+or elevated execution are involved. Trust does not execute anything by
+itself. Execution still requires permission, command preview, broker
+approval, audit logging, and process lifecycle control.

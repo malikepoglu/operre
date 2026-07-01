@@ -78,7 +78,8 @@ Current project phase:
 | OPR-SPEC-0038 | DONE | Define extension contribution points and manifest schema as the detailed successor to the earlier extension manifest planning item. |
 | OPR-SPEC-0039 | DONE | Define extension permission UI and approval flow. |
 | OPR-SPEC-0040 | DONE | Define Workspace Trust deep behavior. |
-| OPR-SPEC-0041 | QUEUED | Define safe terminal and process execution model. |
+| OPR-SPEC-0041 | DONE | Define safe terminal and process execution model. |
+| OPR-SPEC-0042 | QUEUED | Define external toolchain and live runtime broker model. |
 
 ## Implementation queue
 
@@ -100,7 +101,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Safe terminal and process execution model
+NEXT_TOPIC: External toolchain and live runtime broker model
 
 ## Meta discipline queue
 

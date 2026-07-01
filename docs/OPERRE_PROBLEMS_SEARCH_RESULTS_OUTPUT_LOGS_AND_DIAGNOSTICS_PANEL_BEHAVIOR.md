@@ -847,3 +847,10 @@ Likely later topics:
 ## Workspace Trust relationship
 
 Problems, Search Results, Output, Logs, and Diagnostics must respect Workspace Trust. In untrusted workspaces, safe summaries can remain visible, but unrestricted panel reads, diagnostic bundles, logs access, output access, and AI summarization remain locked unless both trust and scoped permissions allow them.
+
+## Terminal output relationship
+
+Terminal stdout and stderr must route through structured Output channels.
+Large terminal output must be bounded, redacted, and spooled when needed.
+Problems and Diagnostics may parse process output later, but panel
+visibility does not grant AI or extension data access by default.

@@ -160,3 +160,11 @@ OPR-SPEC-0038 records the extension contribution and manifest model. Operre uses
 OPR-SPEC-0039 records the extension permission UI and approval flow. Operre uses install-time summaries, runtime critical prompts, scoped grants, duration choices, risk bars below the toolbar and above the editor, status bar summaries, default update policy B, Developer Mode for local extensions, phone/tablet disabled desktop-required capability display, revocation controls, Safe Mode, and audit logging.
 
 OPR-SPEC-0040 records the deep Workspace Trust model. Operre uses opening-time trust bars, runtime prompts for dangerous actions, granular file/folder/workspace/root/extension/toolchain trust, machine-local trust decisions, restricted mode, per-root multi-root trust, external toolchain approval chains, red/yellow/light-blue trust bars, status bar state, trust review needed, phone/tablet desktop-required disabled actions, and strict no-sync defaults.
+
+OPR-SPEC-0041 records the safe terminal and process execution model.
+Operre supports selectable terminal modes A, B, C, and D while keeping
+the recommended default as A plus B. Terminal and process execution are
+brokered, command preview is required for risky actions, logs have
+visible IDs and clickable paths, environments are sanitized, sudo/admin/root
+are disabled by default but can be enabled with critical approval,
+and AI cannot execute commands directly by default.

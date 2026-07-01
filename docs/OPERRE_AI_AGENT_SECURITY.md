@@ -316,3 +316,11 @@ AI access requested by an extension is a very-high-risk permission. It requires 
 ## Workspace Trust and AI access
 
 AI workspace access requires Workspace Trust where project data is involved. AI cannot use visible workspace UI as hidden data access. Open UI does not imply data access. In untrusted workspaces, AI workspace read, AI tool execution, and AI-assisted external toolchain actions remain locked unless a later explicit trusted flow allows them.
+
+## AI command execution relationship
+
+AI cannot directly execute commands by default. AI may propose commands,
+explain risk, prepare safer alternatives, and summarize expected effects.
+Execution requires user approval, Workspace Trust, permission grants,
+command preview, audit logging, and safe defaults. AI must never hide
+command execution behind natural language.

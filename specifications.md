@@ -2865,3 +2865,54 @@ Accepted decisions:
 - Visible workspace content does not grant extension or AI access.
 
 NEXT_TOPIC: Safe terminal and process execution model
+
+## OPR-SPEC-0041 - Safe Terminal and Process Execution Model
+
+Operre must provide powerful terminal and process execution capability
+without allowing uncontrolled execution.
+
+Accepted decisions:
+
+- Terminal and process execution are brokered capabilities.
+- No extension, AI feature, panel, command, task, toolchain, or runtime
+  may directly execute a shell command without broker approval.
+- Supported terminal modes are A, B, C, and D.
+- The recommended default is A plus B.
+- Terminal mode D is full guarded terminal with per-action approval.
+- Users may change terminal mode through settings.
+- Mode D still requires Workspace Trust, Permission Broker approval,
+  command preview, environment sanitation, audit logging, and dangerous
+  operation confirmation.
+- Terminal UI is hybrid: core may provide the surface, but execution is
+  controlled by brokers.
+- Shell path and shell arguments must be visible before use.
+- Silent shell launch is forbidden.
+- Commands are classified as low, medium, high, very high, and critical.
+- Command preview must show command path, arguments, working directory,
+  environment summary, write scope, network scope, output destination,
+  log ID, log file path, timeout, resource limits, owner, reason, and
+  trust state.
+- Working directory path should be clickable and open the directory in
+  the operating system file explorer.
+- Log file path should be clickable and open the log in Operre.
+- Environment is sanitized by default.
+- Secrets are not injected automatically.
+- Default managed workspace location for new projects should be a
+  user-configurable Works root.
+- The canonical visible output surface is the structured Output panel.
+- Every process session must have a log ID.
+- Sudo, administrator, and root operations are disabled by default but
+  may be enabled by an advanced user with critical warnings and separate
+  approval for each operation.
+- Operre must not store sudo passwords.
+- Package managers are high-risk or very-high-risk.
+- Build, run, debug, test, live runtime, and REPL are separate permission
+  categories.
+- AI cannot directly execute commands by default.
+- Future AI-assisted execution requires explicit setting, Workspace Trust,
+  permission grant, command preview, audit logging, and safe defaults.
+- Phone and tablet support safe summaries but no full local terminal by
+  default.
+- Open UI does not imply data access.
+
+NEXT_TOPIC: External toolchain and live runtime broker model
