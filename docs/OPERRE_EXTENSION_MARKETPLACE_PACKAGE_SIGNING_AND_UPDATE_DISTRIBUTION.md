@@ -666,3 +666,12 @@ Likely later topics:
 - first implementation milestone freeze.
 
 Telemetry, usage upload, crash upload, and diagnostics upload are off by default.
+
+## Account and sync relationship
+
+Marketplace login does not grant workspace data access, AI access,
+extension permissions, toolchain permissions, or sync permissions.
+Extension sync is suggestion-oriented. Extension binaries, local unpacked
+paths, Developer Mode state, permission grants, trust grants, executable
+approvals, secrets, local data, and quarantine overrides must not sync
+silently.

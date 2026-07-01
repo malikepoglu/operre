@@ -484,3 +484,12 @@ usage telemetry, crash reports, diagnostics, AI prompts, AI responses,
 workspace names, file paths, toolchain profiles, project names, or
 production target labels by default. Telemetry, usage upload, crash
 upload, and diagnostics upload are off by default.
+
+## Settings sync account and device profile relationship
+
+Operre remains local-first. Account is optional for core local use. Sync
+is off by default. Workspace Trust, permission grants, secrets, tokens,
+API keys, SSH keys, database connection strings, production target
+labels, raw logs, raw outputs, AI prompts, AI responses, diagnostic
+details, executable approvals, toolchain paths, local file paths, and
+protected path access state must not sync silently.

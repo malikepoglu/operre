@@ -849,3 +849,34 @@ Next topic: Settings sync account and device profile behavior.
 - The canonical Operre extension package extension is `.oprx`.
 
 - Telemetry, usage upload, crash upload, and diagnostics upload are off by default.
+
+## OPR-SPEC-0046 - Settings Sync Account and Device Profile Behavior
+
+Decision: Accepted.
+
+Operre will remain local-first. Account and sync are optional. Sync is
+off by default. Device profiles and settings profiles are required so
+desktop, laptop, tablet, phone, high-DPI, touch, and low-power devices
+can have safe and ergonomic behavior.
+
+Key decisions:
+
+- Account is optional for core local use.
+- Sync is off by default.
+- Operre remains local-first.
+- Device profiles are required.
+- Workspace Trust must not sync by default.
+- Permission grants must not sync by default.
+- Extension sync is suggestion-oriented.
+- Marketplace login does not grant workspace data access.
+- Sync provider model is provider-independent.
+- Sync design is encryption-aware.
+- Conflict UI is required.
+- Sync audit is required.
+- Settings profiles are required.
+- Safe reset and recommended defaults are required.
+- No private user data uploads by default.
+- First implementation must not depend on cloud sync.
+- Operre must remain buildable by a small team.
+
+Next topic: First implementation milestone freeze and v0.1 scope.

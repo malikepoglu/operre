@@ -348,3 +348,10 @@ AI must not install, update, remove, quarantine, rollback, trust, block,
 or approve extension packages by default. AI may explain package risk,
 permission diffs, publisher identity, update notes, and safer choices
 only within granted context.
+
+## AI sync relationship
+
+AI prompts, AI responses, AI provider credentials, AI workspace access
+grants, AI diagnostics access grants, and AI command or fix grants must
+not sync silently. Account login does not grant AI access. Sync login
+does not grant AI access.

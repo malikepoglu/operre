@@ -1383,3 +1383,10 @@ Toolchain-related extensions distributed through `.oprx` packages remain
 subject to package preview, publisher identity, signature and hash
 planning, permission diff, Toolchain Broker approval, Workspace Trust,
 Resource Governor, quarantine, rollback, and manual update policy.
+
+## Toolchain sync relationship
+
+Toolchain executable paths, executable approvals, package manager grants,
+runtime grants, debugger grants, production grants, remote target grants,
+and local environment state must not sync silently. Synced profiles may
+suggest templates only; machine-local review remains required.

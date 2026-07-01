@@ -625,3 +625,12 @@ contribution points, commands, toolchain templates, network requests,
 file access requests, AI access requests, diagnostics access requests,
 and package manager or toolchain risks. Updates with new permissions
 become pending or disabled until approved.
+
+## Permission grant sync relationship
+
+Permission grants must not sync by default. Extension permission grants,
+AI permission grants, toolchain permission grants, diagnostics access
+grants, raw log access grants, raw output access grants, production
+action grants, remote target grants, package manager grants, and
+executable approval grants remain local unless a later explicit and safe
+model exists.

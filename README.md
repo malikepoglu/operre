@@ -202,3 +202,10 @@ publisher identity, immutable extension IDs, manual update policy,
 permission diffs, rollback, quarantine, offline install, safe phone and
 tablet marketplace behavior, privacy defaults, and public marketplace
 later.
+
+OPR-SPEC-0046 records settings sync, account, and device profile
+behavior. Operre is local-first, account-optional, sync-off by default,
+device-profile aware, privacy-preserving, conflict-aware, audit-aware,
+and buildable without cloud sync. Workspace Trust, permission grants,
+secrets, executable approvals, local paths, raw logs, raw outputs, AI
+prompts, AI responses, and diagnostic details must not sync silently.

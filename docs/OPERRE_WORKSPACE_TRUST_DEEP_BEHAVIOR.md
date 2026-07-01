@@ -601,3 +601,9 @@ Workspace Trust may be required before workspace diagnostics can expose
 file paths, source snippets, toolchain data, logs, outputs, environment
 state, production labels, or remote target state. Trust does not grant AI
 or extension access by itself.
+
+## Workspace Trust sync relationship
+
+Workspace Trust must not sync by default. Trust is device-local,
+path-local, workspace-local, revocable, explainable, and tied to local
+identity. Account login and sync login do not grant Workspace Trust.

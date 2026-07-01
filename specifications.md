@@ -3099,3 +3099,38 @@ Accepted decisions:
 NEXT_TOPIC: Settings sync account and device profile behavior
 
 - Telemetry, usage upload, crash upload, and diagnostics upload are off by default.
+
+## OPR-SPEC-0046 - Settings Sync Account and Device Profile Behavior
+
+Operre must support optional account and optional sync without weakening
+local-first use, privacy, security, or device ergonomics.
+
+Accepted decisions:
+
+- Account is optional for core local use.
+- Sync is off by default.
+- Operre remains local-first.
+- Safe, risky, and never-silent-sync categories are separate.
+- Device profiles are required.
+- Per-device settings and synced settings are separate.
+- Workspace Trust must not sync by default.
+- Permission grants must not sync by default.
+- Extension sync is suggestion-oriented and does not sync binaries,
+  paths, permission grants, trust grants, or secrets.
+- Marketplace login does not grant workspace, AI, extension, or
+  toolchain access.
+- Sync provider model is provider-independent.
+- Sync design is encryption-aware from the beginning.
+- Conflict UI is required.
+- Sync audit is required.
+- Device management is planned later.
+- Settings profiles are required.
+- Safe reset and recommended defaults are required.
+- Phone and tablet sync is useful but safe.
+- No private user data uploads by default.
+- First implementation starts with local settings, profiles, export, and
+  import skeletons.
+- First implementation must not depend on cloud sync.
+- Operre must remain buildable by a small team.
+
+NEXT_TOPIC: First implementation milestone freeze and v0.1 scope

@@ -695,3 +695,10 @@ Marketplace, package verification, update failure, rollback, quarantine,
 publisher block, signature mismatch, hash mismatch, and permission diff
 issues may feed Diagnostics Dashboard. Diagnostics visibility does not
 grant package approval or extension execution.
+
+## Diagnostics sync relationship
+
+Detailed diagnostics history is local by default. Diagnostics summaries
+are risky sync candidates. Raw logs, raw outputs, diagnostic details,
+production diagnostics, remote diagnostics, AI access state, and
+extension access state must not sync silently.

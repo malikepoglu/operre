@@ -1095,3 +1095,11 @@ extensions.offlineInstall.enabled, extensions.phone.safeMarketplaceMode,
 extensions.tablet.safeMarketplaceMode,
 extensions.privacy.telemetryUpload, extensions.privacy.crashUpload,
 extensions.privacy.usageUpload, and extensions.review.enabledLater.
+
+## Settings sync and device profile relationship
+
+Settings must separate local, per-device, profile-level, synced,
+risky-sync, and never-silent-sync settings. Account is optional for core
+local use. Sync is off by default. Device profiles are required. Safe
+reset should show current value, recommended value, risk label, scope,
+sync state, and device override state.

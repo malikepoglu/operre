@@ -756,3 +756,11 @@ Dashboard provides the deeper project health surface. Diagnostics access,
 raw log access, raw output access, AI access, extension access,
 production detail access, and remote detail access remain separately
 permissioned and redacted.
+
+## Project sync relationship
+
+Managed project and dashboard preferences may have safe sync candidates,
+but project names, local paths, recent files, workspace identity,
+Workspace Trust, permission grants, outputs, logs, artifacts,
+diagnostics details, production labels, and remote target labels must not
+sync silently.

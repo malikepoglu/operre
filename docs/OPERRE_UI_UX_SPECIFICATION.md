@@ -545,3 +545,11 @@ verified state, version, install time, last updated time, permission
 summary, risk summary, device support, changelog, license, privacy notes,
 signature state, source registry, install, update, remove, rollback, and
 quarantine actions while remaining simple and accessible.
+
+## Device profile UI relationship
+
+Device profiles are required for desktop, laptop, tablet, phone,
+high-DPI monitor, touch-first, keyboard-mouse, low-power, and
+remote-view-only experiences. Device profiles affect UI scale, layout,
+dashboard density, sidebar behavior, panel behavior, touch mode, command
+availability, diagnostics detail level, and safe summary mode.

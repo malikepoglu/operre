@@ -116,3 +116,14 @@ Implementation must wait until the specification baseline is stable and the firs
   manual update policy, permission diff, rollback, quarantine,
   marketplace UI, private registry, offline install, phone and tablet
   behavior, Developer Mode, review later, privacy, and v0.1 scope.
+
+## Settings sync, account, and device profiles
+
+- `OPERRE_SETTINGS_SYNC_ACCOUNT_AND_DEVICE_PROFILE_BEHAVIOR.md` -
+  defines optional account, sync-off default, local-first behavior, safe
+  sync categories, risky sync categories, never-silent-sync categories,
+  device profiles, per-device settings, synced settings, trust and
+  permission no-sync rules, extension sync model, provider-independent
+  sync, encryption awareness, conflict UI, sync audit, device management
+  later, settings profiles, safe reset, phone and tablet behavior,
+  privacy defaults, and v0.1 buildability limits.
