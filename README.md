@@ -193,3 +193,12 @@ lifecycle, privacy, retention, fix-action safety, AI and extension
 access controls, production guard, remote diagnostics disabled by
 default, phone and tablet safe summaries, and a skeleton-first
 implementation direction.
+
+OPR-SPEC-0045 records extension marketplace, package signing, and update
+distribution behavior. Operre starts with local packaged extensions,
+Developer Mode, first-party extensions, and private registry planning,
+uses the `.oprx` package format, package hashes, manifest hashes,
+publisher identity, immutable extension IDs, manual update policy,
+permission diffs, rollback, quarantine, offline install, safe phone and
+tablet marketplace behavior, privacy defaults, and public marketplace
+later.

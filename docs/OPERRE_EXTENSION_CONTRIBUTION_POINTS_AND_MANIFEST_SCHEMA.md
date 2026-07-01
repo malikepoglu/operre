@@ -922,3 +922,10 @@ Diagnostics-related contribution points may declare providers, parsers,
 problem matchers, safe fix suggestions, dashboard cards, and summary
 providers. They must declare data access needs and cannot execute fixes
 or commands by themselves.
+
+## Package manifest relationship
+
+Extension packages use manifest data, permission data, contribution data,
+package metadata, manifest hash, content hash list, and signature fields
+reserved for later. Contribution points do not grant execution or data
+access by themselves.

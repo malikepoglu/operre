@@ -529,3 +529,11 @@ Extensions may contribute diagnostics only through declared providers and
 permissions. Extensions cannot read raw logs, raw output, secrets, other
 extension diagnostics, production diagnostics, or remote diagnostics by
 default. Diagnostics contributions do not grant command execution.
+
+## Marketplace signing and update relationship
+
+Extension marketplace and package distribution must preserve extension
+security boundaries. `.oprx` packages require preview, metadata,
+permission summary, package hash, manifest hash, publisher identity,
+update permission diff, rollback state, quarantine state, and strong
+warnings for unverified or high-risk packages.

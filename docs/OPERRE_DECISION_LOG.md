@@ -813,3 +813,39 @@ Key decisions:
   skeleton.
 
 Next topic: Extension marketplace package signing and update distribution behavior.
+
+## OPR-SPEC-0045 - Extension Marketplace Package Signing and Update Distribution
+
+Decision: Accepted.
+
+Operre will plan a secure extension distribution model. Public
+marketplace is later. The first practical model is local packaged
+install, Developer Mode, first-party extensions, and private registry
+planning.
+
+Key decisions:
+
+- The canonical package extension is `.oprx`.
+- Package preview is required before installation.
+- Manifest hash and content hash checks are required planning concepts.
+- Package signing is planned from the beginning.
+- Publisher identity and blocking are required.
+- Extension ID is immutable.
+- Name collision and name imitation are marketplace risks.
+- The recommended update policy is manual updates only.
+- Update permission diff is mandatory.
+- Updates with new permissions become pending or disabled until approved.
+- Rollback is required.
+- Extension quarantine is required.
+- Private registry is the first realistic network distribution model.
+- Offline package install is supported.
+- Local unpacked extension requires Developer Mode.
+- Telemetry, usage upload, crash upload, and diagnostics upload are off
+  by default.
+- Public marketplace review and moderation are later.
+
+Next topic: Settings sync account and device profile behavior.
+
+- The canonical Operre extension package extension is `.oprx`.
+
+- Telemetry, usage upload, crash upload, and diagnostics upload are off by default.

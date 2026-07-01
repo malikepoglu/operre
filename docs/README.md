@@ -107,3 +107,12 @@ Implementation must wait until the specification baseline is stable and the firs
   filtering, grouping, lifecycle, fix-action safety, noise control,
   retention, privacy, production diagnostics, remote diagnostics
   planning, phone and tablet safe summaries, and v0.1 skeleton scope.
+
+## Extension marketplace, package signing, and updates
+
+- `OPERRE_EXTENSION_MARKETPLACE_PACKAGE_SIGNING_AND_UPDATE_DISTRIBUTION.md` -
+  defines extension sources, `.oprx` packages, metadata, hashes, signing
+  planning, publisher identity, immutable extension IDs, version channels,
+  manual update policy, permission diff, rollback, quarantine,
+  marketplace UI, private registry, offline install, phone and tablet
+  behavior, Developer Mode, review later, privacy, and v0.1 scope.

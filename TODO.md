@@ -82,7 +82,8 @@ Current project phase:
 | OPR-SPEC-0042 | DONE | Define external toolchain and live runtime broker model. |
 | OPR-SPEC-0043 | DONE | Define managed Works projects, templates, and project dashboard behavior. |
 | OPR-SPEC-0044 | DONE | Define diagnostics dashboard deep behavior. |
-| OPR-SPEC-0045 | QUEUED | Define extension marketplace, package signing, and update distribution behavior. |
+| OPR-SPEC-0045 | DONE | Define extension marketplace, package signing, and update distribution behavior. |
+| OPR-SPEC-0046 | QUEUED | Define settings sync, account, and device profile behavior. |
 
 ## Implementation queue
 
@@ -104,7 +105,7 @@ Implementation starts only after:
 
 ## Current next topic
 
-NEXT_TOPIC: Extension marketplace package signing and update distribution behavior
+NEXT_TOPIC: Settings sync account and device profile behavior
 
 ## Meta discipline queue
 

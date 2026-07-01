@@ -688,3 +688,10 @@ Likely later topics:
 
 - settings sync and account model;
 - first implementation milestone freeze.
+
+## Marketplace diagnostics relationship
+
+Marketplace, package verification, update failure, rollback, quarantine,
+publisher block, signature mismatch, hash mismatch, and permission diff
+issues may feed Diagnostics Dashboard. Diagnostics visibility does not
+grant package approval or extension execution.

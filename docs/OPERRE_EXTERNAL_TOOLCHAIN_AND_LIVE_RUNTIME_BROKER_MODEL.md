@@ -1376,3 +1376,10 @@ managers, database tools, web development servers, production guard, and
 future remote toolchains may feed Diagnostics Dashboard. Each diagnostic
 must reference source, severity, confidence, profile, session, log, and
 permission state where applicable.
+
+## Marketplace toolchain extension relationship
+
+Toolchain-related extensions distributed through `.oprx` packages remain
+subject to package preview, publisher identity, signature and hash
+planning, permission diff, Toolchain Broker approval, Workspace Trust,
+Resource Governor, quarantine, rollback, and manual update policy.

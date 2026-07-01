@@ -3058,3 +3058,44 @@ Accepted decisions:
   skeleton.
 
 NEXT_TOPIC: Extension marketplace package signing and update distribution behavior
+
+## OPR-SPEC-0045 - Extension Marketplace Package Signing and Update Distribution
+
+Operre must support extension distribution without weakening security,
+privacy, or user control.
+
+Accepted decisions:
+
+- Public marketplace is required eventually, but later.
+- The first practical model is local packaged install, Developer Mode,
+  first-party extensions, and private registry planning.
+- Unknown URL import is disabled by default.
+- The canonical Operre extension package extension is `.oprx`.
+- Package preview is required before installation.
+- Manifest hash and content hash checks are required planning concepts.
+- Package signing is planned from the beginning.
+- Unsigned packages may be installed only as unverified packages.
+- Publisher identity, trust, block, and compromise states are required.
+- Extension ID is immutable.
+- Name collision and name imitation are marketplace risks.
+- Version, install time, last updated time, and update channel are
+  visible.
+- The recommended update policy is manual updates only.
+- Update permission diff is mandatory.
+- Updates with new permissions become pending or disabled until approved.
+- Rollback is required.
+- Extension quarantine is required.
+- Marketplace UI must be ergonomic and security-focused.
+- Private registry is the first realistic network distribution model.
+- Offline package install is supported with warnings and verification.
+- Phone and tablet marketplace support is useful but safe.
+- Local unpacked extension requires Developer Mode.
+- Public marketplace review and moderation are later.
+- Telemetry, usage upload, crash upload, and diagnostics upload are off
+  by default.
+- First implementation starts with skeletons and avoids public
+  marketplace, auto-install, auto-update, and signature enforcement.
+
+NEXT_TOPIC: Settings sync account and device profile behavior
+
+- Telemetry, usage upload, crash upload, and diagnostics upload are off by default.

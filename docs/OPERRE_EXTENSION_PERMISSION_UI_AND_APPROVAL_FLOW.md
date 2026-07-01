@@ -617,3 +617,11 @@ Diagnostics permissions should separate summary access, item access, raw
 log access, raw output access, production diagnostic access, remote
 diagnostic access, AI diagnostic access, and extension provider access.
 Higher-risk categories require stronger prompts and clearer scope.
+
+## Extension update permission diff relationship
+
+Extension updates must show new, removed, and changed permissions,
+contribution points, commands, toolchain templates, network requests,
+file access requests, AI access requests, diagnostics access requests,
+and package manager or toolchain risks. Updates with new permissions
+become pending or disabled until approved.

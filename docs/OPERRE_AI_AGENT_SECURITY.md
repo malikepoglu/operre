@@ -341,3 +341,10 @@ requires explicit permission, Workspace Trust when workspace data is
 involved, item or category scope, redaction, audit logging, and separate
 permission for raw logs or raw output. AI suggestions remain advisory
 unless a later guarded fix flow is explicitly approved.
+
+## AI and marketplace relationship
+
+AI must not install, update, remove, quarantine, rollback, trust, block,
+or approve extension packages by default. AI may explain package risk,
+permission diffs, publisher identity, update notes, and safer choices
+only within granted context.

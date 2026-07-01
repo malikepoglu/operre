@@ -1075,3 +1075,23 @@ projects.cleanup.maxLogAgeDays, projects.cleanup.maxLogBytes,
 projects.cleanup.maxOutputBytes, projects.cleanup.maxSpoolBytes,
 projects.cleanup.protectPinnedArtifacts, projects.safeReset.enabled, and
 projects.mobile.safeSummaryMode.
+
+## Marketplace and extension update settings
+
+Marketplace and update settings should include extensions.marketplace.enabled,
+extensions.marketplace.publicEnabled,
+extensions.marketplace.privateRegistryEnabled,
+extensions.marketplace.unknownUrlImportEnabled,
+extensions.package.format, extensions.package.requirePreview,
+extensions.package.verifyHashes,
+extensions.package.requireSignatureForHighRisk,
+extensions.signing.enabledLater, extensions.publisher.trustEnabled,
+extensions.publisher.blockEnabled, extensions.update.policy,
+extensions.update.autoCheck, extensions.update.autoInstall,
+extensions.update.requirePermissionDiff, extensions.update.showYellowBar,
+extensions.rollback.enabled, extensions.quarantine.enabled,
+extensions.developerMode.enabled, extensions.developerMode.sessionOnly,
+extensions.offlineInstall.enabled, extensions.phone.safeMarketplaceMode,
+extensions.tablet.safeMarketplaceMode,
+extensions.privacy.telemetryUpload, extensions.privacy.crashUpload,
+extensions.privacy.usageUpload, and extensions.review.enabledLater.

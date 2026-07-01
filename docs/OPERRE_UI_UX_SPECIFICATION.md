@@ -537,3 +537,11 @@ detail panels, filters, grouping, lifecycle views, related evidence, and
 safe next actions. The UI must remain readable, accessible, responsive,
 and useful on desktop, tablet, and phone without exposing restricted
 data.
+
+## Marketplace UI relationship
+
+Marketplace UI should show extension name, extension ID, publisher,
+verified state, version, install time, last updated time, permission
+summary, risk summary, device support, changelog, license, privacy notes,
+signature state, source registry, install, update, remove, rollback, and
+quarantine actions while remaining simple and accessible.

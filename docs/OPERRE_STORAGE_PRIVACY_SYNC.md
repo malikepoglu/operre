@@ -476,3 +476,11 @@ diagnostics history requires approval. Raw logs, raw output, secrets,
 production details, remote details, AI diagnostics access state, and
 extension diagnostics access state must not sync silently. Redacted
 summary export may be allowed.
+
+## Marketplace privacy relationship
+
+Marketplace and extension systems must not upload extension install lists,
+usage telemetry, crash reports, diagnostics, AI prompts, AI responses,
+workspace names, file paths, toolchain profiles, project names, or
+production target labels by default. Telemetry, usage upload, crash
+upload, and diagnostics upload are off by default.
